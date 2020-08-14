@@ -57,5 +57,8 @@
   },
   "bugs": {
     "url": "https://github.com/surudhb/gatsby-personal-site-template/issues"
+  },
+	"scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b master"
   }
 }
