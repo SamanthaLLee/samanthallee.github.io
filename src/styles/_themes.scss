@@ -7,23 +7,23 @@
 
 $themes: (
   light: (
-    backgroundColor: white,
+    backgroundColor: #FEB32C,
     footerBackground: white,
     navBackground: $gray-100,
     secondary: $gray-900,
     textColor: $black,
-    firstName: orange,
+    firstName: $black,
     lastName: $black,
     linkHover: $gray-800,
-    themeColor: $dark-blue,
-    heartColor: pink,
-    titleColor: $dark-blue,
+    themeColor: #5e59eb,
+    heartColor: red,
+    titleColor: $gray-800,
     hrefColor: $dark-blue,
     github: $black,
     linkedin: $linkedin-blue,
     fcc: $fcc-green,
     hr: $hr-green,
-    mail: $yellow,
+    mail: #FEB32C,
     file: $dark-blue,
     iconBackground: $white,
     cardBackground: $white,
@@ -35,11 +35,11 @@ $themes: (
     navBackground: $dark-gray,
     linkHover: $gray-200,
     textColor: $gray-300,
-    firstName: $gray-100,
-    lastName: $empire-red,
-    titleColor: $white,
-    hrefColor: $faded-red,
-    themeColor: $dark-red,
+    firstName: $white,
+    lastName: $white,
+    titleColor: $gray-500,
+    hrefColor: #FEB32C,
+    themeColor: #5e59eb,
     heartColor: red,
     github: $empire-red,
     linkedin: $empire-red,
@@ -80,6 +80,12 @@ $themes: (
 
 /** CUSTOM THEMING BEGIN */
 
+a {
+	@include themify($themes) {
+    color: themed("hrefColor");
+  }
+}
+
 .first-name {
   @include themify($themes) {
     color: themed("firstName");
@@ -109,9 +115,39 @@ $themes: (
   }
 }
 
+.positions {
+  @include themify($themes) {
+		//font-size: 4vw;
+		font-size:25px;
+  }
+}
+
+.positions a {
+  @include themify($themes) {
+    color: themed("hrefColor") !important;
+		//font-size: 4vw;
+		font-size:25px;
+    &:hover {
+      text-decoration: underline themed("titleColor") solid;
+    }
+  }
+}
+
+.icon-link a {
+  width: 60px;
+}
+
 .footer {
   @include themify($themes) {
     background: themed("backgroundColor");
+		text-decoration-color: themed("heartColor");
+		color: themed("secondary");
+  }
+}
+
+.footer-text {
+  @include themify($themes) {
+		
   }
 }
 
@@ -129,22 +165,70 @@ $themes: (
 
 .card-container {
   @include themify($themes) {
-    width: 25rem;
-    height: 23rem;
+		width: 20rem;
     text-decoration-color: themed("hrefColor");
-    & * {
+		-webkit-transition: all 0.5s ease;
+	  -moz-transition: all 0.5s ease;
+	  -o-transition: all 0.5s ease;
+	  -ms-transition: all 0.5s ease;
+	  transition: all 0.5s ease;
+		-webkit-box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+		-moz-box-shadow:    4px 4px 3px 1px rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
+		box-shadow:         4px 4px 3px 1px rgba(0, 0, 0, 0.2);
+    & *:not(.pill) {
       background: themed("cardBackground");
+    }
+		&:hover {
+      text-decoration: none;
+			transform:scale(.99);
+		  opacity:.7;
+		  -webkit-transition: all 0.5s ease;
+		  -moz-transition: all 0.5s ease;
+		  -o-transition: all 0.5s ease;
+		  -ms-transition: all 0.5s ease;
+		  transition: all 0.5s ease;
     }
   }
 }
 
+.rounded-corners{
+	border-radius: 10px !important;
+}
+
+.rounded-top-corners{
+	border-radius: 0px !important;
+	border-top-right-radius: 10px !important;
+	border-top-left-radius: 10px !important;
+
+}
+
+.rounded-bottom-corners{
+	border-radius: 0px !important;
+	border-bottom-right-radius: 10px !important;
+	border-bottom-left-radius: 10px !important;
+
+}
+
+.activity {
+		height: 34rem;
+}
+
+.project {
+    height: 27rem;
+}
+
+.experience {
+    height: 21rem;
+}
+
+
 .blog-filter {
   @include themify($themes) {
-    & input {
-      color: themed("titleColor");
+		& input {
+      color: $gray-700;
       &:focus {
-        box-shadow: 0 0 0 1px rgba(themed("hrefColor"), 0.5);
-        border-color: rgba(themed("hrefColor"), 0.5);
+        box-shadow: 0 0 0 1px rgba(themed("themeColor"), 0.5);
+        border-color: rgba(themed("themeColor"), 0.5);
       }
     }
   }
@@ -156,26 +240,41 @@ $themes: (
   }
 }
 
-.icons:hover {
+.resume {
   @include themify($themes) {
-    background: themed("iconBackground");
-    &.github {
-      color: themed("github");
+		width:100%;
+		-webkit-transition: all 0.5s ease;
+	  -moz-transition: all 0.5s ease;
+	  -o-transition: all 0.5s ease;
+	  -ms-transition: all 0.5s ease;
+	  transition: all 0.5s ease;
+		&:hover {
+			transform:scale(.99);
+		  opacity:.7;
+		  -webkit-transition: all 0.5s ease;
+		  -moz-transition: all 0.5s ease;
+		  -o-transition: all 0.5s ease;
+		  -ms-transition: all 0.5s ease;
+		  transition: all 0.5s ease;
     }
-    &.linkedin {
-      color: themed("linkedin");
-    }
-    &.fcc {
-      color: themed("fcc");
-    }
-    &.hr {
-      color: themed("hr");
-    }
-    &.mail {
-      color: themed("mail");
-    }
-    &.file {
-      color: themed("file");
+  }
+}
+
+.img-hover {
+  @include themify($themes) {
+		-webkit-transition: all 0.5s ease;
+	  -moz-transition: all 0.5s ease;
+	  -o-transition: all 0.5s ease;
+	  -ms-transition: all 0.5s ease;
+	  transition: all 0.5s ease;
+		&:hover {
+			transform:scale(.99);
+		  opacity:.7;
+		  -webkit-transition: all 0.5s ease;
+		  -moz-transition: all 0.5s ease;
+		  -o-transition: all 0.5s ease;
+		  -ms-transition: all 0.5s ease;
+		  transition: all 0.5s ease;
     }
   }
 }
@@ -192,8 +291,20 @@ h5 {
 
 div {
   @include themify($themes) {
-    background: themed("backgroundColor");
+		background: themed("backgroundColor");
   }
+}
+
+.tooltip {
+  background: none;
+}
+
+.tooltip-text {
+  background: none;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	height: 15px;
 }
 
 p {
@@ -201,3 +312,37 @@ p {
     color: themed("textColor");
   }
 }
+
+.themed-text {
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+}
+
+.carrdLink {
+	@include themify($themes) {
+    color: themed("textColor");
+  }
+}
+.carrdLink:hover, .carrdLink:focus {
+	@include themify($themes) {
+    color: themed("hrefColor");
+  }	text-decoration: none;
+}
+.carrd {
+	@include themify($themes) {
+    color: themed("textColor");
+  }
+	height:auto;
+	padding:15px;
+	margin-bottom:15px;
+	margin-top:15px;
+	width:auto;
+	border:dashed;
+	justify-content: center;
+	text-align: center; 
+}
+.carrd:hover {
+	@include themify($themes) {
+    color: themed("hrefColor");
+  }}

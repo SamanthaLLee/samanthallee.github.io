@@ -1,28 +1,30 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { Container, Badge, Col, Row } from "react-bootstrap"
+import Card from "react-bootstrap/Card"
+import { Col, Row } from "react-bootstrap"
+import Badge from "react-bootstrap/Badge"
 
-export default ({ excerpt, featuredImages, tags, title, to }) => {
+export default props => {
   return (
-    <Container className="text-center">
-      <Link to={to} style={{ textDecoration: "none" }}>
-        <Row>
-          {featuredImages &&
-            featuredImages.map(image => (
-              <Col key={image.src}>
-                <Img fluid={image} className="m-auto w-75" />
-              </Col>
-            ))}
-        </Row>
-        <h2 className="mt-5">{title}</h2>
-      </Link>
-      {tags.map(tag => (
-        <Badge key={tag} pill variant="dark" className="px-2 mr-1">
-          {tag}
-        </Badge>
-      ))}
-      <p className="pt-3 text-justify">{excerpt}</p>
-    </Container>
+    <Card className="card-container project rounded-corners" as={Link} to={props.to}>
+      <Card.Img className="rounded-top-corners" as={Img} fluid={props.featuredImage}/>
+      <Card.Body className="pt-3 rounded-bottom-corners">
+        <Card.Title>
+          <h4>{props.title}</h4>
+        </Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">
+          {props.season} {props.year}
+        </Card.Subtitle>
+        <Card.Text style={{backgroundColor:"none"}}>
+				<h6>{props.description}</h6>
+					{props.tags.map(tag => (
+						<Badge pill variant="dark" className="px-3 mr-1 pill" key={tag}>
+	 						<p className="text-white my-0 pill">{tag}</p>
+	 				 </Badge> 
+		      ))}
+				</Card.Text>
+      </Card.Body>
+    </Card>
   )
 }

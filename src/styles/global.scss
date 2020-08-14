@@ -27,11 +27,6 @@ body {
   background: rgba(0, 0, 0, 0) !important;
 }
 
-.aurebesh:hover {
-  font-family: "Aurebesh", sans-serif;
-  font-display: swap;
-}
-
 .i-5 {
   text-indent: 5vmin;
 }
@@ -54,8 +49,8 @@ body {
 
 // light mode
 .custom-control-input ~ .custom-control-label::before {
-  border-color: $yellow;
-  background-color: $yellow;
+  border-color: #2a24c7;
+  background-color: #2a24c7;
 }
 
 .custom-switch .custom-control-input ~ .custom-control-label::after {
@@ -69,7 +64,7 @@ body {
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: $red;
+  background-color: #FEB32C;
 }
 /** Toggle Switch Styling END */
 
@@ -79,29 +74,36 @@ body {
 }
 
 .icons {
-  font-size: 3.75rem;
-  margin: 0.1rem;
-  color: $gray-600;
+	margin-top: 1rem;
+  margin-right: .6rem;
+  color: $gray-700;
+	width: 45px;
 }
 
 .brand-icon {
   font-size: 2.75rem;
   color: $gray-700;
-  &:hover {
-    color: $faded-red;
-  }
-  &.empire {
-    border-radius: 50%;
-    color: $white;
-    background: $black;
-    &:hover {
-      color: $black;
-      background: $white;
-    }
-  }
 }
 /** Home Page Icon Styling END */
 
 .unemployed {
   font-size: 1.35rem;
 }
+
+.tooltip {
+	background-color: #2a24c7;
+	font-size: 20px;
+}
+
+.close-button-text {
+	// position:absolute;
+	// left:85%;
+	// top:95%;
+	font-size: 20px;
+	color: $red;
+	&:hover {
+		color: $red;
+	}
+}
+
+
