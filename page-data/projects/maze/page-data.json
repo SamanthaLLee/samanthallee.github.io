@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-projects-post-js","path":"/projects/maze/","result":{"data":{"markdownRemark":{"html":"<p>Coming soon</p>","frontmatter":{"title":"Maze Solver","season":"Spring","year":"2018","tags":["java"]},"excerpt":"Coming soon","timeToRead":1}},"pageContext":{"slug":"/projects/maze/","templatePath":"./src/templates/projects-post.js"}}}
