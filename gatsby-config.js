@@ -26,7 +26,7 @@ module.exports = {
 		basic: ['PHP', 'SQL', 'R'],
 		conferences: [
 			{
-				name: `Grace Hopper Celebration (2020)`,
+				name: `Grace Hopper Celebration (2020, 2019)`,
 				link: 'https://ghc.anitab.org/',
       },
 			{
@@ -36,10 +36,6 @@ module.exports = {
 			{
         name: `Rewrite Your Future (2020)`,
 				link: 'https://rewritingthecode.org/first-rtc-virtual-career-summit-coming-soon/',
-      },
-			{
-        name: `Grace Hopper Celebration (2019)`,
-				link: 'https://ghc.anitab.org/',
       },
 			{
         name: `Bit by Bit (2018)`,
@@ -74,7 +70,7 @@ module.exports = {
       },
       {
         title: `Weapons of Math Destruction`,
-        author: `Cathy O'Niel`,
+        author: `Cathy O'Neil`,
         link: `https://www.goodreads.com/book/show/28186015-weapons-of-math-destruction`,
       },
     ],

@@ -10,7 +10,7 @@ export default () => {
 					 <p>
 						 hello, there! thank you for visiting. below is a collection of relevant links, categorized into the following sections:
 					 	 human rights, parsippany, new brunswick, and rutgers organizations i'm a part of.
-						 
+						 </p><p>
 						 i hope you leave having learned something new. have a great life. 
 					 </p>
 					 <h2>human rights:</h2>

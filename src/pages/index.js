@@ -38,25 +38,25 @@ export default ({ data }) => {
 
 	          <a data-tip data-for='resume' href="docs/traditionalResume.pdf">
 							<img className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>
-							<ReactTooltip arrowColor="transparent" className='tooltip' id='resume' aria-haspopup='true' >
+							<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' data-place='bottom' className='tooltip' id='resume' aria-haspopup='true' >
 							 <p className='tooltip-text'>resume</p>
 							</ReactTooltip>
 
 						<a data-tip data-for='email' href="mailto:samantha.lin.lee@gmail.com">
 							<img className="icons" src={dark ? `../../icons/mail-light.png` : `../../icons/mail-dark.png`}></img></a>
-							<ReactTooltip arrowColor="transparent" className="tooltip" id='email' aria-haspopup='true' >
+							<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className="tooltip" id='email' aria-haspopup='true' >
 							 <p className='tooltip-text'>samantha.lin.lee@gmail.com</p>
 							</ReactTooltip>
 
 						<a data-tip data-for='linkedin' href="https://www.linkedin.com/in/samanthallee/">
 							<img className="icons" src={dark ? `../../icons/linkedin-light.png` : `../../icons/linkedin-dark.png`}></img></a>
-							<ReactTooltip arrowColor="transparent" className='tooltip' id='linkedin' aria-haspopup='true' >
+							<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className='tooltip' id='linkedin' aria-haspopup='true' >
 							 <p className='tooltip-text'>in/SamanthaLLee</p>
 							</ReactTooltip>
 
 						<a data-tip data-for='github' href="https://github.com/SamanthaLLee">
 							<img className="icons" src={dark ? `../../icons/github-light.png` : `../../icons/github-dark.png`}></img></a>
-							<ReactTooltip arrowColor="transparent" className='tooltip' id='github' aria-haspopup='true' >
+							<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className='tooltip' id='github' aria-haspopup='true' >
 							 <p className='tooltip-text'>@SamanthaLLee</p>
 							</ReactTooltip>
 
