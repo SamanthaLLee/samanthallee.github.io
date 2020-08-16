@@ -71,13 +71,13 @@ class Lightbox extends Component {
 		console.log(this.props)
     return (
       <Fragment>
-				<Gallery>
+			<Gallery fluid className="d-flex flex-wrap">
 				{images.map((img, i) => (
-					<Card className="img-container image" as={Link} to={img.node.sizes.src} onClick={e => this.handleClick(e, i)}>
+					<Card className="text-center img-container image" as={Link} to={img.node.sizes.src} onClick={e => this.handleClick(e, i)}>
 			      <Card.Img as={Img} fluid={img.node.sizes.src} sizes={img.node.sizes} className="h-100"/>
 			    </Card>	
 				))}
-				</Gallery>
+			</Gallery>
 				
         <LightboxModal visible={showLightbox} onKeyUp={e => this.handleKeyDown(e)}>
           <LightboxContent>
@@ -103,9 +103,12 @@ class Lightbox extends Component {
 
 const Gallery = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
-  @media (min-width: 700px) {
-    grid-template-columns: 1fr 1fr;
+	align-items: center;
+  justify-content: center;
+	grid-template-columns: 1 fr;
+  
+	@media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   @media (min-width: 900px) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -113,7 +116,7 @@ const Gallery = styled.div`
   @media (min-width: 1100px) {
     grid-template-columns: repeat(5, 1fr);
   }
-  grid-gap: 15px;
+  grid-gap: 2px 2px;
   .gatsby-image-outer-wrapper {
     height: 100%;
   }

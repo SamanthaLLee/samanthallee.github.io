@@ -15,8 +15,8 @@ const IndexPage = ({ data }) => {
 	
 	return (
 		<Layout>
-	 <SEO title="Activities" />
-	 <PageTitle title="Activities" />
+	 <SEO title="Gallery" />
+	 <PageTitle title="Gallery" />
 			<Lightbox images={data.allImageSharp.edges} alt={data.info.edges}/>
 		</Layout>
   )
