@@ -1,5 +1,6 @@
 export { default as ActivityLink } from "./ActivityLink"
 export { default as ExperienceLink } from "./ExperienceLink"
+export { default as GalleryLink } from "./GalleryLink"
 export { default as Footer } from "./Footer"
 export { default as Header } from "./Header"
 export { default as Navbar } from "./Navbar"

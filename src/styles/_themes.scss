@@ -165,7 +165,6 @@ a {
 
 .card-container {
   @include themify($themes) {
-		width: 20rem;
     text-decoration-color: themed("hrefColor");
 		-webkit-transition: all 0.5s ease;
 	  -moz-transition: all 0.5s ease;
@@ -175,7 +174,7 @@ a {
 		-webkit-box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
 		-moz-box-shadow:    4px 4px 3px 1px rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
 		box-shadow:         4px 4px 3px 1px rgba(0, 0, 0, 0.2);
-    & *:not(.pill) {
+    & *:not(.pill):not(.image) {
       background: themed("cardBackground");
     }
 		&:hover {
@@ -189,6 +188,50 @@ a {
 		  transition: all 0.5s ease;
     }
   }
+}
+
+.img-container {
+  @include themify($themes) {
+		border-radius: 5px !important;
+		border-color: themed("backgroundColor");
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		&:hover {
+      text-decoration: none;
+			transform:scale(.99);
+		  opacity:.7;
+		  -webkit-transition: all 0.5s ease;
+		  -moz-transition: all 0.5s ease;
+		  -o-transition: all 0.5s ease;
+		  -ms-transition: all 0.5s ease;
+		  transition: all 0.5s ease;
+    }
+  }
+}
+
+.gallery{
+	display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  grid-gap: 15px;
+  .gatsby-image-outer-wrapper {
+    height: 100%;
+  }
+}
+
+.galleryItem{
+	position:relative;
 }
 
 .rounded-corners{
@@ -210,14 +253,22 @@ a {
 }
 
 .activity {
+		width: 20rem;
 		height: 34rem;
 }
 
+.image {
+		height: 15rem;
+		width: 15rem;
+}
+
 .project {
+		width: 20rem;
     height: 27rem;
 }
 
 .experience {
+		width: 20rem;
     height: 21rem;
 }
 

@@ -17,4 +17,11 @@ export default {
       return map
     }, {})
   },
+	getCaptionMap: (captions, regex, hasMultipleImages = false, limit = 3) => {
+    return captions.reduce((map, caption) => {
+      const slug = caption.node.fileAbsolutePath.match(regex)[0]
+      map[slug] = caption.node.frontmatter.caption
+      return map
+    }, {})
+  },
 }
