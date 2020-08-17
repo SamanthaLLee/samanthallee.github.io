@@ -1,6 +1,6 @@
 ---
 title: "Consultant"
-tags: ["it"]
+tags: ["it","rutgers"]
 description: "Coming soon"
 start: "2020-10"
 end: 

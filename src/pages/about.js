@@ -50,7 +50,7 @@ export default ({ data }) => {
 	const confs = conferences.map(conf => ConfLink(conf))
 
 	return (
-		<Layout>
+		<PageLayout>
 	    <SEO title="Home" />
 			<PageTitle title="About Me" />
 			<Container className="text-center">
@@ -212,7 +212,7 @@ export default ({ data }) => {
          
       
 			</Container>
-	  </Layout>
+	  </PageLayout>
 	
 	)
 }

@@ -1,6 +1,6 @@
 ---
 title: "Research Assistant"
-tags: ["research"]
+tags: ["infoseeking","research"]
 description: "Developed software for information retrieval studies."
 start: "2019-01"
 end: "2019-10"

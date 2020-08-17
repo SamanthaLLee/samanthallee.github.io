@@ -37,6 +37,7 @@
     "react-dom": "^16.13.1",
     "react-drag-drawer": "^3.3.4",
     "react-helmet": "^6.1.0",
+    "react-image-lightbox": "^5.1.1",
     "react-modal": "^3.11.2",
     "react-tooltip": "^4.2.8"
   },
