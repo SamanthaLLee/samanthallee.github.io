@@ -11,20 +11,16 @@ import { SEO, Utils } from "../utils"
 
 const IndexPage = ({ data }) => {
 	const allCaptions = data.info.edges || []
-	//const regex = /\/[gallery].*\/|$/
+	const regex = /\/[gallery].*\/|$/
 	const captionMap = Utils.getCaptionMap(allCaptions, regex)
 	const images = data.images.edges.map(({ node }) => node.childImageSharp)	
 	const captions = data.info.edges.map(({ node }) => node.frontmatter.caption)
 	
 	const allFeaturedImages = data.images.edges || []
   const allPosts = data.info.edges || []
-  const regex = /\/[gallery].*\/|$/
+  //const regex = /\/[gallery].*\/|$/
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
-	
-	// console.log("new way")
-	// console.log(data.images.edges)
-	// console.log("old way")
-	// console.log(data.images1.edges)
+
 	return (
 		
 			<MyLightbox 

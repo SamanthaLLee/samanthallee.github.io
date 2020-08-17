@@ -60,7 +60,7 @@ export default class MyLightbox extends Component {
 			
 				<Gallery fluid className="d-flex flex-wrap pb-5">
 					{allPosts.map(({ node }, i) => 
-					(keyArray.push(node.fields.slug), console.log(featuredImageMap[node.fields.slug]),
+					(keyArray.push(node.fields.slug),
 						<div key={node.id}>
 						<Card className="img-container image" as={Link} onClick={e => this.handleClick(e, i, node.fields.slug)}>
 							<Card.Img as={Img} className="h-100" fluid={featuredImageMap[node.fields.slug]}/>
