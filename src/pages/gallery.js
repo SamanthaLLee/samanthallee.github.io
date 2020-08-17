@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import Header from '../components/Header'
 import Layout from '../components/layout'
-import LightboxExample from '../components/Lightbox2'
+import MyLightbox from '../components/Lightbox'
 import { PageLayout, PageTitle } from "../components"
 import { SEO, Utils } from "../utils"
 
@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
 	
 	return (
 		
-			<LightboxExample className="lightbox-z-index" images={data.allImageSharp.edges} alt={data.info.edges}/>
+			<MyLightbox className="lightbox-z-index" images={data.allImageSharp.edges} alt={data.info.edges}/>
 		
   )
  
@@ -35,7 +35,8 @@ export const pageQuery = graphql`
         title
       }
     }
-    allImageSharp(filter: {original: {src: { regex:"/img/" }}}) {
+    allImageSharp(
+			filter: {original: {src: { regex:"/img/" }}}) {
       edges {
         node {
           sizes(maxWidth: 1800) {

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import Card from "react-bootstrap/Card"
 
-class Lightbox extends Component {
+class LightboxFail extends Component {
   state = {
     showLightbox: false,
     selectedImage: 0,
@@ -158,8 +158,8 @@ const LeftRight = styled.div`
   }
 `
 
-Lightbox.propTypes = {
+LightboxFail.propTypes = {
   images: PropTypes.array.isRequired,
 }
 
-export default Lightbox
+export default LightboxFail

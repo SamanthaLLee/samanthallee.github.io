@@ -1,8 +1,8 @@
 ---
-title: "Bit by Bit"
-tags: ["comp sci", "hackathon", "women in stem"]
-description: "Bit by Bit conference."
+title: ""
+tags: [""]
+description: ""
 date: "2019-02"
-caption: "NOOOOO"
+caption: "HackHERS 2019 with the CSLLC"
 index: 1
 ---

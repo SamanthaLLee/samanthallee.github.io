@@ -1,8 +1,8 @@
 ---
-title: "Bit by Bit"
-tags: ["comp sci", "hackathon", "women in stem"]
-description: "Bit by Bit conference."
-date: "2018-04"
-caption: "my caption"
+title: ""
+tags: [""]
+description: ""
+date: "2019-10"
+caption: "Project SUPER Fall 2019 Research Symposium with Nicole Wodzinski"
 index: 1
 ---

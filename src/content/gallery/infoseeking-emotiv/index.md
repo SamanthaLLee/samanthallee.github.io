@@ -1,8 +1,8 @@
 ---
-title: "Bit by Bit"
-tags: ["comp sci", "hackathon", "women in stem"]
-description: "Bit by Bit conference."
-date: "2019-07"
-caption: "my caption"
+title: ""
+tags: [""]
+description: ""
+date: "2019-08"
+caption: "Playing with the EMOTIV EPOC+ at InfoSeeking"
 index: 1
 ---

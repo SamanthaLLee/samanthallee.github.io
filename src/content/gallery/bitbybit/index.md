@@ -1,8 +1,8 @@
 ---
 title: "Bit by Bit"
-tags: ["comp sci", "hackathon", "women in stem"]
-description: "Bit by Bit conference."
+tags: [""]
+description: ""
 date: "2018-04"
-caption: "my caption"
+caption: "Bit by Bit 2018"
 index: 1
 ---

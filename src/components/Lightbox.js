@@ -13,7 +13,7 @@ import Card from "react-bootstrap/Card"
 import { PageLayout, PageTitle } from "../components"
 import { SEO, Utils } from "../utils"
 
-export default class LightboxExample extends Component {
+export default class MyLightbox extends Component {
 	state = {
 		photoIndex: 0,
 		isOpen: false,

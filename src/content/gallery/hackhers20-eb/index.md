@@ -1,8 +1,8 @@
 ---
-title: "Bit by Bit"
-tags: ["comp sci", "hackathon", "women in stem"]
-description: "HackHERS 2020"
+title: ""
+tags: [""]
+description: ""
 date: "2020-02"
-caption: "my caption"
+caption: "HackHERS 2020 with the WiCS e-board"
 index: 1
 ---

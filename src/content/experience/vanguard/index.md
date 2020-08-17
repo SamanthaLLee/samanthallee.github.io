@@ -11,6 +11,7 @@ Coming soon!
 ### Background
 
 ### My Work
+![ERISA](erisa.png)
 
 ### Reflections
 A huge thank you to Jordan Leach, Stephanie Manning, Abby Holdeman, and Shuaib Baig!

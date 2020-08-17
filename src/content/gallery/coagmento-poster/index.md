@@ -1,8 +1,8 @@
 ---
-title: "Bit by Bit"
-tags: ["comp sci", "hackathon", "women in stem"]
-description: "Bit by Bit conference."
-date: "2018-04"
-caption: "my caption"
+title: ""
+tags: [""]
+description: ""
+date: "2019-10"
+caption: "Presenting my work on Coagmento at the Project SUPER Fall 2019 Research Symposium"
 index: 1
 ---
