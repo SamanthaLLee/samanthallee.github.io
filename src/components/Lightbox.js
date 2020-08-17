@@ -17,23 +17,17 @@ export default class MyLightbox extends Component {
 	state = {
 		photoIndex: 0,
 		isOpen: false,
-		key: "/gallery/techtogether-demo/"
+		key: "",
+		keyArray: []
 	};
-	
-	goBack = () => {
-    
-  }
-
-  goForward = () => {
-    this.setState({ selectedImage: this.state.selectedImage + 1 })
-  }
 	
 	handleClick = (e, index, slug) => {
 		e.preventDefault()
-		this.setState({ isOpen: !this.state.isOpen, photoIndex: index, key: slug })
-		console.log(e)
-		console.log(index)
-		console.log(slug)
+		this.setState({ 
+			isOpen: !this.state.isOpen, 
+			photoIndex: index, 
+			key: slug
+		})
 	}
 	
 	isEnd = (currentIndex, images) => {
@@ -47,45 +41,16 @@ export default class MyLightbox extends Component {
 			return true;
 		}
 	}
-	
-	// <GalleryLink
-	// 	as={Link} 
-	// 
-	// 	onClick={e => this.handleClick(e, i)}
-	// 	featuredImage={featuredImageMap[node.fields.slug]}
-	// 	title={node.frontmatter.title}
-	// 	date={node.frontmatter.date}
-	// 	tags={node.frontmatter.tags}
-	// 	excerpt={node.excerpt}
-	// 	description={node.frontmatter.description}
-	// />
-	
-	//images[photoIndex].node.childImageSharp.fluid.src
-	
-	// {images.map((img, i) => ( 
-	// 	console.log(img),
-	// 	<Card className="text-center img-container image" as={Link} to={img.node.childImageSharp.fluid.src} onClick={e => this.handleClick(e, i)}>
-	// 		<Card.Img as={Img} fluid={img.node.childImageSharp.fluid.src ? img.node.childImageSharp.fluid.src : ""} className="h-100"/>
-	// 	</Card>	
-	// ))}
-	//{() => this.setState({ isOpen: true })}
 
   render() {
+		var keyArray = [];
     const { photoIndex, isOpen, key } = this.state;
 		const { images } = this.props
 		const { alt } = this.props
 		
 		const { featuredImageMap } = this.props
 		const { allPosts } = this.props
-		const customStyles = {
-		  content : {
-		    zindex: 100000
-		  }
-		};
-		
-		console.log("featuredImageMap")
-		console.log(key)
-		console.log(featuredImageMap[key])
+	
     return (
       <div>
 			<Layout>
@@ -95,7 +60,7 @@ export default class MyLightbox extends Component {
 			
 				<Gallery fluid className="d-flex flex-wrap">
 					{allPosts.map(({ node }, i) => 
-					(
+					(keyArray.push(node.fields.slug), console.log(featuredImageMap),
 						<div key={node.id}>
 						<Card className="img-container image" as={Link} onClick={e => this.handleClick(e, i, node.fields.slug)}>
 							<Card.Img as={Img} className="h-100" fluid={featuredImageMap[node.fields.slug]}/>
@@ -108,13 +73,11 @@ export default class MyLightbox extends Component {
 			 
 			  {isOpen && (
           <Lightbox
-						className="lightbox-z-index"
-						reactModalStyle={customStyles}
 						imageLoadErrorMessage="Uh oh! Something went wrong :("
 						imageCaption={alt[photoIndex].node.frontmatter.caption}
-            mainSrc={featuredImageMap[key].src}
-            nextSrc={this.isEnd(photoIndex, images) ? '' : images[(photoIndex + 1) % images.length].node.childImageSharp.fluid.src}
-            prevSrc={this.isStart(photoIndex, images) ? '' : images[(photoIndex + images.length - 1) % images.length].node.childImageSharp.fluid.src}
+            mainSrc={featuredImageMap[keyArray[photoIndex]].src}
+            nextSrc={this.isEnd(photoIndex, images) ? '' : featuredImageMap[keyArray[photoIndex+1]].src}
+            prevSrc={this.isStart(photoIndex, images) ? '' : featuredImageMap[keyArray[photoIndex-1]].src}
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() =>
               this.setState({
