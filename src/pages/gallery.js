@@ -71,16 +71,6 @@ export const query = graphql`
         }
       }
     }
-		images1: allImageSharp(
-			filter: {original: {src: { regex:"/img/" }}}) {
-			edges {
-				node {
-					sizes(maxWidth: 1800) {
-						...GatsbyImageSharpSizes
-					}
-				}
-			}
-		}
     images: allFile(
       filter: { 
 				relativePath: { regex: "/img/" }
@@ -90,7 +80,7 @@ export const query = graphql`
 			edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 400, quality: 100) {
+            fluid(maxWidth: 1800, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

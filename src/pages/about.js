@@ -148,7 +148,7 @@ export default ({ data }) => {
           </p>
 					
           <p>
-            Check out my <Link to="/projects">projects</Link> to see what I've
+            Check out my <Link to="/projects">projects</Link> or <Link to="/gallery">gallery</Link> to see what I've
             been up to!
           </p>
         </article>
