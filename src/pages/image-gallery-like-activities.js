@@ -54,8 +54,7 @@ export default ({ data }) => {
       >
         {filteredPosts.map(({ node }) => (
           <div key={node.id}>
-            <GalleryLink
-              to={node.fields.slug}
+            <GalleryLink  
               featuredImage={featuredImageMap[node.fields.slug]}
               title={node.frontmatter.title}
               date={node.frontmatter.date}

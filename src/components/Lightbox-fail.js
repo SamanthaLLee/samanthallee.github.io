@@ -163,3 +163,92 @@ LightboxFail.propTypes = {
 }
 
 export default LightboxFail
+
+// 
+// 
+// export default class MyLightbox extends Component {
+// 	state = {
+// 		photoIndex: 0,
+// 		isOpen: false,
+// 	};
+// 
+// 	handleClick = (e, index) => {
+// 		e.preventDefault()
+// 		this.setState({ isOpen: !this.state.isOpen, photoIndex: index })
+// 	}
+// 
+// 	isEnd = (currentIndex, images) => {
+// 		if(currentIndex == images.length){
+// 			return true;
+// 		}
+// 	}
+// 
+// 	isStart = (currentIndex, images) => {
+// 		if(currentIndex == 0){
+// 			return true;
+// 		}
+// 	}
+// 
+//   render() {
+//     const { photoIndex, isOpen } = this.state;
+// 		const { images } = this.props
+// 		const { alt } = this.props
+// 		const { captionsMap } = this.props
+// 		const { allInfo } = this.props
+// 
+// 
+// 
+// 		// {allInfo.map((node, i) => (
+// 		// 	<Card className="text-center img-container image" as={Link} to={img.node.sizes.src} onClick={e => this.handleClick(e, i)}>
+// 		//     <Card.Img as={Img} fluid={img.node.sizes.src} sizes={img.node.sizes} className="h-100"/>
+// 		//   </Card>	
+// 		// ))}
+// 
+//     return (
+//       <div>
+// 			<Layout>
+// 
+// 		 <SEO title="Gallery" />
+// 		 <PageTitle title="Gallery" />
+// 
+// 				<Gallery fluid className="d-flex flex-wrap">
+// 				{images.map((img, i) => (
+// 					<Card className="text-center img-container image" as={Link} to={img.node.sizes.src}  onClick={e => this.handleClick(e, i)}>
+// 						<Card.Img as={Img} fluid={img.node.sizes.src} sizes={img.node.sizes} className="h-100"/>
+// 					</Card>	
+// 				))}
+// 				</Gallery>
+// 
+// 
+// 
+// 				{!isOpen && (<Header />)}
+// 
+// 			  {isOpen && (
+//           <Lightbox
+// 						imageLoadErrorMessage="Uh oh! Something went wrong :("
+// 						imageCaption={alt[photoIndex].node.frontmatter.caption}
+//             mainSrc={images[photoIndex].node.sizes.src}
+//             nextSrc={this.isEnd(photoIndex, images) ? '' : images[(photoIndex + 1) % images.length].node.sizes.src}
+//             prevSrc={this.isStart(photoIndex, images) ? '' : images[(photoIndex + images.length - 1) % images.length].node.sizes.src}
+//             onCloseRequest={() => this.setState({ isOpen: false })}
+//             onMovePrevRequest={() =>
+//               this.setState({
+// 								photoIndex: this.state.photoIndex - 1,
+//                 //photoIndex: (photoIndex + images.length - 1) % images.length,
+//               })
+//             }
+//             onMoveNextRequest={() =>
+//               this.setState({
+// 								photoIndex: this.state.photoIndex + 1,
+//                 //photoIndex: (photoIndex + 1) % images.length,
+//               })
+//             }
+//           />
+//         )}
+// 					</Layout>
+//       </div>
+// 
+// 
+//     );
+//   }
+// }

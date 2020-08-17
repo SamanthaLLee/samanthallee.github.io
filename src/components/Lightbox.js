@@ -10,13 +10,14 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import Card from "react-bootstrap/Card"
 
-import { PageLayout, PageTitle } from "../components"
+import { PageLayout, PageTitle, GalleryLink } from "../components"
 import { SEO, Utils } from "../utils"
 
 export default class MyLightbox extends Component {
 	state = {
 		photoIndex: 0,
 		isOpen: false,
+		key: "/gallery/techtogether-demo/"
 	};
 	
 	goBack = () => {
@@ -27,9 +28,12 @@ export default class MyLightbox extends Component {
     this.setState({ selectedImage: this.state.selectedImage + 1 })
   }
 	
-	handleClick = (e, index) => {
+	handleClick = (e, index, slug) => {
 		e.preventDefault()
-		this.setState({ isOpen: !this.state.isOpen, photoIndex: index })
+		this.setState({ isOpen: !this.state.isOpen, photoIndex: index, key: slug })
+		console.log(e)
+		console.log(index)
+		console.log(slug)
 	}
 	
 	isEnd = (currentIndex, images) => {
@@ -44,17 +48,44 @@ export default class MyLightbox extends Component {
 		}
 	}
 	
+	// <GalleryLink
+	// 	as={Link} 
+	// 
+	// 	onClick={e => this.handleClick(e, i)}
+	// 	featuredImage={featuredImageMap[node.fields.slug]}
+	// 	title={node.frontmatter.title}
+	// 	date={node.frontmatter.date}
+	// 	tags={node.frontmatter.tags}
+	// 	excerpt={node.excerpt}
+	// 	description={node.frontmatter.description}
+	// />
+	
+	//images[photoIndex].node.childImageSharp.fluid.src
+	
+	// {images.map((img, i) => ( 
+	// 	console.log(img),
+	// 	<Card className="text-center img-container image" as={Link} to={img.node.childImageSharp.fluid.src} onClick={e => this.handleClick(e, i)}>
+	// 		<Card.Img as={Img} fluid={img.node.childImageSharp.fluid.src ? img.node.childImageSharp.fluid.src : ""} className="h-100"/>
+	// 	</Card>	
+	// ))}
 	//{() => this.setState({ isOpen: true })}
 
   render() {
-    const { photoIndex, isOpen } = this.state;
+    const { photoIndex, isOpen, key } = this.state;
 		const { images } = this.props
 		const { alt } = this.props
+		
+		const { featuredImageMap } = this.props
+		const { allPosts } = this.props
 		const customStyles = {
 		  content : {
 		    zindex: 100000
 		  }
 		};
+		
+		console.log("featuredImageMap")
+		console.log(key)
+		console.log(featuredImageMap[key])
     return (
       <div>
 			<Layout>
@@ -63,10 +94,13 @@ export default class MyLightbox extends Component {
 		 <PageTitle title="Gallery" />
 			
 				<Gallery fluid className="d-flex flex-wrap">
-					{images.map((img, i) => (
-						<Card className="text-center img-container image" as={Link} to={img.node.sizes.src}  onClick={e => this.handleClick(e, i)}>
-				      <Card.Img as={Img} fluid={img.node.sizes.src} sizes={img.node.sizes} className="h-100"/>
-				    </Card>	
+					{allPosts.map(({ node }, i) => 
+					(
+						<div key={node.id}>
+						<Card className="img-container image" as={Link} onClick={e => this.handleClick(e, i, node.fields.slug)}>
+							<Card.Img as={Img} className="h-100" fluid={featuredImageMap[node.fields.slug]}/>
+						</Card>	
+						</div>
 					))}
 				</Gallery>
 
@@ -78,9 +112,9 @@ export default class MyLightbox extends Component {
 						reactModalStyle={customStyles}
 						imageLoadErrorMessage="Uh oh! Something went wrong :("
 						imageCaption={alt[photoIndex].node.frontmatter.caption}
-            mainSrc={images[photoIndex].node.sizes.src}
-            nextSrc={this.isEnd(photoIndex, images) ? '' : images[(photoIndex + 1) % images.length].node.sizes.src}
-            prevSrc={this.isStart(photoIndex, images) ? '' : images[(photoIndex + images.length - 1) % images.length].node.sizes.src}
+            mainSrc={featuredImageMap[key].src}
+            nextSrc={this.isEnd(photoIndex, images) ? '' : images[(photoIndex + 1) % images.length].node.childImageSharp.fluid.src}
+            prevSrc={this.isStart(photoIndex, images) ? '' : images[(photoIndex + images.length - 1) % images.length].node.childImageSharp.fluid.src}
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() =>
               this.setState({
