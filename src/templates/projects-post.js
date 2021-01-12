@@ -2,18 +2,29 @@ import React from "react"
 import { graphql } from "gatsby"
 import PostTemplate from "./post-template"
 import Badge from "react-bootstrap/Badge"
+import Button from 'react-bootstrap/Button'
+import { ThemeContext, SEO } from "../utils"
 
-const SubTitle = ({ season, year, tags }) => (
+const SubTitle = ({ season, year, tags, linkTitles, actualLinks }) => (
 	<h5 className="text-muted mb-5">
     {season} {year}
-		<div className="mb-5"><p></p>
+		
+		<div className="mb-2"><p></p>
 	    {tags.map(tag => (
 	      <Badge key={tag} pill variant="dark" className="img-hover px-3 mb-1 mr-1">
 	        <h5 className="text-white my-0">{tag}</h5>
 	      </Badge>
 	    ))}
 	  </div>
+		<div className="mb-5">
+	    {linkTitles.map((link, index) => (
+			<a href={actualLinks[index]} className="no-decorations"><Badge key={link} pill className="img-hover px-3 mb-1 mr-1 themed-pill" >
+				<h5 className="themed-text-swapped my-0">{link}</h5></Badge> </a>
+	    ))}
+	  </div>
+
   </h5>
+	
 )
 
 export default ({ data }) => {
@@ -26,6 +37,8 @@ export default ({ data }) => {
 					season={post.frontmatter.season}
 					year={post.frontmatter.year}
 					tags={post.frontmatter.tags}
+					actualLinks={post.frontmatter.actualLinks}
+					linkTitles={post.frontmatter.linkTitles}
         />
       }
       excerpt={post.excerpt}
@@ -43,6 +56,8 @@ export const query = graphql`
 	 			season
 	 		  year(formatString: "YYYY")
 	 			tags
+				linkTitles
+				actualLinks
       }
       excerpt
       timeToRead

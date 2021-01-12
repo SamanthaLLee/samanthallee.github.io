@@ -30,19 +30,18 @@ export default ({ data }) => {
             <span className="first-name">Samantha L. Lee</span>
           </h1>
 
-					<h3 className="positions">Rising Junior @ <a href="https://rutgers.edu">Rutgers</a></h3>
-          <h3 className="positions">TA @ <a href="https://www.cs.rutgers.edu/">RU CS Department</a></h3>
-          <h3 className="positions">Consultant @ <a href="https://oit-nb.rutgers.edu/">RU Office of IT</a></h3>
+					<h3 className="positions">Junior & TA @ <a href="https://rutgers.edu">Rutgers</a></h3>
+					<h3 className="positions">Incoming Intern @ <a href="https://www.audible.com/">Audible</a></h3>
 					<h3 className="positions">Former Intern @ <a href="https://investor.vanguard.com/home">Vanguard</a></h3>
           <h3 className="positions">Former RA @ <a href="https://www.infoseeking.org/index.php">InfoSeeking</a></h3>
 
-	          <a data-tip data-for='resume' href="docs/traditionalResume.pdf">
+	          <a data-tip data-for='resume' href="docs/Samantha-Lee-Resume.pdf">
 							<img className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>
 							<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' data-place='bottom' className='tooltip' id='resume' aria-haspopup='true' >
 							 <p className='tooltip-text'>resume</p>
 							</ReactTooltip>
 
-						<a data-tip data-for='email' href="mailto:samantha.lin.lee@gmail.com">
+						<a data-tip data-for='email' href="mailto:samantha.lin.lee@gmail.com?subject=Hello!">
 							<img className="icons" src={dark ? `../../icons/mail-light.png` : `../../icons/mail-dark.png`}></img></a>
 							<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className="tooltip" id='email' aria-haspopup='true' >
 							 <p className='tooltip-text'>samantha.lin.lee@gmail.com</p>
@@ -64,6 +63,7 @@ export default ({ data }) => {
       </Container>
 			<Container className="text-right mr-5">
 			<Image
+				alt="A black and white speech bubble gif that grows, spells 'Welcome!!', then shrinks into nothing."
 			  src={`../../icons/welcome2.png`}
 	      style={{ 
 					position: 'absolute',
@@ -75,6 +75,7 @@ export default ({ data }) => {
 				}}
 			/>
 			<Image
+				alt="A hand-drawn sketch of Sam's head (in blue if you're in light mode, yellow if you're in dark). She has short hair with a little flick in the front and the slightest hint of a smile."
 			  src={dark ? `../../icons/me-yellow.png` : `../../icons/me-blue.PNG`}
 	      style={{ 
 					position: 'absolute',

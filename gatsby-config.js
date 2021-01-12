@@ -16,15 +16,19 @@ module.exports = {
       `Teacher`,
       `Thinker`,
     ],
-		interests: [`Software engineering`, 'Human-centered research'],
+		interests: [`Software engineering`, 'Civic tech', 'Human-centered research'],
 		passions: [`Diversity in tech`, `Ethical tech`, `K-12 outreach`, `Social justice`],
 		dabblings: [`Graphic design`, `UX/UI`],
-		learnings: [`Data science`, 'Data visualization', 'NLP', 'Bias in ML'],
-		hobbies: ['DIY',`Pokémon GO`,'Sewing','Skateboarding'],
+		learnings: ['Data visualization', 'Bias in ML', 'Public policy'],
+		hobbies: ['Animal Crossing','DIY',`Pokémon GO`,'Sewing and embroidery','Skateboarding'],
 		advanced: ['Java','C'],
-		intermediate: ['Python','JavaScript', 'AWS'],
-		basic: ['PHP', 'SQL', 'R'],
+		intermediate: ['JavaScript','Python', 'AWS'],
+		basic: ['PHP', 'SQL'],
 		conferences: [
+			{
+				name: `oSTEM Conference (2020)`,
+				link: 'https://ostem.org/page/conference-2020',
+      },
 			{
 				name: `Grace Hopper Celebration (2020, 2019)`,
 				link: 'https://ghc.anitab.org/',
@@ -59,6 +63,11 @@ module.exports = {
         link: `https://www.goodreads.com/book/show/28187.The_Lightning_Thief`,
       },
 			{
+				title: `Politics Is for Power`,
+				author: `Eitan Hersh`,
+				link: `https://www.goodreads.com/book/show/49556729-politics-is-for-power`,
+			},
+			{
         title: `The Book Thief`,
         author: `Markus Zusak`,
         link: `https://www.goodreads.com/book/show/19063.The_Book_Thief`,
@@ -75,6 +84,11 @@ module.exports = {
       },
     ],
     showsList: [
+			{
+        title: `Ex Machina`,
+        author: `Alex Garland`,
+        link: `https://www.imdb.com/title/tt0470752/`,
+      },
 			{
         title: `Hereditary`,
         author: `Ari Aster`,
@@ -106,9 +120,19 @@ module.exports = {
         link: `https://www.imdb.com/title/tt0245429/`,
       },
 			{
+        title: `The Silence of the Lambs`,
+        author: `Jonathan Demme`,
+        link: `https://www.imdb.com/title/tt0102926/`,
+      },
+			{
         title: `The Sixth Sense`,
         author: `M. Night Shyamalan`,
         link: `https://www.imdb.com/title/tt0167404/`,
+      },
+			{
+        title: `The Social Network`,
+        author: `David Fincher`,
+        link: `https://www.imdb.com/title/tt1285016/`,
       },
     ],
   },
@@ -169,5 +193,19 @@ module.exports = {
         showSpinner: true,
       },
     },
+		{
+	    resolve: "gatsby-transformer-remark",
+	    options: {
+	      plugins: [
+	      {
+	        resolve: "gatsby-remark-embed-youtube",
+	        options: {
+	          width: 800,
+	          height: 400
+	        }
+	      }
+	      ]
+	    }
+	  }
   ],
 }

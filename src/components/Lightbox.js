@@ -31,7 +31,7 @@ export default class MyLightbox extends Component {
 	}
 	
 	isEnd = (currentIndex, images) => {
-		if(currentIndex == images.length){
+		if(currentIndex == images.length-1){
 			return true;
 		}
 	}

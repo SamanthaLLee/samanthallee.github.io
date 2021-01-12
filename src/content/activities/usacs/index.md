@@ -1,10 +1,11 @@
 ---
 title: "Undergraduate Student Alliance of Computer Scientists"
-tags: ["comp sci"]
+tags: ["comp sci","rutgers"]
 description: "Let's just call it 'Computer Science Club.'"
 start: "2019-11"
-end: 
+end: "2020-05"
 index: 0
+website: "https://usacs.rutgers.edu/"
 ---
 
 The <a href="https://usacs.rutgers.edu/">Undergraduate Student Alliance of Computer Scientists</a> is Rutgers University's largest CS club. We provide students with educational resources and curriculums outside of coursework and encourage the skill acquisition, career development, and innovation</h3>

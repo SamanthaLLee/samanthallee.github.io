@@ -1,6 +1,8 @@
 ---
 title: "You Are Not Alone"
 tags: ["chrome extension", "javascript", "mental health"]
+linkTitles: ["github repo"]
+actualLinks: ["https://github.com/SamanthaLLee/YANA"]
 description: "A Chrome extension that detects symptoms of poor mental health and directs its users to resources."
 season: "Spring"
 year: "2020"

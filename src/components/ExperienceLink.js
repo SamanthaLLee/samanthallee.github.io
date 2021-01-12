@@ -8,7 +8,7 @@ import Badge from "react-bootstrap/Badge"
 export default props => {
   return (
     <Card className="card-container experience rounded-corners" as={Link} to={props.to}>
-      <Card.Img className="rounded-top-corners" as={Img} fluid={props.featuredImage}/>
+      <Card.Img className="shadow rounded-top-corners" as={Img} fluid={props.featuredImage}/>
       <Card.Body className="pt-3 rounded-bottom-corners">
         <Card.Title>
           <h4>{props.title}</h4>

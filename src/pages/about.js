@@ -10,7 +10,7 @@ import Badge from "react-bootstrap/Badge"
 export default ({ data }) => {
 	
 	const MediaLink = ({ title, author, link }) => (
-		<li key={title} style={{ color: "#495057" }}>
+		<li key={title}>
 			> <a rel="noopener noreferrer" href={link}>
 				{title}
 			</a>
@@ -19,7 +19,7 @@ export default ({ data }) => {
 	)
 	
 	const ConfLink = ({ name, link }) => (
-		<li key={name} style={{ color: "#495057" }}>
+		<li key={name}>
 			> <a rel="noopener noreferrer" href={link}>
 				{name}
 			</a>
@@ -51,21 +51,22 @@ export default ({ data }) => {
 
 	return (
 		<PageLayout>
-	    <SEO title="Home" />
-			<PageTitle title="About Me" />
+	    <SEO title="About" />
+			<PageTitle title="About" />
 			<Container className="text-center">
-			<Image
+			<Link to="/easter-egg/" asModal><Image
+				alt="A headshot of Sam. She's wearing a blue, vertically striped button-up, and a black blazer. She has short hair, parted to the side."
 				style={{width: 300, borderRadius: 300/2, overflow: 'hidden'}} 
 				src={`../../images/headshot.jpg`}
 				overflow='hidden'
 				className="resume"
-			/>
+			/></Link>
 				</Container><p></p>
 				<Container>
 				<article className="w-75 m-auto pt-3 pb-2 text-justify">
           <p>
-					Hello! I'm Sam Lee (she/her), a <b>rising junior</b> at Rutgers University–New Brunswick pursuing a double major
-					in Computer Science and Cognitive Science. 
+					Hello! I'm Sam Lee (she/her/hers), a third-year honors student at Rutgers University–New Brunswick pursuing a double major
+					in Computer Science and Cognitive Science and a minor in Political Science.
           </p>
 					
 					<Row className="py-4">
@@ -143,8 +144,8 @@ export default ({ data }) => {
 				  </div>
 					
           <p>
-					<b>I am actively seeking summer 2021 internships</b> as well as new research opportunities. In the future, 
-					I hope to pursue a Masters in Computer Science and conduct socially impactful research.
+					I am actively seeking new research opportunities. In the future, 
+					I hope to pursue a Masters in a field like tech policy that combines computer and social sciences.
           </p>
 					
           <p>
@@ -154,7 +155,7 @@ export default ({ data }) => {
         </article>
 			
 
-          <hr />
+          <hr style={{ color: "#495057" }}/>
 					
 					<article className="w-75 m-auto text-justify">
 					
@@ -163,8 +164,8 @@ export default ({ data }) => {
 						<h5 className="watch-list-title">
 							Conferences attended:
 						</h5>
-						<ul className="text-left" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-						{confs}
+						<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+							{confs}	
 						</ul>
 						</Col>
 						
@@ -186,8 +187,8 @@ export default ({ data }) => {
 						<h5 className="watch-list-title">
 	            Book recs:
 	          </h5>
-	          <ul className="text-left" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-						<li style={{ color: "#495057" }}>
+	          <ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+						<li>
 							> <Link to="/easter-egg/" asModal>
 								About Me: Extended
 							</Link>
@@ -200,7 +201,7 @@ export default ({ data }) => {
 						<h5 className="watch-list-title">
 							Movie recs:
 						</h5>
-						<ul className="text-left"style={{ fontSize: "0.9rem", listStyle: "none" }}>
+						<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 					 {showLinks}
 					 </ul>
 						</Col>

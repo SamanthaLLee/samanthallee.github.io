@@ -20,11 +20,12 @@ const EasterEgg = () => (
 				src={`../../images/me.png`}
 				overflow='hidden'
 				className="resume pb-2 pr-3"
+				z-index='100'
 			/>
 			</Col>
 			<Col sm={11}>
 			<ul>
-				<li>I'm an <a href="https://www.16personalities.com/infp-personality">INFP</a> and equal parts Ravenclaw and Hufflepuff, according to <a href="https://www.proprofs.com/quiz-school/story.php?title=mte2mdawoq2srl">Pottermore</a></li>
+				<li>I'm an <a href="https://www.16personalities.com/infp-personality">INFP</a>, a <a href="https://www.enneagraminstitute.com/type-3">3w2</a>, and equal parts Ravenclaw and Hufflepuff (according to <a href="https://www.proprofs.com/quiz-school/story.php?title=mte2mdawoq2srl">Pottermore</a>)</li>
 				<li>I know the alphabet backwards</li>
 				<li>According to Spotify, I'm in the top 1% of Hozier fans</li>
 				<li>I played the flute for ~10 years and now play it recreationally</li>

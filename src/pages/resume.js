@@ -6,8 +6,7 @@ import { SEO, Utils } from "../utils"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Container from "react-bootstrap/Container"
 import { Row, Col } from "react-bootstrap"
-import resumev1 from "../../static/docs/traditionalResume.png"
-import resumev2 from "../../static/docs/creativeResume.png"
+import resumev1 from "../../static/docs/Samantha-Lee-Resume.png"
 
 export default () => {
   return (
@@ -16,50 +15,25 @@ export default () => {
       <PageTitle title="Resume">
       </PageTitle>
       <Container style={{paddingRight:100,paddingLeft:100,paddingBottom:70}} fluid>
-				<Row>
-					<Col lg={6} style={{paddingBottom:30}}>
-						<a href="docs/traditionalResume.pdf" target="_blank" download>
-							<FontAwesomeIcon
-								style={{ fontSize: "2rem", color:"#666" }}
-								icon={["fas", "file-download"]}
-								className="icons file"
-							/>
-						</a>
-						<a href="docs/traditionalResume.pdf" target="_blank">
-							<FontAwesomeIcon
-								style={{ fontSize: "2rem", color:"#666" }}
-								icon={["fa", "link"]}
-								className="icons file"
-							/>
-		        </a>
-						<p></p>
-						<img
-						src={resumev1}
-						className="m-auto resume"
-						/>
-					</Col>
-					<Col lg={6} style={{paddingBottom:30}}>
-						<a href="docs/creativeResume.pdf" target="_blank" download>
-							<FontAwesomeIcon
-								style={{ fontSize: "2rem", color:"#666" }}
-								icon={["fas", "file-download"]}
-								className="icons file"
-							/>
-						</a>
-						<a href="docs/creativeResume.pdf" target="_blank">
-							<FontAwesomeIcon
-								style={{ fontSize: "2rem", color:"#666" }}
-								icon={["fa", "link"]}
-								className="icons file"
-							/>
-						</a>
-						<p></p>
-						<img
-						src={resumev2}
-						className="m-auto resume"
-						/>
-					</Col>
-				</Row>
+				<a href="docs/Samantha-Lee-Resume.pdf" target="_blank" download>
+					<FontAwesomeIcon
+						style={{ fontSize: "2rem", color:"#666" }}
+						icon={["fas", "file-download"]}
+						className="icons file"
+					/>
+				</a>
+				<a href="docs/Samantha-Lee-Resume.pdf" target="_blank">
+					<FontAwesomeIcon
+						style={{ fontSize: "2rem", color:"#666" }}
+						icon={["fa", "link"]}
+						className="icons file"
+					/>
+				</a>
+				<p></p>
+				<a href="docs/Samantha-Lee-Resume.pdf" target="_blank"><img
+				src={resumev1}
+				className="m-auto resume"
+				/></a>
       </Container>
     </PageLayout>
   )
