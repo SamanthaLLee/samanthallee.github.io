@@ -11,6 +11,4 @@ end: "2019-08"
 index: 1
 ---
 
-![Coagmento](Coagmento.jpg)
-
-
+<div style="text-align:center"><img alt="A research symposium poster detailing Sam's work developing a Chrome extension for Coagmento" src="../../../../docs/Coagmento.jpg" width="100%"/></div>

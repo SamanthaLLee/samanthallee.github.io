@@ -10,4 +10,5 @@ start:
 end: "2019-05"
 ---
 
-![QAC](QACLitReview.jpg)
+<div style="text-align:center"><img alt="A research symposium poster detailing the quality of Q&A services and the answers they provide" src="../../../../docs/QACLitReview.jpg" width="100%"/></div>
+
