@@ -7,7 +7,7 @@
 
 $themes: (
   light: (
-    backgroundColor: #FEB32C,
+    backgroundColor: #a8e6d3,
     footerBackground: white,
     navBackground: $gray-100,
     secondary: $gray-900,
@@ -18,13 +18,12 @@ $themes: (
     themeColor: #5e59eb,
     heartColor: red,
     titleColor: $gray-800,
-		swappedColor: #FEB32C,
+		swappedColor: #a8e6d3,
     hrefColor: $dark-blue,
     github: $black,
     linkedin: $linkedin-blue,
     fcc: $fcc-green,
-    hr: $hr-green,
-    mail: #FEB32C,
+    mail: #a8e6d3,
     file: $dark-blue,
     iconBackground: $white,
     cardBackground: $white,
@@ -40,13 +39,12 @@ $themes: (
     lastName: $white,
     titleColor: $gray-500,
 		swappedColor: $dark-blue,
-    hrefColor: #FEB32C,
+    hrefColor: #2ad19d,
     themeColor: #5e59eb,
     heartColor: red,
     github: $empire-red,
     linkedin: $empire-red,
     fcc: $empire-red,
-    hr: $empire-red,
     mail: $empire-red,
     file: $empire-red,
     iconBackground: $black,
@@ -437,4 +435,8 @@ a.no-decorations:hover{
 .footer{
 	height:50px;
 	line-height: 50px;
+}
+
+.indexTitles{
+  max-width: 90%;
 }

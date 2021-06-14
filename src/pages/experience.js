@@ -19,9 +19,7 @@ export default ({ data }) => {
     const query = e.target.value
 
     const filteredData = allPosts.filter(post => {
-      // query will run on the following fields
       const { description, title, tags } = post.node.frontmatter
-      // standardize query
       const stdQuery = query.toLowerCase()
       return (
         post.node.excerpt.toLowerCase().includes(stdQuery) ||
@@ -65,10 +63,10 @@ export default ({ data }) => {
               featuredImage={featuredImageMap[node.fields.slug]}
               title={node.frontmatter.title}
               startDate={node.frontmatter.start}
-							endDate={node.frontmatter.end}
-							tags={node.frontmatter.tags}
+              endDate={node.frontmatter.end}
+              tags={node.frontmatter.tags}
               excerpt={node.excerpt}
-							description={node.frontmatter.description}
+              description={node.frontmatter.description}
             />
           </div>
         ))}

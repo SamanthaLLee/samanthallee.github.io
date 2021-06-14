@@ -7,24 +7,23 @@ import { Utils } from "../utils"
 
 
 const IndexPage = ({ data }) => {
-	const regex = /\/[gallery].*\/|$/
-	const allFeaturedImages = data.images.edges || []
+  const regex = /\/[gallery].*\/|$/
+  const allFeaturedImages = data.images.edges || []
   const allPosts = data.info.edges || []
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
 
-	return (
-		
-			<MyLightbox 
-				className="lightbox-z-index" 
-				images={data.images.edges} 
-				alt={data.info.edges}
-				
-				featuredImageMap = {featuredImageMap}
-				allPosts = {allPosts}
-			/>
-		
+  return (
+
+    <MyLightbox
+      className="lightbox-z-index"
+      images={data.images.edges}
+      alt={data.info.edges}
+
+      featuredImageMap={featuredImageMap}
+      allPosts={allPosts}
+    />
   )
- 
+
 }
 
 IndexPage.propTypes = {

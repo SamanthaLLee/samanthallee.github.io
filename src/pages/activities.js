@@ -65,10 +65,10 @@ export default ({ data }) => {
               featuredImage={featuredImageMap[node.fields.slug]}
               title={node.frontmatter.title}
               startDate={node.frontmatter.start}
-							endDate={node.frontmatter.end}
-							tags={node.frontmatter.tags}
+              endDate={node.frontmatter.end}
+              tags={node.frontmatter.tags}
               excerpt={node.excerpt}
-							description={node.frontmatter.description}
+              description={node.frontmatter.description}
             />
           </div>
         ))}

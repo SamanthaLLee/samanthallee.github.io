@@ -49,8 +49,10 @@ body {
 
 // light mode
 .custom-control-input ~ .custom-control-label::before {
-  border-color: #2a24c7;
-  background-color: #2a24c7;
+  @include themify($themes) {
+    border-color: $black;
+    background-color: themed("hrefColor");
+  }
 }
 
 .custom-switch .custom-control-input ~ .custom-control-label::after {
@@ -59,12 +61,16 @@ body {
 
 // dark mode
 .custom-control-input:checked ~ .custom-control-label::before {
-  border-color: $black;
-  background-color: $black;
+  @include themify($themes) {
+    border-color: themed("hrefColor");
+    background-color: $black;
+  }
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: #FEB32C;
+  @include themify($themes) {
+    background-color: themed("hrefColor");
+  }
 }
 /** Toggle Switch Styling END */
 
@@ -91,14 +97,13 @@ body {
 }
 
 .tooltip {
-	background-color: #2a24c7;
+	@include themify($themes) {
+    background-color: themed("backgroundColor");
+  }
 	font-size: 20px;
 }
 
 .close-button-text {
-	// position:absolute;
-	// left:85%;
-	// top:95%;
 	font-size: 20px;
 	color: $red;
 	&:hover {
@@ -113,4 +118,9 @@ body {
 .lightbox-z-index{
 	z-index: 9999999999999999999999999999;
 	position:fixed;
+}
+
+hr.separator{
+  border: "#ffff"
+
 }
