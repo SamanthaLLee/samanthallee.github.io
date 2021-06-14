@@ -3,7 +3,7 @@ title: "Impact Labs"
 tags: ["ethics"]
 description: "Inspiring and empowering young engineers to build a better world."
 start: "2020-09"
-end: 
+end: "2021-05"
 index: 0.5
 website: "http://www.impactlabs.io/"
 ---

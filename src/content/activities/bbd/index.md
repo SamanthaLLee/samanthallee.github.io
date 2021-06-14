@@ -3,8 +3,8 @@ title: "Bluebonnet Data"
 tags: ["nonprofit","politics"]
 description: "Democratizing data."
 start: "2020-08"
-end: "2020-11"
-index: 4
+end: 
+index: 1
 website: "https://www.bluebonnetdata.org/"
 ---
 

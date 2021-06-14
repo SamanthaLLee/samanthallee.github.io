@@ -2,8 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Card from "react-bootstrap/Card"
-import { Col, Row, Container } from "react-bootstrap"
-import Badge from "react-bootstrap/Badge"
+import { Container } from "react-bootstrap"
 
 export default props => {
   return (

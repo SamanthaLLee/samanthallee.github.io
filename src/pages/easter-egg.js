@@ -1,15 +1,14 @@
 import React from "react"
-import { Link } from "gatsby-plugin-modal-routing"
-import { Row, Col, Table, Image, Container } from "react-bootstrap"
+import { Row, Col, Image } from "react-bootstrap"
 
 import ConditionalLayout from "../components/ConditionalLayout"
-import { ThemeContext, SEO } from "../utils"
+import { SEO } from "../utils"
 
 const EasterEgg = () => (
   <ConditionalLayout>
 
     <SEO title="Hi! 👋" />
-		<h1 className="pt-3">Hi! 👋</h1>
+		<h1 className="pt-3">Hi! <span role="img" aria-label="The wave emoji in yellow">👋</span></h1>
 		<h5>You just found my Easter Egg :)</h5>
 		<p></p>
 		<p>Here's some more about me:</p>
@@ -35,7 +34,7 @@ const EasterEgg = () => (
 				<li>Je parle un peu le français</li>
 				<li>I love to analyze fiction</li>
 				<li>
-					<a href="https://matthew-notaro.github.io/">Here</a> <a href="https://www.stephaniephotos.com/">are</a> <a href="https://sruthisoorian.github.io/">some</a> <a href="http://isabella-pham.github.io/">of</a> <a href="http://www.johnmulaney.com/">my</a> <a href="https://hozier.com/">favorite</a> <a href="https://www.jessleecreations.com/">people</a>
+					<a href="https://matthew-notaro.github.io/">Here</a> <a href="https://www.stephaniephotos.com/">are</a> <a href="https://sruthisoorian.github.io/">some</a> <a href="http://isabella-pham.github.io/">of</a> <a href="https://kuhuhalder.com/">my</a> <a href="https://manasvimedam.github.io/#/">favorite</a> <a href="https://www.jessleecreations.com/">people</a>
 				</li>
 			</ul>
 			</Col>

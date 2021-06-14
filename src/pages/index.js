@@ -4,7 +4,6 @@ import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
 import { Container, Image } from "react-bootstrap"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import ReactTooltip from 'react-tooltip'
 
 export default ({ data }) => {
@@ -30,31 +29,31 @@ export default ({ data }) => {
             <span className="first-name">Samantha L. Lee</span>
           </h1>
 
-					<h3 className="positions">Junior & TA @ <a href="https://rutgers.edu">Rutgers</a></h3>
-					<h3 className="positions">Incoming Intern @ <a href="https://www.audible.com/">Audible</a></h3>
+					<h3 className="positions">Rising Senior & TA @ <a href="https://rutgers.edu">Rutgers</a></h3>
+					<h3 className="positions">SDE Intern @ <a href="https://www.audible.com/">Audible</a></h3>
 					<h3 className="positions">Former Intern @ <a href="https://investor.vanguard.com/home">Vanguard</a></h3>
-          <h3 className="positions">Former RA @ <a href="https://www.infoseeking.org/index.php">InfoSeeking</a></h3>
+          			<h3 className="positions">Former RA @ <a href="https://www.infoseeking.org/index.php">InfoSeeking</a></h3>
 
 	          <a data-tip data-for='resume' href="docs/Samantha-Lee-Resume.pdf">
-							<img className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>
+							<img alt="Resume icon" className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>
 							<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' data-place='bottom' className='tooltip' id='resume' aria-haspopup='true' >
 							 <p className='tooltip-text'>resume</p>
 							</ReactTooltip>
 
 						<a data-tip data-for='email' href="mailto:samantha.lin.lee@gmail.com?subject=Hello!">
-							<img className="icons" src={dark ? `../../icons/mail-light.png` : `../../icons/mail-dark.png`}></img></a>
+							<img alt="Email icon" className="icons" src={dark ? `../../icons/mail-light.png` : `../../icons/mail-dark.png`}></img></a>
 							<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className="tooltip" id='email' aria-haspopup='true' >
 							 <p className='tooltip-text'>samantha.lin.lee@gmail.com</p>
 							</ReactTooltip>
 
 						<a data-tip data-for='linkedin' href="https://www.linkedin.com/in/samanthallee/">
-							<img className="icons" src={dark ? `../../icons/linkedin-light.png` : `../../icons/linkedin-dark.png`}></img></a>
+							<img alt="LinkedIn logo" className="icons" src={dark ? `../../icons/linkedin-light.png` : `../../icons/linkedin-dark.png`}></img></a>
 							<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className='tooltip' id='linkedin' aria-haspopup='true' >
 							 <p className='tooltip-text'>in/SamanthaLLee</p>
 							</ReactTooltip>
 
 						<a data-tip data-for='github' href="https://github.com/SamanthaLLee">
-							<img className="icons" src={dark ? `../../icons/github-light.png` : `../../icons/github-dark.png`}></img></a>
+							<img alt="Github logo" className="icons" src={dark ? `../../icons/github-light.png` : `../../icons/github-dark.png`}></img></a>
 							<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className='tooltip' id='github' aria-haspopup='true' >
 							 <p className='tooltip-text'>@SamanthaLLee</p>
 							</ReactTooltip>

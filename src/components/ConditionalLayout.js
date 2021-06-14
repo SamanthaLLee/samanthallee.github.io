@@ -1,8 +1,7 @@
 import React from "react"
-import Layout from "./layout"
-import { Link, Button, ModalRoutingContext } from 'gatsby-plugin-modal-routing'
+import { Link, ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import { Container } from "react-bootstrap"
-import { PageLayout, PageTitle } from "../components"
+import { PageLayout } from "../components"
 
 
 const ConditionalLayout = ({ children, ...rest }) => (

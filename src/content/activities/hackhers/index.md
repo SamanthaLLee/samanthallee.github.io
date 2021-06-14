@@ -4,7 +4,7 @@ tags: ["comp sci", "hackathon", "rutgers","women in stem"]
 description: "Rutgers University's annual women-centric hackathon."
 start: "2019-04"
 end: 
-index: 1
+index: 3
 website: "https://ruhackhers.org/"
 ---
 

@@ -6,8 +6,8 @@ actualLinks: ["https://github.com/SamanthaLLee/Pink-Lemonade","https://devpost.c
 description: "A web app that suggests recipes with ingredients that fight against breast cancer."
 season: "Fall"
 year: "2020"
-start: "2020-09"
-end: 
+start: 
+end: "2020-09"
 ---
 
 ### Background 

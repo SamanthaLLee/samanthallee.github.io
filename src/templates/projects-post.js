@@ -2,8 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import PostTemplate from "./post-template"
 import Badge from "react-bootstrap/Badge"
-import Button from 'react-bootstrap/Button'
-import { ThemeContext, SEO } from "../utils"
 
 const SubTitle = ({ season, year, tags, linkTitles, actualLinks }) => (
 	<h5 className="text-muted mb-5">

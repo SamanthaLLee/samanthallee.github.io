@@ -1,17 +1,18 @@
 import React, { useContext } from "react"
 import { Link } from "gatsby-plugin-modal-routing"
 import { Container, Image } from "react-bootstrap"
-import Layout from "../components/layout"
-import { PageLayout, PageTitle, SideDrawer } from "../components"
+import { PageLayout, PageTitle } from "../components"
 import { ThemeContext, SEO } from "../utils"
-import { Row, Col, Table } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
 import Badge from "react-bootstrap/Badge"
 
 export default ({ data }) => {
+
+	const bullet = '>'
 	
 	const MediaLink = ({ title, author, link }) => (
 		<li key={title}>
-			> <a rel="noopener noreferrer" href={link}>
+			{bullet} <a rel="noopener noreferrer" href={link}>
 				{title}
 			</a>
 			&nbsp;-<i>{author}</i>
@@ -20,7 +21,7 @@ export default ({ data }) => {
 	
 	const ConfLink = ({ name, link }) => (
 		<li key={name}>
-			> <a rel="noopener noreferrer" href={link}>
+			{bullet} <a rel="noopener noreferrer" href={link}>
 				{name}
 			</a>
 		</li>
@@ -55,7 +56,7 @@ export default ({ data }) => {
 			<PageTitle title="About" />
 			<Container className="text-center">
 			<Link to="/easter-egg/" asModal><Image
-				alt="A headshot of Sam. She's wearing a blue, vertically striped button-up, and a black blazer. She has short hair, parted to the side."
+				alt="A headshot of Sam. She's wearing a blue, vertically striped button-up, and a black blazer. She has short hair, parted to the side. She smiles with her teeth."
 				style={{width: 300, borderRadius: 300/2, overflow: 'hidden'}} 
 				src={`../../images/headshot.jpg`}
 				overflow='hidden'
@@ -66,7 +67,16 @@ export default ({ data }) => {
 				<article className="w-75 m-auto pt-3 pb-2 text-justify">
           <p>
 					Hello! I'm Sam Lee (she/her/hers), a third-year honors student at Rutgers University–New Brunswick pursuing a double major
-					in Computer Science and Cognitive Science and a minor in Political Science.
+					in Computer Science and Cognitive Science (with a concentration in decision-making) and a minor in Political Science.
+					I'm located in the greater NYC area originally inhabited by the <a href="https://native-land.ca/maps/territories/munsee-lenape/">Munsee Lenape</a> people.
+          </p>
+					
+			<p>
+					I like to stay busy. I'm currently the co-president of Rutgers Women in Computer Science and the president and founder of the Rutgers Ethical Technology Club (Ethitech).
+					I also volunteer as a data analyst for Lead Locally, a non-profit dedicated to electing community leaders who pledge to fight against fossil fuel projects and for a green economy.
+          </p>
+		  <p>
+					I am additionally a part of the Out in Tech, Rewriting the Code, and Girls Who Code communities. 
           </p>
 					
 					<Row className="py-4">
@@ -77,7 +87,7 @@ export default ({ data }) => {
 						<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 							{interests.map((attr, i) => (
 									<span key={attr}>
-									<li>> {attr}</li>
+									<li>{bullet} {attr}</li>
 									</span>
 								))}	
 						</ul>
@@ -90,7 +100,7 @@ export default ({ data }) => {
 						<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 							{passions.map((attr, i) => (
 		              <span key={attr}>
-									<li>> {attr}</li>
+									<li>{bullet} {attr}</li>
 		              </span>
 		            ))}	
 						</ul>
@@ -102,7 +112,7 @@ export default ({ data }) => {
 						<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 							{learnings.map((attr, i) => (
 									<span key={attr}>
-									<li>> {attr}</li>
+									<li>{bullet} {attr}</li>
 									</span>
 								))}	
 						</ul>			
@@ -115,7 +125,7 @@ export default ({ data }) => {
 						<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 							{dabblings.map((attr, i) => (
 									<span key={attr}>
-										<li>> {attr}</li>
+										<li>{bullet} {attr}</li>
 									</span>
 								))}	
 						</ul>
@@ -176,7 +186,7 @@ export default ({ data }) => {
 						<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 							{hobbies.map((attr, i) => (
 									<span key={attr}>
-									<li>> {attr}</li>
+									<li>{bullet} {attr}</li>
 									</span>
 								))}	
 						</ul>
@@ -189,7 +199,7 @@ export default ({ data }) => {
 	          </h5>
 	          <ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 						<li>
-							> <Link to="/easter-egg/" asModal>
+						{bullet} <Link to="/easter-egg/" asModal>
 								About Me: Extended
 							</Link>
 							&nbsp;-<i>Samantha Lee</i>

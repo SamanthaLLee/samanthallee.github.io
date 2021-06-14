@@ -6,7 +6,7 @@ module.exports = {
     lastName: `Lee`,
     description: `Samantha L. Lee's portfolio`,
     occupation: `Student`,
-    keywords: [`Samantha`, `Lee`, `Personal`, `Portfolio`, `Resume`, `Projects`, `Work`],
+    keywords: [`Samantha`, `Lee`, `Personal`, `Portfolio`, `Resume`, `Projects`, `Work`, 'Tech'],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: true,
@@ -16,10 +16,10 @@ module.exports = {
       `Teacher`,
       `Thinker`,
     ],
-		interests: [`Software engineering`, 'Civic tech', 'Human-centered research'],
-		passions: [`Diversity in tech`, `Ethical tech`, `K-12 outreach`, `Social justice`],
-		dabblings: [`Graphic design`, `UX/UI`],
-		learnings: ['Data visualization', 'Bias in ML', 'Public policy'],
+		interests: [`Software engineering`, 'Human-centered research'],
+		passions: [`Ethical tech`, `Social justice`, `K-12 outreach`, `Diversity in tech`],
+		dabblings: [`Graphic design`, `UX/UI`, `Prose`],
+		learnings: ['Data visualization', 'Bias in ML', 'Political decision-making'],
 		hobbies: ['Animal Crossing','DIY',`Pokémon GO`,'Sewing and embroidery','Skateboarding'],
 		advanced: ['Java','C'],
 		intermediate: ['JavaScript','Python', 'AWS'],
@@ -47,6 +47,11 @@ module.exports = {
       },
 		],
     readingList: [
+      {
+        title: `Algorithms of Oppression`,
+        author: `Safiya Umoja Noble`,
+        link: `https://www.goodreads.com/book/show/34762552-algorithms-of-oppression`,
+      },
 			{
         title: `Oranges Are Not the Only Fruit`,
         author: `Jeanette Winterson`,
@@ -56,11 +61,6 @@ module.exports = {
         title: `Passing`,
         author: `Nella Larson`,
         link: `https://www.goodreads.com/book/show/349929.Passing`,
-      },
-			{
-        title: `Percy Jackson and Olympians: The Lightning Thief`,
-        author: `Rick Riordan`,
-        link: `https://www.goodreads.com/book/show/28187.The_Lightning_Thief`,
       },
 			{
 				title: `Politics Is for Power`,
@@ -85,11 +85,6 @@ module.exports = {
     ],
     showsList: [
 			{
-        title: `Ex Machina`,
-        author: `Alex Garland`,
-        link: `https://www.imdb.com/title/tt0470752/`,
-      },
-			{
         title: `Hereditary`,
         author: `Ari Aster`,
         link: `https://www.imdb.com/title/tt7784604/`,
@@ -103,6 +98,11 @@ module.exports = {
         title: `Jojo Rabbit`,
         author: `Taika Waititi`,
         link: `https://www.imdb.com/title/tt2584384/`,
+      },
+      {
+        title: `Knives Out`,
+        author: `Rian Johnson`,
+        link: `https://www.imdb.com/title/tt8946378/`,
       },
 			{
         title: `Moulin Rouge!`,

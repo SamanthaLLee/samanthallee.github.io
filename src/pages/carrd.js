@@ -1,5 +1,5 @@
 import React from "react"
-import { PageTitle, PageLayout } from "../components"
+import { PageLayout } from "../components"
 import { Container } from "react-bootstrap"
 
 export default () => {

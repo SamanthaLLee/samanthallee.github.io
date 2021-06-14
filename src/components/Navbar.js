@@ -3,7 +3,6 @@ import ThemeContext from "../utils/theme"
 import { Navbar, Nav, Form } from "react-bootstrap"
 import { Link } from "gatsby"
 import "./Fontawesome.js"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default () => {
   const { dark, toggleDark, toString } = useContext(ThemeContext)
@@ -11,6 +10,7 @@ export default () => {
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-1 ml-1" as={Link} to="/">
         <img 
+          alt="Sam's logo: her initials, SLL, stylized in all caps, with the two Ls offset a little lower than the S."
 					src={dark ? "../../icons/logo-white.png" : "../../icons/logo-black.png"}
 					title="Home" 
 					style={{width : '20px', margin:'5px'}}>

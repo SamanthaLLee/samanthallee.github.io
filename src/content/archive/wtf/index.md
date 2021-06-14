@@ -1,6 +1,6 @@
 ---
 title: "Where's the File?"
-tags: ["c", "systems programming"]
+tags: ["c", "systems"]
 linkTitles: ["github repo"]
 actualLinks: ["https://github.com/matthew-notaro/Systems-Programming"]
 description: "A version control system in C."

@@ -6,8 +6,8 @@ actualLinks: ["https://github.com/matthew-notaro/HackRU2020","https://devpost.co
 description: "A web app that filters food items at Rutgers dining halls for students with diet restrictions."
 season: "Fall"
 year: "2020"
-start: "2020-10"
-end:
+start: 
+end: "2020-10"
 --- 
 
 ### Background
@@ -19,7 +19,7 @@ RU Restricted? utilizes a Python script that scrapes the Rutgers dining services
 I personally worked on the front-end using Bootstrap and handled the calls to the Edamam API.
 
 ### Reflection
-We were grateful to have been awarded the "Best Rutgers Hack" prize at <a href="https://devpost.com/software/ru-restricted">HackRU 2020</a>.
+We were grateful to have been awarded the "Best Rutgers Hack" prize at <a href="https://hackru-f20.devpost.com/">HackRU 2020</a>.
 
 ### Demo
 `youtube:https://www.youtube.com/embed/iGEkHCLgwog`

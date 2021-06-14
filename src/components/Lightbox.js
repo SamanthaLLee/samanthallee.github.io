@@ -1,17 +1,16 @@
-import React, { Component, Fragment, Link } from 'react'
+import React, { Component, Link } from 'react'
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
 import Header from '../components/Header'
 import Layout from '../components/layout'
 
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import Card from "react-bootstrap/Card"
 
-import { PageLayout, PageTitle, GalleryLink } from "../components"
-import { SEO, Utils } from "../utils"
+import { PageTitle } from "../components"
+import { SEO } from "../utils"
 
 export default class MyLightbox extends Component {
 	state = {
@@ -31,20 +30,20 @@ export default class MyLightbox extends Component {
 	}
 	
 	isEnd = (currentIndex, images) => {
-		if(currentIndex == images.length-1){
+		if(currentIndex === images.length-1){
 			return true;
 		}
 	}
 	
 	isStart = (currentIndex, images) => {
-		if(currentIndex == 0){
+		if(currentIndex === 0){
 			return true;
 		}
 	}
 
   render() {
 		var keyArray = [];
-    const { photoIndex, isOpen, key } = this.state;
+    const { photoIndex, isOpen } = this.state;
 		const { images } = this.props
 		const { alt } = this.props
 		
@@ -61,7 +60,7 @@ export default class MyLightbox extends Component {
 				<Gallery fluid className="d-flex flex-wrap pb-5">
 					{allPosts.map(({ node }, i) => 
 					(keyArray.push(node.fields.slug),
-						<div key={node.id}>
+						<div>
 						<Card className="img-container image" as={Link} onClick={e => this.handleClick(e, i, node.fields.slug)}>
 							<Card.Img as={Img} className="h-100" fluid={featuredImageMap[node.fields.slug]}/>
 						</Card>	
@@ -120,34 +119,4 @@ const Gallery = styled.div`
   .gatsby-image-outer-wrapper {
     height: 100%;
   }
-`
-
-const Button = styled.button``
-
-const LightboxModal = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: ${props => (props.visible ? '1' : '0')};
-  visibility: ${props => (props.visible ? 'visible' : 'hidden')};
-`
-const LightboxContent = styled.div`
-  height: 90vh;
-  width: 70vw;
-`
-
-const ImgContainer = styled.div`
-  max-width: 800px;
-	max-height: 500px;
-`
-
-const Controls = styled.div`
-  display: flex;
-  justify-content: space-between;
 `

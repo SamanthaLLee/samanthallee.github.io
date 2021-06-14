@@ -1,11 +1,8 @@
 import React from "react"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import { PageLayout, PageTitle, WorkHistory } from "../components"
-import { SEO, Utils } from "../utils"
+import { PageLayout, PageTitle } from "../components"
+import { SEO } from "../utils"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Container from "react-bootstrap/Container"
-import { Row, Col } from "react-bootstrap"
 import resumev1 from "../../static/docs/Samantha-Lee-Resume.png"
 
 export default () => {
@@ -31,6 +28,7 @@ export default () => {
 				</a>
 				<p></p>
 				<a href="docs/Samantha-Lee-Resume.pdf" target="_blank"><img
+				alt="Sam's professional resume with the following sections: education, experience, skills, projects, and leadership & activities"
 				src={resumev1}
 				className="m-auto resume"
 				/></a>
