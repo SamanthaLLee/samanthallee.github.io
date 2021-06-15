@@ -34,25 +34,25 @@ export default ({ data }) => {
 					<h3 className="positions">Former Intern @ <a href="https://investor.vanguard.com/home">Vanguard</a></h3>
 					<h3 className="positions">Former RA @ <a href="https://www.infoseeking.org/index.php">InfoSeeking</a></h3>
 
-					<a data-tip data-for='resume' href="docs/Samantha-Lee-Resume.pdf">
+					<a className="no-effect" data-tip data-for='resume' href="docs/Samantha-Lee-Resume.pdf">
 						<img alt="Resume icon" className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>
 					<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' data-place='bottom' className='tooltip' id='resume' aria-haspopup='true' >
 						<p className='tooltip-text'>resume</p>
 					</ReactTooltip>
 
-					<a data-tip data-for='email' href="mailto:samantha.lin.lee@gmail.com?subject=Hello!">
+					<a className="no-effect" data-tip data-for='email' href="mailto:samantha.lin.lee@gmail.com?subject=Hello!">
 						<img alt="Email icon" className="icons" src={dark ? `../../icons/mail-light.png` : `../../icons/mail-dark.png`}></img></a>
 					<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className="tooltip" id='email' aria-haspopup='true' >
 						<p className='tooltip-text'>samantha.lin.lee@gmail.com</p>
 					</ReactTooltip>
 
-					<a data-tip data-for='linkedin' href="https://www.linkedin.com/in/samanthallee/">
+					<a className="no-effect" data-tip data-for='linkedin' href="https://www.linkedin.com/in/samanthallee/">
 						<img alt="LinkedIn logo" className="icons" src={dark ? `../../icons/linkedin-light.png` : `../../icons/linkedin-dark.png`}></img></a>
 					<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className='tooltip' id='linkedin' aria-haspopup='true' >
 						<p className='tooltip-text'>in/SamanthaLLee</p>
 					</ReactTooltip>
 
-					<a data-tip data-for='github' href="https://github.com/SamanthaLLee">
+					<a className="no-effect" data-tip data-for='github' href="https://github.com/SamanthaLLee">
 						<img alt="Github logo" className="icons" src={dark ? `../../icons/github-light.png` : `../../icons/github-dark.png`}></img></a>
 					<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className='tooltip' id='github' aria-haspopup='true' >
 						<p className='tooltip-text'>@SamanthaLLee</p>

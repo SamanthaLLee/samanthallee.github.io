@@ -50,7 +50,7 @@ body {
 // light mode
 .custom-control-input ~ .custom-control-label::before {
   @include themify($themes) {
-    border-color: $black;
+    border-color: themed("hrefColor");
     background-color: themed("hrefColor");
   }
 }
@@ -120,7 +120,10 @@ body {
 	position:fixed;
 }
 
-hr.separator{
-  border: "#ffff"
+hr.separator{ display: block; height: 1px;
+    border: 0; border-top: 2px dotted rgb(82, 82, 82);
+    margin: 1em 0; padding: 0; }
 
+.key-card{
+  border: 2px dotted rgb(82, 82, 82);
 }

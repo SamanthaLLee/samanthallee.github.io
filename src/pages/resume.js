@@ -12,14 +12,14 @@ export default () => {
 			<PageTitle title="Resume">
 			</PageTitle>
 			<Container style={{ paddingRight: 100, paddingLeft: 100, paddingBottom: 70 }} fluid>
-				<a href="docs/Samantha-Lee-Resume.pdf" target="_blank" download>
+				<a className="no-effect" href="docs/Samantha-Lee-Resume.pdf" target="_blank" download>
 					<FontAwesomeIcon
 						style={{ fontSize: "2rem", color: "#666" }}
 						icon={["fas", "file-download"]}
 						className="icons file"
 					/>
 				</a>
-				<a href="docs/Samantha-Lee-Resume.pdf" target="_blank">
+				<a className="no-effect" href="docs/Samantha-Lee-Resume.pdf" target="_blank">
 					<FontAwesomeIcon
 						style={{ fontSize: "2rem", color: "#666" }}
 						icon={["fa", "link"]}
@@ -27,7 +27,7 @@ export default () => {
 					/>
 				</a>
 				<p></p>
-				<a href="docs/Samantha-Lee-Resume.pdf" target="_blank"><img
+				<a className="no-effect" href="docs/Samantha-Lee-Resume.pdf" target="_blank"><img
 					alt="Sam's professional resume with the following sections: education, experience, skills, projects, and leadership & activities"
 					src={resumev1}
 					className="m-auto resume"

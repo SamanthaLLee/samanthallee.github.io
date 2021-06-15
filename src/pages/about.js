@@ -56,7 +56,7 @@ export default ({ data }) => {
 			<SEO title="About" />
 			<PageTitle title="About" />
 			<Container className="text-center">
-				<Link to="/easter-egg/" asModal><Image
+				<Link className="no-effect" to="/easter-egg/" asModal><Image
 					alt="A headshot of Sam. She's wearing a blue, vertically striped button-up, and a black blazer. She has short hair, parted to the side. She smiles with her teeth."
 					style={{ width: 300, borderRadius: 300 / 2, overflow: 'hidden' }}
 					src={`../../images/headshot.jpg`}
@@ -135,8 +135,7 @@ export default ({ data }) => {
 					</h5><p></p>
 
 						<Card
-							className="mx-auto my-auto"
-							border-color="#f2f2f2"
+							className="mx-auto my-auto key-card"
 							style={{ width: '21rem' }}>
 							<Card.Body>
 								<Badge pill variant="success" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">4+ years</h6></Badge>
