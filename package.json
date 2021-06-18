@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && cp ./static/cname_file/CNAME && gh-pages -d public -b master"
   },
   "dependencies": {
     "@browniebroke/gatsby-image-gallery": "^3.5.1",
