@@ -1,7 +1,7 @@
 ---
 title: "Girls Who Code College Loops"
 tags: ["comp sci", "drc", "outreach", "rutgers","women in stem"]
-description: "Or, if you've been around for a while, Douglass-DIMACS Computing Corps."
+description: "Teaching girls how to – you guessed it – code!"
 start: "2018-09"
 end: 
 index: 4

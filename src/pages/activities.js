@@ -61,7 +61,7 @@ export default ({ data }) => {
         {filteredPosts.map(({ node }) => (
           <div key={node.id} className="p-3">
             <ActivityLink
-              to={node.fields.slug}
+              to={node.frontmatter.website}
               featuredImage={featuredImageMap[node.fields.slug]}
               title={node.frontmatter.title}
               startDate={node.frontmatter.start}
@@ -94,6 +94,7 @@ export const query = graphql`
             start(formatString: "MMMM YYYY")
 						end(formatString: "MMMM YYYY")
 						index
+            website
           }
           fields {
             slug

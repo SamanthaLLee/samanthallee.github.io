@@ -1,11 +1,10 @@
 ---
 title: "Ethitech"
 tags: ["ethics", "rutgers"]
-description: "Ethics plus technology equals... "
+description: "Ethics plus technology equals... (basically, I started a club!)"
 start: "2020-10"
 end: 
 index: 0
-website: "/"
+website: "https://linktr.ee/RUEthitech"
 ---
 
-I started a club dedicated to ethical technology. Details to come!

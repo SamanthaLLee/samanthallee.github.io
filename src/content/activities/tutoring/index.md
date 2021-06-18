@@ -1,7 +1,7 @@
 ---
 title: "SAS Honors Program Tutoring"
 tags: ["rutgers","sashp", "volunteering"]
-description: "Pretty self-explanatory, if you ask me."
+description: "(Pretty self-explanatory.)"
 start: "2019-09"
 end: "2020-05"
 website: "https://sashonors.rutgers.edu/opportunities/engagement-leadership/tutoring-project"

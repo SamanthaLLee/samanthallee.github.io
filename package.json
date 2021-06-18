@@ -1,7 +1,7 @@
 {
-  "name": "john-doe-starter-site",
+  "name": "samantha-lee-portfolio",
   "private": true,
-  "description": "A personal site built on the bare-bones starter for Gatsby",
+  "description": "Samantha Lee's portfolio website.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {

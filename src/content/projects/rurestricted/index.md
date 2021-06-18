@@ -1,8 +1,8 @@
 ---
 title: "RU Restricted?"
 tags: ["edamam","hackathon","healthcare","javascript","python","rutgers"]
-linkTitles: ["github repo","devpost"]
-actualLinks: ["https://github.com/matthew-notaro/HackRU2020","https://devpost.com/software/ru-restricted"]
+linkTitles: ["app link","github repo","devpost"]
+actualLinks: ["https://s0gur.csb.app/","https://github.com/matthew-notaro/HackRU2020","https://devpost.com/software/ru-restricted"]
 description: "A web app that filters food items at Rutgers dining halls for students with diet restrictions."
 season: "Fall"
 year: "2020"

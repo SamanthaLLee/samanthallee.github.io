@@ -117,7 +117,15 @@ a:hover {
 }
 
 a.no-effect {
-  background: none
+  background: none;
+  background-image: none;
+  text-decoration: none;
+}
+
+a.no-effect:hover {
+  background: none;
+  background-image: none;
+  text-decoration: none;
 }
 
 
@@ -144,8 +152,20 @@ a.no-effect {
 .nav-links a {
   @include themify($themes) {
     color: themed("linkHover") !important;
+    // background: linear-gradient(to bottom, themed(hoverBackground) 0%, themed(hoverBackground)0 100%);
+    // color: themed("textColor");
+    // background-position: 0 100%;
+    // background-repeat: repeat-x;
+    // background-size: 1px 1px;
+    text-decoration: underline themed("hoverBackground") solid;
     &:hover {
-      text-decoration: underline themed("hoverBackground") solid;
+        @include themify($themes) {
+          background-image: url(themed("linkHoverSvg"));
+          background-position: 0 70%;
+          background-size: auto 3px;
+          // background-repeat: repeat-x;
+          text-decoration: none;
+      }
     }
   }
 }

@@ -20,10 +20,10 @@ export default ({ data }) => {
 		</li>
 	)
 
-	const ConfLink = ({ name, link }) => (
-		<li key={name}>
+	const ConfLink = ({ title, link }) => (
+		<li key={title}>
 			{bullet} <a rel="noopener noreferrer" href={link}>
-				{name}
+				{title}
 			</a>
 		</li>
 	)
@@ -33,6 +33,10 @@ export default ({ data }) => {
 		occupation,
 		readingList,
 		showsList,
+		animeList,
+		hackathons,
+		features,
+		essayList,
 		designations,
 		interests,
 		passions,
@@ -49,7 +53,12 @@ export default ({ data }) => {
 
 	const bookLinks = readingList.map(book => MediaLink(book))
 	const showLinks = showsList.map(show => MediaLink(show))
+	const essays = essayList.map(e => MediaLink(e))
+	const featureList = features.map(f => ConfLink(f))
+	const hackathonList = hackathons.map(h => ConfLink(h))
+	const anime = animeList.map(a => ConfLink(a))
 	const confs = conferences.map(conf => ConfLink(conf))
+
 
 	return (
 		<PageLayout>
@@ -65,21 +74,21 @@ export default ({ data }) => {
 				/></Link>
 				<article className="w-75 m-auto pt-3 pb-2 text-justify">
 					<p>
-						Hello! I'm Sam Lee (she/her/hers), a senior honors student at Rutgers University–New Brunswick pursuing a double major
+						Hi, there! I'm Sam Lee (she/her/hers), a senior honors student at Rutgers University–New Brunswick pursuing a double major
 						in Computer Science and Cognitive Science (with a concentration in decision-making) and a minor in Political Science.
-					I'm located in the greater NYC area originally inhabited by the <a href="https://native-land.ca/maps/territories/munsee-lenape/">Munsee Lenape</a> people.</p>
+						I'm located in the greater NYC area originally inhabited by the <a href="https://native-land.ca/maps/territories/munsee-lenape/">Munsee Lenape</a> people.</p>
 
 					<p>
 						I like to stay busy! I'm currently the co-president of Rutgers Women in Computer Science and the president and founder of the Rutgers Ethical Technology Club (Ethitech).
 						I also volunteer as a data analyst for Lead Locally, a non-profit dedicated to electing community leaders who pledge to fight against fossil fuel projects.</p>
 					<p>
-						I am additionally a part of the <a href="">Impact Labs</a>, <a href="">Out in Tech</a>, <a href="">Rewriting the Code</a>, and <a href="">Girls Who Code</a> communities.</p>
+						I am additionally a part of the <a href="https://www.impactlabs.io/">Impact Labs</a>, <a href="https://outintech.com/">Out in Tech</a>, <a href="https://rewritingthecode.org/">Rewriting the Code</a>, and <a href="https://girlswhocode.com/">Girls Who Code</a> communities.</p>
 
 					<Row className="py-4">
 						<Col md={3}>
 							<h5 className="watch-list-title">
 								Interested in...
-						</h5>
+							</h5>
 							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 								{interests.map((attr, i) => (
 									<span key={attr}>
@@ -92,7 +101,7 @@ export default ({ data }) => {
 						<Col md={3}>
 							<h5 className="watch-list-title">
 								Passionate about...
-	          </h5>
+							</h5>
 							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 								{passions.map((attr, i) => (
 									<span key={attr}>
@@ -104,7 +113,7 @@ export default ({ data }) => {
 						<Col md={3}>
 							<h5 className="watch-list-title">
 								Learning about...
-	          </h5>
+							</h5>
 							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 								{learnings.map((attr, i) => (
 									<span key={attr}>
@@ -116,7 +125,7 @@ export default ({ data }) => {
 						<Col md={3}>
 							<h5 className="watch-list-title">
 								I dabble in...
-						</h5>
+							</h5>
 
 							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 								{dabblings.map((attr, i) => (
@@ -132,11 +141,11 @@ export default ({ data }) => {
 
 						<h5 className="watch-list-title">
 							Skills
-					</h5><p></p>
+						</h5><p></p>
 
 						<Card
 							className="mx-auto my-auto key-card"
-							style={{ width: '21rem' }}>
+						>
 							<Card.Body>
 								<Badge pill variant="success" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">4+ years</h6></Badge>
 								<Badge pill style={{ backgroundColor: "#ff9100" }} className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">2-3 years</h6> </Badge>
@@ -164,13 +173,13 @@ export default ({ data }) => {
 
 					<p>
 						I am actively seeking new research opportunities. In the future,
-						I hope to pursue a Masters in a field like tech policy that combines computer and social sciences.
-          </p>
+						I hope to pursue a Masters in a field like tech policy that falls in the intersection of computer and social sciences.
+					</p>
 
 					<p>
 						Check out my <Link to="/projects">projects</Link> or <Link to="/gallery">gallery</Link> to see what I've
-            been up to!
-          </p>
+						been up to!
+					</p>
 				</article>
 
 
@@ -179,19 +188,11 @@ export default ({ data }) => {
 				<article className="w-75 m-auto text-justify">
 
 					<Row className="pt-4">
-						<Col md={6}>
-							<h5 className="watch-list-title">
-								Conferences attended:
-						</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-								{confs}
-							</ul>
-						</Col>
 
 						<Col md={6}>
 							<h5 className="watch-list-title">
 								Hobbies:
-						</h5>
+							</h5>
 							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 								{hobbies.map((attr, i) => (
 									<span key={attr}>
@@ -200,18 +201,49 @@ export default ({ data }) => {
 								))}
 							</ul>
 						</Col>
+
+						<Col md={6}>
+							<h5 className="watch-list-title">
+								Places I'm featured:
+							</h5>
+							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+								{featureList}
+							</ul>
+						</Col>
+
+
 					</Row>
-					<Row className="pb-4">
+					<Row>
+						<Col md={6}>
+							<h5 className="watch-list-title">
+								Conferences attended:
+							</h5>
+							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+								{confs}
+							</ul>
+						</Col>
+						<Col md={6}>
+							<h5 className="watch-list-title">
+								Hackathon acknowledgements:
+							</h5>
+							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+								{hackathonList}
+							</ul>
+						</Col>
+
+
+					</Row>
+					<Row>
 						<Col md={6}>
 							<h5 className="watch-list-title">
 								Book recs:
-	          </h5>
+							</h5>
 							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 								<li>
 									{bullet} <Link to="/easter-egg/" asModal>
 										About Me: Extended
-							</Link>
-							&nbsp;-<i>Samantha Lee</i>
+									</Link>
+									&nbsp;-<i>Samantha Lee</i>
 								</li>
 								{bookLinks}</ul>
 						</Col>
@@ -219,16 +251,34 @@ export default ({ data }) => {
 						<Col md={6}>
 							<h5 className="watch-list-title">
 								Movie recs:
-						</h5>
+							</h5>
 							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
 								{showLinks}
+							</ul>
+						</Col>
+					</Row>
+					<Row className="pb-4">
+						<Col md={6}>
+							<h5 className="watch-list-title">
+								Anime recs:
+							</h5>
+							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+								{anime}</ul>
+						</Col>
+
+						<Col md={6}>
+							<h5 className="watch-list-title">
+								Video essay recs:
+							</h5>
+							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+								{essays}
 							</ul>
 						</Col>
 					</Row>
 
 				</article>
 			</Container>
-		</PageLayout>
+		</PageLayout >
 
 	)
 }
@@ -241,14 +291,14 @@ export const query = graphql`
         occupation
         author
         designations
-				interests
-				passions
-				dabblings
-				learnings
-				hobbies
-				advanced
-				intermediate
-				basic
+		interests
+		passions
+		dabblings
+		learnings
+		hobbies
+		advanced
+		intermediate
+		basic
         readingList {
           title
           author
@@ -259,10 +309,27 @@ export const query = graphql`
           author
           link
         }
-				conferences {
-					name 
-					link
-				}				
+		essayList {
+          title
+          author
+          link
+        }
+		conferences {
+			title
+			link
+		}			
+		animeList {
+			title
+			link
+		}
+		hackathons {
+			title
+			link
+		}
+		features {
+			title
+			link
+		}
       }
     }
   }

@@ -1,6 +1,6 @@
 ---
 title: "Application Development Intern"
-tags: ["internship","appn development","vanguard"]
+tags: ["internship","app dev","vanguard"]
 description: "Established ERISA compliance across brokerage accounts using Java, Python, and AWS."
 start: "2020-05"
 end: "2020-07"

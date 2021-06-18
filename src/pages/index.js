@@ -30,7 +30,8 @@ export default ({ data }) => {
 					</h1>
 
 					<h3 className="positions">Senior & TA @ <a href="https://rutgers.edu">Rutgers</a></h3>
-					<h3 className="positions">SDE Intern @ <a href="https://www.audible.com/">Audible, Inc.</a></h3>
+					<h3 className="positions">SDE Intern @ <a href="https://www.audible.com/">Audible</a></h3>
+					<h3 className="positions">Data Volunteer @ <a href="https://leadlocally.org/">Lead Locally</a></h3>
 					<h3 className="positions">Former Intern @ <a href="https://investor.vanguard.com/home">Vanguard</a></h3>
 					<h3 className="positions">Former RA @ <a href="https://www.infoseeking.org/index.php">InfoSeeking</a></h3>
 

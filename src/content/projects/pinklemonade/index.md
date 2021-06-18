@@ -1,8 +1,8 @@
 ---
 title: "Pink Lemonade"
 tags: ["hackathon","healthcare","javascript"]
-linkTitles: ["github repo", "devpost"]
-actualLinks: ["https://github.com/SamanthaLLee/Pink-Lemonade","https://devpost.com/software/pink-lemonade"]
+linkTitles: ["app link","github repo", "devpost"]
+actualLinks: ["https://pxwrz.csb.app/","https://github.com/SamanthaLLee/Pink-Lemonade","https://devpost.com/software/pink-lemonade"]
 description: "A web app that suggests recipes with ingredients that fight against breast cancer."
 season: "Fall"
 year: "2020"
