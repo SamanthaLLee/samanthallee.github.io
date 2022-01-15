@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
-import { Container, Image } from "react-bootstrap"
+import { Container, Image, Row, Col } from "react-bootstrap"
 import ReactTooltip from 'react-tooltip'
 
 export default ({ data }) => {
@@ -30,10 +30,8 @@ export default ({ data }) => {
 					</h1>
 
 					<h3 className="positions">Senior & TA @ <a href="https://rutgers.edu">Rutgers</a></h3>
-					<h3 className="positions">SDE Intern @ <a href="https://www.audible.com/">Audible</a></h3>
-					<h3 className="positions">Data Volunteer @ <a href="https://leadlocally.org/">Lead Locally</a></h3>
-					<h3 className="positions">Former Intern @ <a href="https://investor.vanguard.com/home">Vanguard</a></h3>
-					<h3 className="positions">Former RA @ <a href="https://www.infoseeking.org/index.php">InfoSeeking</a></h3>
+					<h3 className="positions">Incoming SWE @ <a href="https://rutgers.edu">Microsoft</a></h3>
+					<h3 className="positions">RA @ <a href="https://rutgers.edu">The Nicolas Lab</a></h3>
 
 					<a className="no-effect" data-tip data-for='resume' href="docs/Samantha-Lee-Resume.pdf">
 						<img alt="Resume icon" className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>
@@ -58,21 +56,14 @@ export default ({ data }) => {
 					<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' className='tooltip' id='github' aria-haspopup='true' >
 						<p className='tooltip-text'>@SamanthaLLee</p>
 					</ReactTooltip>
-
 				</Container>
-			</Container>
-			<Container className="text-right mr-5">
 				<Image
 					alt="A hand-drawn sketch of Sam's head (in blue if you're in light mode, yellow if you're in dark). She has short hair with a little flick in the front and the slightest hint of a smile."
-					src={`../../images/cartoon_me.gif`}
-					style={{
-						position: 'absolute',
-						width: '35vw',
-						right: '1vw',
-						bottom: '3vh'
-					}}
+					src={`../../images/me2022.png`}
+					className="index-img"
 				/>
 			</Container>
+
 		</PageLayout>
 	)
 }

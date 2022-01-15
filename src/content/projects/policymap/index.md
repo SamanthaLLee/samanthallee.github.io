@@ -1,6 +1,6 @@
 ---
 title: "LGBTQ+ Policy Map"
-tags: ["d3","next.js","politics","react"]
+tags: ["d3","data viz","next.js","politics","react"]
 linkTitles: ["app link","github repo"]
 actualLinks: ["https://n2656.sse.codesandbox.io/","https://github.com/SamanthaLLee/LGBTQ-policy-map"]
 description: "A visualization of state-level legistative activity that affects the LGBTQ+ community."

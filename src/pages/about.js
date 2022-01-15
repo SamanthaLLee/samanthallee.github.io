@@ -80,10 +80,12 @@ export default ({ data }) => {
 
 					<p>
 						I like to stay busy! I'm currently the co-president of Rutgers Women in Computer Science and the president and founder of the Rutgers Ethical Technology Club (Ethitech).
-						I also volunteer as a data analyst for Lead Locally, a non-profit dedicated to electing community leaders who pledge to fight against fossil fuel projects.</p>
-					<p>
+						I also volunteer as a data analyst for <a href="https://leadlocally.org/">Lead Locally</a>, a non-profit dedicated to electing community leaders who pledge to fight against fossil fuel projects.
 						I am additionally a part of the <a href="https://www.impactlabs.io/">Impact Labs</a>, <a href="https://outintech.com/">Out in Tech</a>, <a href="https://rewritingthecode.org/">Rewriting the Code</a>, and <a href="https://girlswhocode.com/">Girls Who Code</a> communities.</p>
 
+					<p>
+						Come August 2021, I will be joining Microsoft's Redmond team as a software engineer.
+					</p>
 					<Row className="py-4">
 						<Col md={3}>
 							<h5 className="watch-list-title">
@@ -143,15 +145,11 @@ export default ({ data }) => {
 							Skills
 						</h5><p></p>
 
-						<Card
-							className="mx-auto my-auto key-card"
-						>
-							<Card.Body>
-								<Badge pill variant="success" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">4+ years</h6></Badge>
-								<Badge pill style={{ backgroundColor: "#ff9100" }} className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">2-3 years</h6> </Badge>
-								<Badge pill variant="danger" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">{lessThan}2 years</h6> </Badge>
-							</Card.Body>
-						</Card>
+
+						<Badge pill variant="success" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">Preferred</h6></Badge>
+						<Badge pill style={{ backgroundColor: "#ff9100" }} className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">Comfortable</h6> </Badge>
+						<Badge pill variant="danger" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">Still Learning</h6> </Badge>
+
 
 						<p></p>
 						{advanced.map(skill => (
@@ -172,8 +170,7 @@ export default ({ data }) => {
 					</div>
 
 					<p>
-						I am actively seeking new research opportunities. In the future,
-						I hope to pursue a Masters in a field like tech policy that falls in the intersection of computer and social sciences.
+						I'd like to go to grad school in the future, but I'm taking things one step at a time.
 					</p>
 
 					<p>

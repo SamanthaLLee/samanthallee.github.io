@@ -7,23 +7,23 @@ import Footer from "./Footer"
 import "../styles/modal.css"
 
 const Layout = ({ children }) => {
-  return (
-    <>
-		<Container fluid className="px-0 theme-light app-container">
-	    <Container fluid className="pt-5 mt-5 min-vh-100 text-center">
-	      {children}
-	    </Container>
-	    <Footer />
-	  </Container>    </>
-  )
+	return (
+		<>
+			<Container fluid className="px-0 theme-light app-container">
+				<Container fluid className="pt-5 mt-5 min-vh-100 text-center">
+					{children}
+				</Container>
+				<Footer />
+			</Container>    </>
+	)
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+	children: PropTypes.node.isRequired,
 }
 
 export default Layout
-// 
+//
 // import React from 'react'
 // import PropTypes from 'prop-types'
 // import Helmet from 'react-helmet'

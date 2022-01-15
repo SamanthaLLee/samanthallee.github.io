@@ -24,19 +24,16 @@ export default () => {
         <Nav className="pr-1 mr-1 nav-links">
           <Nav.Link className="ml-2 no-effect" as={Link} to="/about" title="about">
             about
-				</Nav.Link>
-          <Nav.Link className="ml-2 no-effect" as={Link} to="/resume" title="resume">
-            resume
-				</Nav.Link>
+          </Nav.Link>
           <Nav.Link className="ml-2 no-effect" as={Link} to="/experience" title="experience">
             experience
-				</Nav.Link>
+          </Nav.Link>
           <Nav.Link className="ml-2 no-effect" as={Link} to="/projects" title="projects">
             projects
-				</Nav.Link>
+          </Nav.Link>
           <Nav.Link className="ml-2 no-effect" as={Link} to="/activities" title="activities">
             activities
-				</Nav.Link>
+          </Nav.Link>
           <Form className="ml-3 my-auto">
             <Form.Check
               type="switch"

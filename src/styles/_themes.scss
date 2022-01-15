@@ -274,66 +274,6 @@ a.no-effect:hover {
   }
 }
 
-.gallery{
-	display: grid;
-  grid-template-columns: 1fr;
-  @media (min-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media (min-width: 900px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  @media (min-width: 1100px) {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  grid-gap: 15px;
-  .gatsby-image-outer-wrapper {
-    height: 100%;
-  }
-}
-
-.galleryItem{
-	position:relative;
-}
-
-.rounded-corners{
-	border-radius: 10px !important;
-}
-
-.rounded-top-corners{
-	border-radius: 0px !important;
-	border-top-right-radius: 10px !important;
-	border-top-left-radius: 10px !important;
-
-}
-
-.rounded-bottom-corners{
-	border-radius: 0px !important;
-	border-bottom-right-radius: 10px !important;
-	border-bottom-left-radius: 10px !important;
-
-}
-
-.activity {
-		width: 20rem;
-		height: 34rem;
-}
-
-.image {
-		height: 15rem;
-		width: 15rem;
-}
-
-.project {
-		width: 20rem;
-    height: 27rem;
-}
-
-.experience {
-		width: 20rem;
-    height: 21rem;
-}
-
 
 .blog-filter {
   @include themify($themes) {
@@ -483,15 +423,3 @@ li {
     color: themed("hrefColor");
   }}
 	
-a.no-decorations:hover{
-	text-decoration:none;
-}
-
-.footer{
-	height:50px;
-	line-height: 50px;
-}
-
-.indexTitles{
-  max-width: 90%;
-}

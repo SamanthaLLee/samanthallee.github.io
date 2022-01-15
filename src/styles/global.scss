@@ -1,24 +1,33 @@
 @import "../../static/fonts/fonts.css";
 
 @import "themes";
-
+    
 html,
-body {
-  margin: 0;
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
   font-family: "Raleway", sans-serif;
   font-display: swap;
   height: 100%;
   width: 100%;
+  margin-top: -49px;
+  padding: 0px;
   // font-size: calc(16px * ((80vw - 700px) / (1600 - 400)));
   // line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 }
+
+// #gatsby-focus-wrapper,
+// #___gatsby {
+//   height: 100%;
+//   width: 100%;
+// }
 
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.app-container * {
+.app-container{
   transition: color 0.45s ease-in-out;
   transition: background 0.45s ease-in-out;
 }
@@ -111,15 +120,6 @@ body {
 	}
 }
 
-.nav-z-index{
-	z-index: 100000;
-}
-
-.lightbox-z-index{
-	z-index: 9999999999999999999999999999;
-	position:fixed;
-}
-
 hr.separator{ display: block; height: 1px;
     border: 0; border-top: 2px dotted rgb(82, 82, 82);
     margin: 1em 0; padding: 0; }
@@ -127,4 +127,96 @@ hr.separator{ display: block; height: 1px;
 .key-card{
   border: 2px dotted rgb(82, 82, 82);
   max-width: 30rem;
+}
+
+.gallery{
+	display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  grid-gap: 15px;
+  .gatsby-image-outer-wrapper {
+    height: 100%;
+  }
+}
+
+.galleryItem{
+	position:relative;
+}
+
+.rounded-corners{
+	border-radius: 10px !important;
+}
+
+.rounded-top-corners{
+	border-radius: 0px !important;
+	border-top-right-radius: 10px !important;
+	border-top-left-radius: 10px !important;
+
+}
+
+.rounded-bottom-corners{
+	border-radius: 0px !important;
+	border-bottom-right-radius: 10px !important;
+	border-bottom-left-radius: 10px !important;
+
+}
+
+.activity {
+		width: 20rem;
+		height: 34rem;
+}
+
+.image {
+		height: 15rem;
+		width: 15rem;
+}
+
+.project {
+		width: 20rem;
+    height: 27rem;
+}
+
+.experience {
+		width: 20rem;
+    height: 21rem;
+}
+
+a.no-decorations:hover{
+	text-decoration:none;
+}
+
+.footer{
+	height:50px;
+	line-height: 50px;
+  position:relative;
+}
+
+.index{
+  overflow-y: hidden;
+}
+
+.indexTitles{
+  max-width: 90%;
+}
+
+.index-img{
+  position: absolute;
+  @media (min-width: 700px) {
+    height: 80%;
+    bottom: 2%;
+    right: 2%;
+  }
+  @media (max-width: 700px) {
+    height: 50%;
+    bottom: 2%;
+    right: 2%;
+  }
 }
