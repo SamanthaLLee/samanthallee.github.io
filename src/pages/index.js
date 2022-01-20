@@ -33,7 +33,7 @@ export default ({ data }) => {
 					<h3 className="positions">Incoming SWE @ <a href="https://www.microsoft.com/">Microsoft</a></h3>
 					<h3 className="positions">RA @ <a href="https://www.nicolaslab.org/">The Nicolas Lab</a></h3>
 
-					<a className="no-effect" data-tip data-for='resume' href="docs/Sam-Lee-Resume.pdf">
+					<a className="no-effect" data-tip data-for='resume' href="docs/Samantha-Lee-Resume.pdf">
 						<img alt="Resume icon" className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>
 					<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' data-place='bottom' className='tooltip' id='resume' aria-haspopup='true' >
 						<p className='tooltip-text'>resume</p>
@@ -58,7 +58,7 @@ export default ({ data }) => {
 					</ReactTooltip>
 				</Container>
 				<Image
-					alt="A hand-drawn sketch of Sam's head (in blue if you're in light mode, yellow if you're in dark). She has short hair with a little flick in the front and the slightest hint of a smile."
+					alt="A digital, cartoonish drawing of Sam. At the right side of the page, she is facing to the left and has her back turned toward you but is looking over her shoulder and smiling. She's kicking her left leg up behind her. She's wearing a yellow t-shirt, jeans, and brown ankle boots. You can also see two tattoos, one on each tricep (left: 爱, right: 健權. She's holding a turquoise laptop that flashes different code snippets. A speech bubble says 'hello!'"
 					src={`../../images/me2022.png`}
 					className="index-img"
 				/>

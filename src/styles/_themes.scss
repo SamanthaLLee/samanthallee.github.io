@@ -128,7 +128,7 @@ a.no-effect:hover {
   text-decoration: none;
 }
 
-summary {
+summary, details {
   @include themify($themes) {
     color: themed("textColor");
     background: none;

@@ -16,7 +16,7 @@ module.exports = {
       `Teacher`,
       `Thinker`,
     ],
-    interests: [`Software engineering`, "Social Media Bias", "Public Policy"],
+    interests: [`Software engineering`, "Social media bias", "Public policy"],
     passions: [`Ethical tech`, `Social justice`, `K-12 outreach`, `DEI in tech`],
     dabblings: [`Graphic design`, `Prose`, 'UI/UX'],
     eager: ['Move to Seattle', 'Get my next tattoo', 'Build my own closed ecosystem'],
