@@ -14,7 +14,7 @@ The task my intern pod took on was to establish ERISA compliance across Vanguard
 
 ### My Work
 
-My work entailed making calls to an internal API in JAVA to fetch and process brokerage accounts. Given that the full load contained thousands of data points, it was necessary to make multiple calls to the service at once, and the use of Java's concurrency package improved efficiency by 90%.
+My work entailed making calls to an internal API in Java to fetch and process brokerage accounts. Given that the full load contained thousands of data points, it was necessary to make multiple calls to the service at once, and the use of Java's concurrency package improved efficiency by 90%.
 
 Additionally, I worked in Python to process information sprayed onto a Kinesis stream through various Lambda functions. In doing so, I created and updated DynamoDB entries containing brokerage account information. 
 

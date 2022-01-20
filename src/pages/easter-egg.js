@@ -24,6 +24,7 @@ const EasterEgg = () => (
 					<li>Je parle un peu le français</li>
 					<li>I'm fairly active on <a href="https://instagram.com/sam.lin.lee/">Instagram</a></li>
 					<li>I have four tattoos (and counting)</li>
+					<li>This site has its own carrd/linktree/beacon page for relevant educational and mutual aid resources <a href="/links">here</a></li>
 					<li>
 						<a href="https://matthew-notaro.github.io/">Here</a> <a href="https://www.stephaniephotos.com/">are</a> <a href="https://sruthisoorian.github.io/">some</a> <a href="http://isabella-pham.github.io/">of</a> <a href="https://kuhuhalder.com/">my</a> <a href="https://manasvimedam.github.io/#/">favorite</a> <a href="https://www.jessleecreations.com/">people</a>
 					</li>

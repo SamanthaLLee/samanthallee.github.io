@@ -405,19 +405,38 @@ li {
 }
 .carrd {
 	@include themify($themes) {
-    color: themed("textColor");
+    
+    background: linear-gradient(white,themed("hrefColor")) !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
+
+  color: black;
 	height:auto;
 	padding:15px;
 	margin-bottom:15px;
 	margin-top:15px;
 	width:auto;
-	border:dashed;
+	
 	justify-content: center;
 	text-align: center; 
+  border-radius: 50px;
+  
 }
 .carrd:hover {
 	@include themify($themes) {
-    color: themed("hrefColor");
-  }}
+    background: linear-gradient(themed("hrefColor"), #fff) !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+
+}
+  
 	
