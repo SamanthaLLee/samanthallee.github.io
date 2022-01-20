@@ -19,12 +19,17 @@ module.exports = {
     interests: [`Software engineering`, "Social Media Bias", "Public Policy"],
     passions: [`Ethical tech`, `Social justice`, `K-12 outreach`, `DEI in tech`],
     dabblings: [`Graphic design`, `Prose`, 'UI/UX'],
+    eager: ['Move to Seattle', 'Get my next tattoo', 'Build my own closed ecosystem'],
     learnings: ['Neural networks', 'Tech policy', 'Political decision-making'],
-    hobbies: ['DIY', `Pokémon GO`, 'Sewing & embroidery', 'Skateboarding'],
+    hobbies: ['DIY', `Pokémon GO`, 'Sewing & embroidery', 'Ice skating'],
     advanced: ['Java', 'Python', 'C'],
     intermediate: ['JavaScript'],
     basic: ['C#', 'React', 'PHP'],
     conferences: [
+      {
+        title: `O4U Tech Conference (2021)`,
+        link: 'http://www.outforundergrad.org/tech',
+      },
       {
         title: `Civis Data for Good Summit (2021)`,
         link: 'https://hopin.com/events/dataforgood_june2021',
@@ -34,12 +39,12 @@ module.exports = {
         link: 'https://ostem.org/page/conference-2020',
       },
       {
-        title: `Grace Hopper Celebration (2020, 2019)`,
-        link: 'https://ghc.anitab.org/',
-      },
-      {
         title: `Impact Summit (2020)`,
         link: 'https://www.impactlabs.io/summit/',
+      },
+      {
+        title: `Grace Hopper Celebration (2019-2021)`,
+        link: 'https://ghc.anitab.org/',
       },
       {
         title: `Bit by Bit (2018)`,
@@ -51,6 +56,11 @@ module.exports = {
         title: `Algorithms of Oppression`,
         author: `Safiya Umoja Noble`,
         link: `https://www.goodreads.com/book/show/34762552-algorithms-of-oppression`,
+      },
+      {
+        title: `Freakonomics`,
+        author: `Steven D. Levitt, Stephen J. Dubner`,
+        link: `https://www.goodreads.com/book/show/1202.Freakonomics`,
       },
       {
         title: `Oranges Are Not the Only Fruit`,
@@ -167,6 +177,10 @@ module.exports = {
         link: `https://myanimelist.net/anime/35120/Devilman__Crybaby`,
       },
       {
+        title: `Haikyuu!!`,
+        link: `https://myanimelist.net/anime/20583/Haikyuu`,
+      },
+      {
         title: `Mob Psycho 100`,
         link: `https://myanimelist.net/anime/32182/Mob_Psycho_100`,
       },
@@ -198,6 +212,10 @@ module.exports = {
       },
     ],
     hackathons: [
+      {
+        title: `HackHERS 2022 (Director)`,
+        link: `https://hackhers-2022.devpost.com/`,
+      },
       {
         title: `HackRU Spring 2021 (Winner)`,
         link: `https://hackru-s21.devpost.com/`,

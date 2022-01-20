@@ -41,6 +41,7 @@ export default ({ data }) => {
 		interests,
 		passions,
 		dabblings,
+		eager,
 		learnings,
 		conferences,
 		unemployed,
@@ -81,10 +82,10 @@ export default ({ data }) => {
 					<p>
 						I like to stay busy! I'm currently the co-president of Rutgers Women in Computer Science and the president and founder of the Rutgers Ethical Technology Club (Ethitech).
 						I also volunteer as a data analyst for <a href="https://leadlocally.org/">Lead Locally</a>, a non-profit dedicated to electing community leaders who pledge to fight against fossil fuel projects.
-						I am additionally a part of the <a href="https://www.impactlabs.io/">Impact Labs</a>, <a href="https://outintech.com/">Out in Tech</a>, <a href="https://rewritingthecode.org/">Rewriting the Code</a>, and <a href="https://girlswhocode.com/">Girls Who Code</a> communities.</p>
+						I am additionally a part of the <a href="https://rewritingthecode.org/">Rewriting the Code</a>, <a href="https://girlswhocode.com/">Girls Who Code</a>, <a href="https://www.impactlabs.io/">Impact Labs</a>, and <a href="https://outintech.com/">Out in Tech</a> communities.</p>
 
 					<p>
-						Come August 2021, I will be joining Microsoft's Redmond team as a software engineer.
+						Come August 2022, I will be joining Microsoft's Redmond team as a software engineer.
 					</p>
 					<Row className="py-4">
 						<Col md={3}>
@@ -126,11 +127,11 @@ export default ({ data }) => {
 						</Col>
 						<Col md={3}>
 							<h5 className="watch-list-title">
-								I dabble in...
+								Eager to...
 							</h5>
 
 							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-								{dabblings.map((attr, i) => (
+								{eager.map((attr, i) => (
 									<span key={attr}>
 										<li>{bullet} {attr}</li>
 									</span>
@@ -142,13 +143,13 @@ export default ({ data }) => {
 					<div className="text-center mb-5"><p></p>
 
 						<h5 className="watch-list-title">
-							Skills
+							Notable Skills
 						</h5><p></p>
 
 
-						<Badge pill variant="success" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">Preferred</h6></Badge>
-						<Badge pill style={{ backgroundColor: "#ff9100" }} className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">Comfortable</h6> </Badge>
-						<Badge pill variant="danger" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">Still Learning</h6> </Badge>
+						<Badge pill variant="success" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">[ Preferred ]</h6></Badge>
+						<Badge pill style={{ backgroundColor: "#ff9100" }} className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">[ Comfortable ]</h6> </Badge>
+						<Badge pill variant="danger" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">[ Still Learning ]</h6> </Badge>
 
 
 						<p></p>
@@ -236,13 +237,8 @@ export default ({ data }) => {
 								Book recs:
 							</h5>
 							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-								<li>
-									{bullet} <Link to="/easter-egg/" asModal>
-										About Me: Extended
-									</Link>
-									&nbsp;-<i>Samantha Lee</i>
-								</li>
-								{bookLinks}</ul>
+								{bookLinks}
+							</ul>
 						</Col>
 
 						<Col md={6}>
@@ -291,6 +287,7 @@ export const query = graphql`
 		interests
 		passions
 		dabblings
+		eager
 		learnings
 		hobbies
 		advanced

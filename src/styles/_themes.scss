@@ -128,6 +128,15 @@ a.no-effect:hover {
   text-decoration: none;
 }
 
+summary {
+  @include themify($themes) {
+    color: themed("textColor");
+    background: none;
+    background-image: none;
+    text-decoration: none;
+  }
+}
+
 
 .first-name {
   @include themify($themes) {
@@ -182,17 +191,6 @@ a.no-effect:hover {
 		//font-size: 4vw;
 		margin-left:25px;
   }
-}
-
-.positions a {
-  // @include themify($themes) {
-  //   color: themed("hrefColor") !important;
-	// 	//font-size: 4vw;
-	// 	font-size:25px;
-  //   &:hover {
-  //     text-decoration: underline themed("titleColor") solid;
-  //   }
-  // }
 }
 
 .icon-link a {

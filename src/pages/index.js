@@ -30,10 +30,10 @@ export default ({ data }) => {
 					</h1>
 
 					<h3 className="positions">Senior & TA @ <a href="https://rutgers.edu">Rutgers</a></h3>
-					<h3 className="positions">Incoming SWE @ <a href="https://rutgers.edu">Microsoft</a></h3>
-					<h3 className="positions">RA @ <a href="https://rutgers.edu">The Nicolas Lab</a></h3>
+					<h3 className="positions">Incoming SWE @ <a href="https://www.microsoft.com/">Microsoft</a></h3>
+					<h3 className="positions">RA @ <a href="https://www.nicolaslab.org/">The Nicolas Lab</a></h3>
 
-					<a className="no-effect" data-tip data-for='resume' href="docs/Samantha-Lee-Resume.pdf">
+					<a className="no-effect" data-tip data-for='resume' href="docs/Sam-Lee-Resume.pdf">
 						<img alt="Resume icon" className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>
 					<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' data-place='bottom' className='tooltip' id='resume' aria-haspopup='true' >
 						<p className='tooltip-text'>resume</p>
