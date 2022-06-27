@@ -3,6 +3,6 @@ title: ""
 tags: [""]
 description: ""
 date: "2019-12"
-caption: "DDCC meeting"
+caption: "Girls Who Code meeting."
 index: 1
 ---

@@ -3,6 +3,6 @@ title: ""
 tags: [""]
 description: ""
 date: "2022-04"
-caption: "Tabling for Rutgers Day."
+caption: "PLEN panel hosted by Douglass Residential College."
 index: 1
 ---

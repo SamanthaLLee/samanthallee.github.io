@@ -3,6 +3,6 @@ title: ""
 tags: [""]
 description: ""
 date: "2020-02-23"
-caption: "A banner I designed for HackHERS"
+caption: "A banner I designed for HackHERS."
 index: 3
 ---
