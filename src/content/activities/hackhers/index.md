@@ -1,9 +1,9 @@
 ---
 title: "HackHERS"
-tags: ["comp sci", "hackathon", "rutgers","women in stem"]
+tags: ["hackathon", "rutgers", "tech","women in stem"]
 description: "Rutgers University's annual women-centric hackathon."
 start: "2019-04"
-end: 
+end: "2022-05"
 index: 3
 website: "https://ruhackhers.org/"
 ---

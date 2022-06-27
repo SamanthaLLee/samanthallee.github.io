@@ -1,10 +1,11 @@
 ---
 title: "Software Engineer"
-tags: ["full time","microsoft","swe"]
-description: "Coming soon!"
+tags: ["full time","swe"]
+description: "Improving security and authentication in M365 services"
 start: "2022-08"
 end: 
 index: 0
 ---
 
-### Coming soon!
+### Overview
+I am a software engineer in Experiences & Devices working on security and authentication in M365 services.

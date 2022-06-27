@@ -1,6 +1,6 @@
 ---
 title: "Software Development Engineering Intern"
-tags: ["audible","internship","swe"]
+tags: ["internship","swe"]
 description: "Designed a BOGO BuyBox for the Audible website."
 start: "2021-06"
 end: "2021-08"
@@ -9,7 +9,7 @@ index: 0
 
 ### Background
 
-This is the Audible buybox. On all platforms and devices, it presents purchase options available to the user.
+This is the <a href="https://www.audible.com/">Audible</a> buybox. On all platforms and devices, it presents purchase options available to the user.
 
 <p><div style="text-align:center"><img alt="A picture of the product detail page of an Audible audiobook. A red arrow points to the buybox, a section to the left of the screen that lists all options available to the user: 'Buy for $0.00', 'Add to Cart','Add to Wish List', etc." src="../../../../images/buybox.png" width="80%"/></div></p>
 

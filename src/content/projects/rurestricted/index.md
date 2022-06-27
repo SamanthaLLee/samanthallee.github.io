@@ -19,7 +19,7 @@ RU Restricted? utilizes a Python script that scrapes the Rutgers dining services
 I personally worked on the front-end using Bootstrap and handled the calls to the Edamam API.
 
 ### Reflection
-We were grateful to have been awarded the "Best Rutgers Hack" prize at <a href="https://hackru-f20.devpost.com/">HackRU 2020</a>.
+We were grateful to have been awarded the "Best Rutgers Hack" prize at <a href="https://hackru-f20.devpost.com/">HackRU Fall 2020</a>.
 
 ### Demo
 `youtube:https://www.youtube.com/embed/iGEkHCLgwog`

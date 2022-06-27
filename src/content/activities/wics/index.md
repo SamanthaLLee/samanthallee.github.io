@@ -1,9 +1,9 @@
 ---
 title: "Women in Computer Science"
-tags: ["comp sci", "rutgers", "women in stem"]
+tags: ["rutgers", "tech","women in stem"]
 description: "You'll never guess what this club is about."
 start: "2019-04"
-end:
+end: "2022-05"
 index: 2
 website: "https://rutgerswics.org/"
 ---

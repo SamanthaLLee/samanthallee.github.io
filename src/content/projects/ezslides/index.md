@@ -23,7 +23,7 @@ One of the biggest challenges on the video/live processing end was how difficult
 
 As mentioned earlier, more intuitive controls especially when cropping should be on their way maybe sometime in the future. Not only would the interface be made more appealing and be easier to follow, but it would also have positive implications on the accessibility of the program. We also talked about implementing a multithreaded approach to checking if a slide already exists which could greatly decrease processing time for long lectures but neither of us have worked with multithreading in Python before and we both agreed today was not the day to learn it. Finally, and probably most importantly, EZSlides cannot process images, diagrams, nor handwritten text very well, and by very well we mean not at all. We would have to brainstorm a bit more to determine an algorithm to detect these images or design a seamless way for the user to manually include these.
 
-We were grateful to have been awarded the "Best Education Hack" prize at <a href="https://hackru-s21.devpost.com/">HackRU 2021</a>.
+We were grateful to have been awarded the "Best Education Hack" prize at <a href="https://hackru-s21.devpost.com/">HackRU Spring 2021</a>.
 
 ### Demo
 `youtube:https://www.youtube.com/embed/0vnTaAnytKc`

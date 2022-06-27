@@ -75,18 +75,14 @@ export default ({ data }) => {
 				/></Link>
 				<article className="w-75 m-auto pt-3 pb-2 text-justify">
 					<p>
-						Hi, there! I'm Sam Lee (she/her/hers), a senior honors student at Rutgers University–New Brunswick pursuing a double major
-						in Computer Science and Cognitive Science (with a concentration in decision-making) and a minor in Political Science.
-						I'm located in the greater NYC area originally inhabited by the <a href="https://native-land.ca/maps/territories/munsee-lenape/">Munsee Lenape</a> people.</p>
+						Hi, there! I'm Sam Lee, a recent graduate of Rutgers University–New Brunswick with a B.S. in
+						in Computer Science and Cognitive Science (with a concentration in decision-making) and a completed minor in Political Science.
+						I'm based in Seattle, the traditional land of the <a href="https://native-land.ca/maps/territories/suquamish/">Suquamish</a>,
+						<a href="https://native-land.ca/maps/territories/puget-sound-salish/">Coast Salish</a>,
+						and the <a href="https://native-land.ca/maps/territories/duwamish/">Duwamish People</a>, as well as the greater NYC area, the traditional land of the
+						<a href="https://native-land.ca/maps/territories/munsee-lenape/">Munsee Lenape</a> people.</p>
 
-					<p>
-						I like to stay busy! I'm currently the co-president of Rutgers Women in Computer Science and the president and founder of the Rutgers Ethical Technology Club (Ethitech).
-						I also volunteer as a data analyst for <a href="https://leadlocally.org/">Lead Locally</a>, a non-profit dedicated to electing community leaders who pledge to fight against fossil fuel projects.
-						I am additionally a part of the <a href="https://rewritingthecode.org/">Rewriting the Code</a>, <a href="https://girlswhocode.com/">Girls Who Code</a>, <a href="https://www.impactlabs.io/">Impact Labs</a>, and <a href="https://outintech.com/">Out in Tech</a> communities.</p>
 
-					<p>
-						Come August 2022, I will be joining Microsoft's Redmond team as a software engineer.
-					</p>
 					<Row className="py-4">
 						<Col md={3}>
 							<h5 className="watch-list-title">
@@ -140,38 +136,8 @@ export default ({ data }) => {
 						</Col>
 					</Row>
 
-					<div className="text-center mb-5"><p></p>
-
-						<h5 className="watch-list-title">
-							Notable Skills
-						</h5><p></p>
-
-
-						<Badge pill variant="success" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">[ Preferred ]</h6></Badge>
-						<Badge pill style={{ backgroundColor: "#ff9100" }} className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">[ Comfortable ]</h6> </Badge>
-						<Badge pill variant="danger" className="img-hover px-3 mb-1 mr-1" > <h6 className="text-white my-0">[ Still Learning ]</h6> </Badge>
-
-
-						<p></p>
-						{advanced.map(skill => (
-							<Badge key={skill} pill variant="success" className="img-hover px-3 mb-1 mr-1">
-								<h6 className="text-white my-0">{skill}</h6>
-							</Badge>
-						))}
-						{intermediate.map(skill => (
-							<Badge key={skill} pill style={{ backgroundColor: "#ff9100" }} className="img-hover px-3 mb-1 mr-1">
-								<h6 className="text-white my-0">{skill}</h6>
-							</Badge>
-						))}
-						{basic.map(skill => (
-							<Badge key={skill} pill variant="danger" className="img-hover px-3 mb-1 mr-1">
-								<h6 className="text-white my-0">{skill}</h6>
-							</Badge>
-						))}
-					</div>
-
 					<p>
-						I'd like to go to grad school in the future, but I'm taking things one step at a time.
+						I'd like to pursue a PhD in the future, but I'm taking things one step at a time.
 					</p>
 
 					<p>
@@ -189,6 +155,15 @@ export default ({ data }) => {
 
 						<Col md={6}>
 							<h5 className="watch-list-title">
+								Highlights:
+							</h5>
+							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+								{featureList}
+							</ul>
+						</Col>
+
+						<Col md={6}>
+							<h5 className="watch-list-title">
 								Hobbies:
 							</h5>
 							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
@@ -199,36 +174,6 @@ export default ({ data }) => {
 								))}
 							</ul>
 						</Col>
-
-						<Col md={6}>
-							<h5 className="watch-list-title">
-								Places I'm featured:
-							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-								{featureList}
-							</ul>
-						</Col>
-
-
-					</Row>
-					<Row>
-						<Col md={6}>
-							<h5 className="watch-list-title">
-								Conferences attended:
-							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-								{confs}
-							</ul>
-						</Col>
-						<Col md={6}>
-							<h5 className="watch-list-title">
-								Hackathon acknowledgements:
-							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-								{hackathonList}
-							</ul>
-						</Col>
-
 
 					</Row>
 					<Row>

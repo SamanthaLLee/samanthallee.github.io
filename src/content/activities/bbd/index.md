@@ -1,6 +1,6 @@
 ---
 title: "Bluebonnet Data"
-tags: ["nonprofit","politics"]
+tags: ["nonprofit","politics","tech",]
 description: "Democratizing data."
 start: "2020-08"
 end: 

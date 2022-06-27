@@ -12,6 +12,12 @@ end: "2018"
 ### Research
 
 <details>
+  <summary>The Model Minority, Online: A Review and Research Proposal to Examine AAPI Identities on Reddit (Nicolas Lab, Spring 2022)</summary>
+
+  In spite of America’s growing diversity, there is a lack of research considering relations between non-White minority groups. Notably, there are comparatively fewer works exploring Asian American people, who, in particular, hold a distinctive place in the social hierarchy in which they can realize their own identity in a way that either embraces or rejects Whiteness and consequently impacts other racial minorities with less privilege. Meanwhile, in digital environments, racialized communities thrive. Asian American people have taken to Reddit to explore their identities, and in the midst of social movements like Black Lives Matter, the question arises: how do AAPI people constructing their identities perceive people of other races? Racial identity theory informs how people perceive themselves and others through race, as well as how they behave in their ingroups. Intergroup contact lies adjacent to it, providing a framework to analyze interactions between groups. Through these lenses, one can perform a thematic content analysis on moderated discourse in notable AAPI subreddits on Reddit to explore the perceptions of other races from an AAPI perspective and how they may have changed over time. Completion of this study can result in enormous benefits to the digital activist space by informing Reddit moderators of strengths and weaknesses in their practices, creating a more structural understanding of online communities, identifying which aspects of discrimination are most salient, and more.
+</details>
+
+<details>
   <summary>Social Media Bias: A Review of Psycho-Digital Feedback Loops (Nicolas Lab, Fall 2021)</summary>
 
   People have always consumed media in selective and partisan ways. As social media become dominant forms of news and entertainment, users introduce personal biases to the platforms they use, and platforms respond by amplifying those biases. Recommendation systems established for commercial gain aim to increase engagement and consequently create feedback loops of bias through individual and collaborative personalization that affects digital communities on both local and global scales. Literature reveals that social media algorithms create filter bubbles, homogenize groups, and prioritize popular opinions over minority ones, thereby increasing the strengths of pre-existing beliefs, polarization, ingroup loyalty, and misrepresentation. A related, albeit weaker, consequence of social media influence manifests in the backlash effect, in which fact-checkers have counterproductive consequences and have further impacts on civic engagement. Despite dire implications, researchers demonstrate that various factors can mitigate the effect of bias and, and they work toward developing systems geared toward fairness and diversity to alleviate sociopolitical strife.
@@ -56,10 +62,21 @@ end: "2018"
 </details>
 
 #
-### Other
+### Policy Memorandums
 
 <details>
-  <summary>Unemployment Insurance Policy Memorandum (Public Policy Formation, Fall 2021)</summary>
+  <summary>Call to Deprioritize the Consumer Welfare Standard in Favor of Broader Measures of Competition and Resource Regulations (NYU Policy Case Competition, Spring 2022)</summary>
+
+  Currently, US antitrust regulation favors affordability and consumer accessibility above all else, thereby creating unfavorable conditions for Big Tech to exploit. Their true product is user data, which they collect for free and sell to other firms for profit. According to Credit Suisse, the number of companies listed on U.S stock exchanges has decreased from 7,322 to 3,671 in the last 20 years. Despite the massive increase in consolidations, the Department of Justice (DOJ) and the Federal Trade Commission (FTC), responded to the OECD’s concerns by stating that they find the claims of increased concentration unsupported by the data for meaningful markets. To reinvigorate the impact of antitrust laws and address the manipulation of user data, we propose the following three-step policy approach:
+  
+  1. The FTC should deprioritize the use of the consumer welfare standard in the identification of monopolistic power. 
+  2. Congress should give users control over the collection of their data and levy a tax on businesses that save and sell it. 
+  3. To lower barriers to entry, the FTC should provide public resources to start-up firms.
+
+</details>
+
+<details>
+  <summary>Unemployment Insurance Memo (Public Policy Formation, Fall 2021)</summary>
 
   At the cusp of the Great Depression, President Franklin D. Roosevelt signed the Social Security Bill and established some of modern America’s most important social programs. Of these initiatives, unemployment insurance aimed to safeguard against economic decline and assist individuals suffering from the uncertainty and restrictions of unemployment. Through its federal-state system, the U.S. Department of Labor left the states to fund the program, define their own eligibility requirements and benefits, and administer compensation.
   

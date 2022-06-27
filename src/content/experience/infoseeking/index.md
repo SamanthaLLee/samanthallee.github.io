@@ -1,6 +1,6 @@
 ---
 title: "Research Assistant"
-tags: ["data science","infoseeking","research"]
+tags: ["data science","research"]
 description: "Developed software for information retrieval studies."
 start: "2019-01"
 end: "2019-10"
@@ -16,4 +16,4 @@ As people become increasingly reliant on the Internet as a source of information
 <a href="/docs/Coagmento.pdf"><div style="text-align:center"><img alt="A research symposium poster detailing Sam's work developing a Chrome extension for Coagmento. It links to a PDF version." src="../../../../docs/Coagmento.jpg" width="100%"/></div></a>
 
 ### Reflections
-Although I'd been a part of InfoSeeking for many months, my time there during the summer was the most memorable. Working on Coagmento was my first formal technical experience – it was my first taste of agile development, it was the first time my efforts had a direct impact on the people around me. I'm proud of having been able to pick up skills and languages I'd never before used, and I am more so grateful for the support I received through Douglass Residential College and the mentorship of Dr. Matthew Mitsui.
+Although I'd been a part of <a href="https://infoseeking.org/">InfoSeeking</a> for many months, my time there during the summer was the most memorable. Working on Coagmento was my first formal technical experience – it was my first taste of agile development, it was the first time my efforts had a direct impact on the people around me. I'm proud of having been able to pick up skills and languages I'd never before used, and I am more so grateful for the support I received through Douglass Residential College and the mentorship of Dr. Matthew Mitsui and Dr. Chirag Shah.

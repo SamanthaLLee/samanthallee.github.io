@@ -89,3 +89,34 @@ end: "2019"
   <p><a href="https://github.com/SamanthaLLee/CS520/tree/main/proj4">View source here.</a>
 
   </details>
+
+#
+### Computer Graphics [CS523]
+
+<details>
+  <summary>Koch Snowflakes</summary>
+    A Python agent is put into an NxN maze and attempts to reach the goal using a repeated A* algorithm with a Manhattan distance heuristic.
+
+  <p><a href="https://koch-snowflakes.samanthallee.repl.co">View project here.</a>
+
+  <p><div style="text-align:center"><img alt="" src="../../../../images/maze.png" width="70%"/></div></p>
+
+</details>
+
+<details>
+  <summary>Rat Maze Game</summary>
+    A Python agent is put into an NxN and learns about its environment through logical inference. As it attempts to reach the goal using a repeated A* algorithm, it maintains a knowledge base that updates with new information every move, allowing the agent to make informed decisions.
+  
+  <p><a href="https://rat-maze.samanthallee.repl.co">Play game here.</a>
+
+  <p><div style="text-align:center"><img alt="" src="../../../../images/maze.png" width="70%"/></div></p>
+
+</details>
+
+<details>
+  <summary>3D Ferris Wheel</summary>
+    A Python agent is put into an NxN maze where each available location has one of three terrains. The probability of the agent accurately detecting an unknown goal cell depends on the terrain type. The agent learns about its environment and uses probability to identify (1) the cell with the highest chance of containing the target and (2) the cell that gives the agent the highest chance of successfully finding the target. Using a repeated A* algorithm, the agent examines cells and updates probabilities until it finds the goal.
+  
+  <p><div style="text-align:center"><img alt="" src="../../../../images/maze.png" width="70%"/></div></p>
+
+</details>

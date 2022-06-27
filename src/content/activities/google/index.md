@@ -1,6 +1,6 @@
 ---
 title: "Google CSRMP"
-tags: ["comp sci", "hackathon", "rutgers","women in stem"]
+tags: ["hackathon", "rutgers", "tech","women in stem"]
 description: "Google's CS Research Mentorship Program."
 start: "2021-09"
 end: "2021-12"
