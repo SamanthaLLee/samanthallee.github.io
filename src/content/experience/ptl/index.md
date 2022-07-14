@@ -6,7 +6,7 @@ start: "2020-09"
 end: "2022-05"
 ---
 ### Overview 
-I am a head teaching assistant for Data Structures (<a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-112-data-structures">01:198:112</a>), a foundational CS course taught in Java. The class covers a variety of topics, including hash tables, trees, graphs, sorting, and space-time complexity.
+I was a head teaching assistant for Data Structures (<a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-112-data-structures">01:198:112</a>), a foundational CS course taught in Java. The class covers a variety of topics, including hash tables, trees, graphs, sorting, and space-time complexity.
 
 In Fall 2020, I led weekly recitations and study groups, evaluated projects, and graded exams for a section of ~45 students. In Spring 2021, I delivered a range of assessment activities and technical lesson plans that were used by 30+ other teaching assistants and 650+ undergraduate students while leading my own sections of 40+ students.
 

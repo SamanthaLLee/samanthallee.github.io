@@ -93,10 +93,10 @@ export const query = graphql`
             title
             description
             tags
-            start(formatString: "MMMM YYYY")
-						end(formatString: "MMMM YYYY")
+            start
+						end
 						season
-						year(formatString: "YYYY")
+						year
 						index
           }
           fields {

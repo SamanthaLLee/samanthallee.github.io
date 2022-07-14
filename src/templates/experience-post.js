@@ -6,13 +6,13 @@ import Badge from "react-bootstrap/Badge"
 const SubTitle = ({ start, end, tags }) => (
   <h5 className="text-muted mb-5">
     {start} – {end}
-		<div className="mb-5"><p></p>
-	    {tags.map(tag => (
-	      <Badge key={tag} pill variant="dark" className="img-hover px-3 mb-1 mr-1">
-	        <h5 className="text-white my-0">{tag}</h5>
-	      </Badge>
-	    ))}
-	  </div>
+    <div className="mb-5"><p></p>
+      {tags.map(tag => (
+        <Badge key={tag} pill variant="dark" className="img-hover px-3 mb-1 mr-1">
+          <h5 className="text-white my-0">{tag}</h5>
+        </Badge>
+      ))}
+    </div>
   </h5>
 )
 
@@ -23,9 +23,9 @@ export default ({ data }) => {
       title={post.frontmatter.title}
       subTitle={
         <SubTitle
-					start={post.frontmatter.start}
-					end={post.frontmatter.end}
-					tags={post.frontmatter.tags}
+          start={post.frontmatter.start}
+          end={post.frontmatter.end}
+          tags={post.frontmatter.tags}
         />
       }
       excerpt={post.excerpt}
@@ -40,8 +40,8 @@ export const query = graphql`
       html
       frontmatter {
         title
-        start(formatString: "MMMM YYYY")
-				end(formatString: "MMMM YYYY")
+        start
+				end
 				tags
       }
       excerpt

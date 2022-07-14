@@ -52,7 +52,7 @@ export const query = graphql`
       frontmatter {
 				title
 	 			season
-	 		  year(formatString: "YYYY")
+	 		  year
 	 			tags
 				linkTitles
 				actualLinks

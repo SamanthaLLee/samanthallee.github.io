@@ -45,8 +45,8 @@ export const query = graphql`
       html
       frontmatter {
         title
-        start(formatString: "MMMM YYYY")
-				end(formatString: "MMMM YYYY")
+        start
+				end
 				tags
 				website
       }

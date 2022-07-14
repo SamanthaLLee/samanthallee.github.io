@@ -46,7 +46,7 @@ export const query = graphql`
             title
             description
             tags
-            date(formatString: "MMMM YYYY")
+            date
 						index
 						caption
           }

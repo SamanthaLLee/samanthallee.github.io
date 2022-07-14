@@ -28,8 +28,8 @@ export default ({ data }) => {
 					>
 						<span className="first-name">Samantha L. Lee</span>
 					</h1>
-					<h3 className="positions">SWE @ <a href="https://www.microsoft.com/">Microsoft</a></h3>
-					<h3 className="positions"><a href="https://rutgers.edu">Rutgers</a> Alum</h3>
+					<h3 className="positions">Software Engineer @ <a href="https://www.microsoft.com/">Microsoft</a></h3>
+					<h3 className="positions"><a href="https://rutgers.edu">Rutgers University</a> Alumna</h3>
 
 					<a className="no-effect" data-tip data-for='resume' href="docs/Samantha-Lee-Resume.pdf">
 						<img alt="Resume icon" className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>

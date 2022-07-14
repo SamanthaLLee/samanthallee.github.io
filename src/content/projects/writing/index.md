@@ -12,7 +12,7 @@ end: "2018"
 ### Research
 
 <details>
-  <summary>The Model Minority, Online: A Review and Research Proposal to Examine AAPI Identities on Reddit (Nicolas Lab, Spring 2022)</summary>
+  <summary>The Model Minority, Online: Examining AAPI Identities on Reddit (Nicolas Lab, Spring 2022)</summary>
 
   In spite of America’s growing diversity, there is a lack of research considering relations between non-White minority groups. Notably, there are comparatively fewer works exploring Asian American people, who, in particular, hold a distinctive place in the social hierarchy in which they can realize their own identity in a way that either embraces or rejects Whiteness and consequently impacts other racial minorities with less privilege. Meanwhile, in digital environments, racialized communities thrive. Asian American people have taken to Reddit to explore their identities, and in the midst of social movements like Black Lives Matter, the question arises: how do AAPI people constructing their identities perceive people of other races? Racial identity theory informs how people perceive themselves and others through race, as well as how they behave in their ingroups. Intergroup contact lies adjacent to it, providing a framework to analyze interactions between groups. Through these lenses, one can perform a thematic content analysis on moderated discourse in notable AAPI subreddits on Reddit to explore the perceptions of other races from an AAPI perspective and how they may have changed over time. Completion of this study can result in enormous benefits to the digital activist space by informing Reddit moderators of strengths and weaknesses in their practices, creating a more structural understanding of online communities, identifying which aspects of discrimination are most salient, and more.
 </details>
@@ -65,7 +65,7 @@ end: "2018"
 ### Policy Memorandums
 
 <details>
-  <summary>Call to Deprioritize the Consumer Welfare Standard in Favor of Broader Measures of Competition and Resource Regulations (NYU Policy Case Competition, Spring 2022)</summary>
+  <summary>Antitrust Reform Memo (NYU Policy Case Competition, Spring 2022)</summary>
 
   Currently, US antitrust regulation favors affordability and consumer accessibility above all else, thereby creating unfavorable conditions for Big Tech to exploit. Their true product is user data, which they collect for free and sell to other firms for profit. According to Credit Suisse, the number of companies listed on U.S stock exchanges has decreased from 7,322 to 3,671 in the last 20 years. Despite the massive increase in consolidations, the Department of Justice (DOJ) and the Federal Trade Commission (FTC), responded to the OECD’s concerns by stating that they find the claims of increased concentration unsupported by the data for meaningful markets. To reinvigorate the impact of antitrust laws and address the manipulation of user data, we propose the following three-step policy approach:
   

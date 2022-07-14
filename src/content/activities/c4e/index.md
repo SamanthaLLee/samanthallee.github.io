@@ -4,7 +4,7 @@ tags: ["ethics","tech"]
 description: "Inspiring and empowering young engineers to build a better world."
 start: "2020-09"
 end: "2021-05"
-index: 0.5
+index: 2
 website: "http://www.impactlabs.io/"
 ---
 

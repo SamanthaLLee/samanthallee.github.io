@@ -4,27 +4,27 @@ import { Container, Card, Image } from "react-bootstrap"
 import { PageLayout, PageTitle } from "../components"
 import { ThemeContext, SEO } from "../utils"
 import { Row, Col } from "react-bootstrap"
-import Badge from "react-bootstrap/Badge"
 
 export default ({ data }) => {
 
 	const bullet = '>'
 	const lessThan = '<'
 
-	const MediaLink = ({ title, author, link }) => (
+	const MediaLink = ({ title, author, link, year }) => (
 		<li key={title}>
 			{bullet} <a rel="noopener noreferrer" href={link}>
 				{title}
 			</a>
-			&nbsp;-<i>{author}</i>
+			&nbsp; ({year}) – {author}
 		</li>
 	)
 
-	const ConfLink = ({ title, link }) => (
+	const ConfLink = ({ title, link, year }) => (
 		<li key={title}>
 			{bullet} <a rel="noopener noreferrer" href={link}>
 				{title}
 			</a>
+			&nbsp; ({year})
 		</li>
 	)
 
@@ -77,13 +77,15 @@ export default ({ data }) => {
 					<p>
 						Hi, there! I'm Sam Lee, a recent graduate of Rutgers University–New Brunswick with a B.S. in
 						in Computer Science and Cognitive Science (with a concentration in decision-making) and a completed minor in Political Science.
-						I'm based in Seattle, the traditional land of the <a href="https://native-land.ca/maps/territories/suquamish/">Suquamish</a>,
-						<a href="https://native-land.ca/maps/territories/puget-sound-salish/">Coast Salish</a>,
-						and the <a href="https://native-land.ca/maps/territories/duwamish/">Duwamish People</a>, as well as the greater NYC area, the traditional land of the
-						<a href="https://native-land.ca/maps/territories/munsee-lenape/">Munsee Lenape</a> people.</p>
+						I'm based in Seattle, the traditional land of the <a href="https://native-land.ca/maps/territories/suquamish/">Suquamish</a>, <a href="https://native-land.ca/maps/territories/puget-sound-salish/">Coast Salish</a>,
+						and the <a href="https://native-land.ca/maps/territories/duwamish/">Duwamish People</a>, as well as the greater NYC area,
+						the traditional land of the <a href="https://native-land.ca/maps/territories/munsee-lenape/">Munsee Lenape</a> people.</p>
 
+					<p>
+						I'm proud to be a member of several <a href="/activities">communities</a> that span across various causes. Special shout-out to Rutgers Women in Computer Science and Rutgers Ethitech! ❤️
+					</p>
 
-					<Row className="py-4">
+					<Row className="py-2">
 						<Col md={3}>
 							<h5 className="watch-list-title">
 								Interested in...
@@ -146,14 +148,13 @@ export default ({ data }) => {
 					</p>
 				</article>
 
-
 				<hr className="separator" />
 
 				<article className="w-75 m-auto text-justify">
 
 					<Row className="pt-4">
 
-						<Col md={6}>
+						<Col md={12}>
 							<h5 className="watch-list-title">
 								Highlights:
 							</h5>
@@ -162,30 +163,8 @@ export default ({ data }) => {
 							</ul>
 						</Col>
 
-						<Col md={6}>
-							<h5 className="watch-list-title">
-								Hobbies:
-							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-								{hobbies.map((attr, i) => (
-									<span key={attr}>
-										<li>{bullet} {attr}</li>
-									</span>
-								))}
-							</ul>
-						</Col>
-
 					</Row>
 					<Row>
-						<Col md={6}>
-							<h5 className="watch-list-title">
-								Book recs:
-							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-								{bookLinks}
-							</ul>
-						</Col>
-
 						<Col md={6}>
 							<h5 className="watch-list-title">
 								Movie recs:
@@ -194,8 +173,6 @@ export default ({ data }) => {
 								{showLinks}
 							</ul>
 						</Col>
-					</Row>
-					<Row className="pb-4">
 						<Col md={6}>
 							<h5 className="watch-list-title">
 								Anime recs:
@@ -204,17 +181,21 @@ export default ({ data }) => {
 								{anime}</ul>
 						</Col>
 
-						<Col md={6}>
-							<h5 className="watch-list-title">
-								Video essay recs:
-							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
-								{essays}
-							</ul>
-						</Col>
+
 					</Row>
 
-				</article>
+				</article><br></br>
+
+				<div class="gr m-auto text-justify">
+					<div id="gr_updates_widget">
+						<iframe sandbox id="the_iframe" src="https://goodreads.com/widgets/user_update_widget?height=250&num_updates=10&user=25279873&width=500" width="98%" height="95%" frameborder="0"></iframe>
+						<div id="gr_footer">
+							<a href="https://www.goodreads.com/"><img alt="Goodreads: Book reviews, recommendations, and discussion" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" /></a>
+						</div>
+					</div>
+				</div><br></br><br></br>
+
+
 			</Container>
 		</PageLayout >
 
@@ -247,6 +228,7 @@ export const query = graphql`
           title
           author
           link
+		  year
         }
 		essayList {
           title
@@ -260,6 +242,7 @@ export const query = graphql`
 		animeList {
 			title
 			link
+			year
 		}
 		hackathons {
 			title
@@ -268,6 +251,7 @@ export const query = graphql`
 		features {
 			title
 			link
+			year
 		}
       }
     }
