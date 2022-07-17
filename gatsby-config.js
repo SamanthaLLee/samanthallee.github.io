@@ -1,15 +1,30 @@
 module.exports = {
   siteMetadata: {
-    title: `Samantha L. Lee`,
-    author: `Samantha L. Lee`,
-    firstName: `Samantha`,
+    title: `Sam Lin Lee`,
+    author: `Sam Lin Lee`,
+    firstName: `Sam`,
     lastName: `Lee`,
-    description: `Samantha L. Lee's portfolio`,
+    description: `Sam Lin Lee's portfolio`,
     occupation: `Student`,
-    keywords: [`Samantha`, `Lee`, `Personal`, `Portfolio`, `Resume`, `Projects`, `Work`, 'Tech'],
+    keywords: [`Samantha`, `Sam`, `Lee`, `Personal`, `Portfolio`, `Resume`, `Projects`, `Work`, 'Tech'],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
-    unemployed: true,
+    unemployed: false,
+    statusCommon: [
+      "An accessible version of this website is in the works!",
+      "New to Seattle – accepting food recommendations 🥘",
+      "AMOGR (add me on Goodreads) 📚",
+      "RU, RAH, RAH!",
+      "A vehement _ enthusiast.",
+      "1% software, 99% development.",
+    ],
+    statusUncommon: [
+      "You're telling me trauma is just a Hidden Markov Model?",
+      "Sometimes, I consider going to law school. You should talk me into or out of it.",
+    ],
+    statusRare: [
+      "This blurb has a 1% chance of showing up, and you've seen it. Congratulations!"
+    ],
     designations: [
       `Student`,
       `Activist`,

@@ -75,14 +75,12 @@ export default ({ data }) => {
 				/></Link>
 				<article className="w-75 m-auto pt-3 pb-2 text-justify">
 					<p>
-						Hi, there! I'm Sam Lee, a recent graduate of Rutgers University–New Brunswick with a B.S. in
+						Hi, there! I'm Sam Lee, a recent graduate of Rutgers University–New Brunswick with a B.S.
 						in Computer Science and Cognitive Science (with a concentration in decision-making) and a completed minor in Political Science.
-						I'm based in Seattle, the traditional land of the <a href="https://native-land.ca/maps/territories/suquamish/">Suquamish</a>, <a href="https://native-land.ca/maps/territories/puget-sound-salish/">Coast Salish</a>,
-						and the <a href="https://native-land.ca/maps/territories/duwamish/">Duwamish People</a>, as well as the greater NYC area,
-						the traditional land of the <a href="https://native-land.ca/maps/territories/munsee-lenape/">Munsee Lenape</a> people.</p>
+						I'm based in Seattle and the greater NYC area, which are the traditional lands of the <a href="https://native-land.ca/maps/territories/puget-sound-salish/">Coast Salish</a> and <a href="https://native-land.ca/maps/territories/munsee-lenape/">Munsee Lenape</a> people, respectively.</p>
 
 					<p>
-						I'm proud to be a member of several <a href="/activities">communities</a> that span across various causes. Special shout-out to Rutgers Women in Computer Science and Rutgers Ethitech! ❤️
+						I'm proud to be a member of several <a href="/activities">communities</a> that span across various causes and interests. Special shout-out to Rutgers Women in Computer Science and Rutgers Ethitech! ❤️
 					</p>
 
 					<Row className="py-2">

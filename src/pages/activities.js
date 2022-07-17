@@ -91,8 +91,8 @@ export const query = graphql`
             title
             description
             tags
-            start
-						end
+            start(formatString: "MMMM YYYY")
+						end(formatString: "MMMM YYYY")
 						index
             website
           }

@@ -7,8 +7,48 @@ import { Container, Image, Row, Col } from "react-bootstrap"
 import ReactTooltip from 'react-tooltip'
 
 export default ({ data }) => {
-	const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
+	const { firstName, lastName, statusCommon, statusUncommon, statusRare } = data.site.siteMetadata
 	const { dark } = useContext(ThemeContext)
+
+	var val = Math.floor(Math.random() * 10)
+
+	if (val > 5) {
+
+	} else if (val > 3) {
+
+	} else {
+
+	}
+
+	// $(function () {
+	// 	var $sequence = $("#sequence");
+	// 	var sequence = ['I', 'Am', 'So', 'Cool'];
+	// 	var position = -1;
+
+	// 	!function loop() {
+	// 		position = (position + 1) % sequence.length;
+	// 		$sequence.html(sequence[position])
+	// 			.fadeIn(1000)
+	// 			.delay(3000)
+	// 			.fadeOut(1000, loop);
+	// 	}();
+	// });
+
+	// var example = ['A', 'B', 'C', 'D'];
+	// textSequence(0);
+	// function textSequence(i) {
+	// 	if (example.length > i) {
+	// 		setTimeout(function () {
+	// 			document.getElementById("sequence").innerHTML = example[i]; fade-in
+	// 			textSequence(++i);
+	// 		}, 1000); // 1 second (in milliseconds)
+
+	// 	} else if (example.length == i) { // Loop
+	// 		textSequence(0);
+	// 	}
+	// }
+
+
 	return (
 		<PageLayout>
 			<SEO title="Home" />
@@ -26,15 +66,17 @@ export default ({ data }) => {
 							color: "black",
 						}}
 					>
-						<span className="first-name">Samantha L. Lee</span>
+						<span className="first-name">Sam Lin Lee</span>
 					</h1>
 					<h3 className="positions">Software Engineer @ <a href="https://www.microsoft.com/">Microsoft</a></h3>
 					<h3 className="positions"><a href="https://rutgers.edu">Rutgers University</a> Alumna</h3>
 
-					<a className="no-effect" data-tip data-for='resume' href="docs/Samantha-Lee-Resume.pdf">
+					<div className="sequence" id="sequence"></div>
+
+					<a className="no-effect" data-tip data-for='resume' href="/resume">
 						<img alt="Resume icon" className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>
 					<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' data-place='bottom' className='tooltip' id='resume' aria-haspopup='true' >
-						<p className='tooltip-text'>resume</p>
+						<p className='tooltip-text'>resume/cv</p>
 					</ReactTooltip>
 
 					<a className="no-effect" data-tip data-for='email' href="mailto:samantha.lin.lee@gmail.com?subject=Hello!">
@@ -70,10 +112,11 @@ export const query = graphql`
   query {
     site {
       siteMetadata {
-        unemployed
         firstName
         lastName
-        occupation
+		statusCommon
+		statusUncommon
+		statusRare
       }
     }
   }
