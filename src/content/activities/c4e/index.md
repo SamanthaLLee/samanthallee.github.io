@@ -1,6 +1,6 @@
 ---
 title: "Impact Labs"
-tags: ["ethics","tech"]
+tags: ["tech"]
 description: "Inspiring and empowering young engineers to build a better world."
 start: "2020-09"
 end: "2021-05"

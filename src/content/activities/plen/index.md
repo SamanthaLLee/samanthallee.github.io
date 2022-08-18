@@ -1,6 +1,6 @@
 ---
 title: "Public Leadership Education Network"
-tags: ["nonprofit","politics"]
+tags: ["politics"]
 description: "Preparing women to lead."
 start: "2022-03"
 end: "2022-05"

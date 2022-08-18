@@ -1,7 +1,7 @@
 ---
 title: "Girls Who Code College Loops"
-tags: ["drc", "outreach", "rutgers", "tech","women in stem"]
-description: "Teaching girls how to – you guessed it – code!"
+tags: ["outreach","tech","women in stem"]
+description: "Teaching girls how to code and building belonging in tech."
 start: "2018-09"
 end: "2022-05"
 index: 4

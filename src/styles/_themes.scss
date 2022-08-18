@@ -6,8 +6,7 @@
  */
 
 $themes: (
-  light: (
-    backgroundColor: #a8e6d3,
+  light: (backgroundColor: #a8e6d3,
     footerBackground: white,
     navBackground: $gray-100,
     secondary: $gray-900,
@@ -18,7 +17,7 @@ $themes: (
     themeColor: #5e59eb,
     heartColor: red,
     titleColor: $gray-800,
-		swappedColor: #a8e6d3,
+    swappedColor: #a8e6d3,
     hrefColor: #2ad19d,
     github: $black,
     linkedin: $linkedin-blue,
@@ -30,8 +29,7 @@ $themes: (
     hoverBackground: #ff9800,
     linkHoverSvg: "data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E"
   ),
-  dark: (
-    backgroundColor: #222,
+  dark: (backgroundColor: #222,
     footerBackground: #222,
     secondary: $gray-100,
     navBackground: $dark-gray,
@@ -40,7 +38,7 @@ $themes: (
     firstName: $white,
     lastName: $white,
     titleColor: $gray-500,
-		swappedColor: $dark-blue,
+    swappedColor: $dark-blue,
     hrefColor: #2ad19d,
     themeColor: #5e59eb,
     heartColor: red,
@@ -61,18 +59,20 @@ $themes: (
  * Implementation of themes
  */
 @mixin themify($themes) {
-  @each $theme, $map in $themes {
+
+  @each $theme,
+  $map in $themes {
     .theme-#{$theme} & {
       $theme-map: () !global;
-      @each $key, $submap in $map {
+
+      @each $key,
+      $submap in $map {
         $value: map-get(map-get($themes, $theme), "#{$key}");
-        $theme-map: map-merge(
-          $theme-map,
-          (
-            $key: $value,
-          )
-        ) !global;
+        $theme-map: map-merge($theme-map,
+          ($key: $value,
+          )) !global;
       }
+
       @content;
       $theme-map: null !global;
     }
@@ -128,7 +128,8 @@ a.no-effect:hover {
   text-decoration: none;
 }
 
-summary, details {
+summary,
+details {
   @include themify($themes) {
     color: themed("textColor");
     background: none;
@@ -167,13 +168,14 @@ summary, details {
     // background-repeat: repeat-x;
     // background-size: 1px 1px;
     text-decoration: underline themed("hoverBackground") solid;
+
     &:hover {
-        @include themify($themes) {
-          background-image: url(themed("linkHoverSvg"));
-          background-position: 0 70%;
-          background-size: auto 3px;
-          // background-repeat: repeat-x;
-          text-decoration: none;
+      @include themify($themes) {
+        background-image: url(themed("linkHoverSvg"));
+        background-position: 0 70%;
+        background-size: auto 3px;
+        // background-repeat: repeat-x;
+        text-decoration: none;
       }
     }
   }
@@ -181,15 +183,21 @@ summary, details {
 
 .positions {
   @include themify($themes) {
-		//font-size: 4vw;
-		font-size:25px;
+    //font-size: 4vw;
+    font-size: 22px;
+  }
+}
+
+.sequence {
+  @include themify($themes) {
+    color: themed("textColor");
   }
 }
 
 .positions-sub {
   @include themify($themes) {
-		//font-size: 4vw;
-		margin-left:25px;
+    //font-size: 4vw;
+    margin-left: 25px;
   }
 }
 
@@ -200,15 +208,13 @@ summary, details {
 .footer {
   @include themify($themes) {
     background: themed("backgroundColor");
-		text-decoration-color: themed("heartColor");
-		color: themed("secondary");
+    text-decoration-color: themed("heartColor");
+    color: themed("secondary");
   }
 }
 
 .footer-text {
-  @include themify($themes) {
-		
-  }
+  @include themify($themes) {}
 }
 
 .heart {
@@ -226,48 +232,53 @@ summary, details {
 .card-container {
   @include themify($themes) {
     text-decoration-color: themed("hrefColor");
-		-webkit-transition: all 0.5s ease;
-	  -moz-transition: all 0.5s ease;
-	  -o-transition: all 0.5s ease;
-	  -ms-transition: all 0.5s ease;
-	  transition: all 0.5s ease;
-		-webkit-box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-		-moz-box-shadow:    4px 4px 3px 1px rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
-		box-shadow:         4px 4px 3px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);
+
     & *:not(.pill):not(.image) {
       background: themed("cardBackground");
     }
-		&:hover {
+
+    &:hover {
       text-decoration: none;
-			transform:scale(.99);
-		  opacity:.7;
-		  -webkit-transition: all 0.5s ease;
-		  -moz-transition: all 0.5s ease;
-		  -o-transition: all 0.5s ease;
-		  -ms-transition: all 0.5s ease;
-		  transition: all 0.5s ease;
+      transform: scale(.99);
+      opacity: .7;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
     }
   }
 }
 
 .img-container {
   @include themify($themes) {
-		border-radius: 5px !important;
-		border-color: themed("backgroundColor");
-		-webkit-transition: all 0.5s ease;
-		-moz-transition: all 0.5s ease;
-		-o-transition: all 0.5s ease;
-		-ms-transition: all 0.5s ease;
-		transition: all 0.5s ease;
-		&:hover {
+    border-radius: 5px !important;
+    border-color: themed("backgroundColor");
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    &:hover {
       text-decoration: none;
-			transform:scale(.99);
-		  opacity:.7;
-		  -webkit-transition: all 0.5s ease;
-		  -moz-transition: all 0.5s ease;
-		  -o-transition: all 0.5s ease;
-		  -ms-transition: all 0.5s ease;
-		  transition: all 0.5s ease;
+      transform: scale(.99);
+      opacity: .7;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
     }
   }
 }
@@ -275,8 +286,9 @@ summary, details {
 
 .blog-filter {
   @include themify($themes) {
-		& input {
+    & input {
       color: $gray-700;
+
       &:focus {
         box-shadow: 0 0 0 1px rgba(themed("themeColor"), 0.5);
         border-color: rgba(themed("themeColor"), 0.5);
@@ -293,39 +305,41 @@ summary, details {
 
 .resume {
   @include themify($themes) {
-		width:100vh;
-		-webkit-transition: all 0.5s ease;
-	  -moz-transition: all 0.5s ease;
-	  -o-transition: all 0.5s ease;
-	  -ms-transition: all 0.5s ease;
-	  transition: all 0.5s ease;
-		&:hover {
-			transform:scale(.99);
-		  opacity:.7;
-		  -webkit-transition: all 0.5s ease;
-		  -moz-transition: all 0.5s ease;
-		  -o-transition: all 0.5s ease;
-		  -ms-transition: all 0.5s ease;
-		  transition: all 0.5s ease;
+    width: 100vh;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    &:hover {
+      transform: scale(.99);
+      opacity: .7;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
     }
   }
 }
 
 .img-hover {
   @include themify($themes) {
-		-webkit-transition: all 0.5s ease;
-	  -moz-transition: all 0.5s ease;
-	  -o-transition: all 0.5s ease;
-	  -ms-transition: all 0.5s ease;
-	  transition: all 0.5s ease;
-		&:hover {
-			transform:scale(.99);
-		  opacity:.7;
-		  -webkit-transition: all 0.5s ease;
-		  -moz-transition: all 0.5s ease;
-		  -o-transition: all 0.5s ease;
-		  -ms-transition: all 0.5s ease;
-		  transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    &:hover {
+      transform: scale(.99);
+      opacity: .7;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
     }
   }
 }
@@ -342,7 +356,7 @@ h5 {
 
 div {
   @include themify($themes) {
-		background: themed("backgroundColor");
+    background: themed("backgroundColor");
   }
 }
 
@@ -352,10 +366,10 @@ div {
 
 .tooltip-text {
   background: none;
-	font-size: 20px;
-	justify-content: center;
-	align-items: center;
-	height: 15px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
 }
 
 p {
@@ -381,32 +395,38 @@ li {
     color: themed("textColor");
   }
 }
+
 .themed-pill {
-	@include themify($themes) {
-		background-color: themed("hrefColor");
-	}
+  @include themify($themes) {
+    background-color: themed("hrefColor");
+  }
 }
 
 .themed-text-swapped {
-	@include themify($themes) {
-		color: themed("footerBackground");
-	}
+  @include themify($themes) {
+    color: themed("footerBackground");
+  }
 }
 
 .carrdLink {
-	@include themify($themes) {
+  @include themify($themes) {
     color: themed("textColor");
   }
 }
-.carrdLink:hover, .carrdLink:focus {
-	@include themify($themes) {
+
+.carrdLink:hover,
+.carrdLink:focus {
+  @include themify($themes) {
     color: themed("hrefColor");
-  }	text-decoration: none;
+  }
+
+  text-decoration: none;
 }
+
 .carrd {
-	@include themify($themes) {
-    
-    background: linear-gradient(white,themed("hrefColor")) !important;
+  @include themify($themes) {
+
+    background: linear-gradient(white, themed("hrefColor")) !important;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -415,19 +435,20 @@ li {
   }
 
   color: black;
-	height:auto;
-	padding:15px;
-	margin-bottom:15px;
-	margin-top:15px;
-	width:auto;
-	
-	justify-content: center;
-	text-align: center; 
+  height:auto;
+  padding:15px;
+  margin-bottom:15px;
+  margin-top:15px;
+  width:auto;
+
+  justify-content: center;
+  text-align: center;
   border-radius: 50px;
-  
+
 }
+
 .carrd:hover {
-	@include themify($themes) {
+  @include themify($themes) {
     background: linear-gradient(themed("hrefColor"), #fff) !important;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -438,5 +459,3 @@ li {
 
 
 }
-  
-	

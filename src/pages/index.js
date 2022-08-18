@@ -10,44 +10,26 @@ export default ({ data }) => {
 	const { firstName, lastName, statusCommon, statusUncommon, statusRare } = data.site.siteMetadata
 	const { dark } = useContext(ThemeContext)
 
-	var val = Math.floor(Math.random() * 10)
+	var val = Math.floor(Math.random() * statusCommon.length)
+	var val2 = Math.floor(Math.random() * statusCommon.length)
 
-	if (val > 5) {
-
-	} else if (val > 3) {
-
-	} else {
-
+	while (val == val2) {
+		val2 = Math.floor(Math.random() * statusCommon.length)
 	}
 
-	// $(function () {
-	// 	var $sequence = $("#sequence");
-	// 	var sequence = ['I', 'Am', 'So', 'Cool'];
-	// 	var position = -1;
+	textSequence(val);
+	function textSequence(i) {
+		if (statusCommon.length > i) {
+			setTimeout(function () {
+				if (document.getElementById("sequence") != null) {
+					document.getElementById("sequence").innerHTML = "<i> → " + statusCommon[i] + "</i>"; //fade-in
+					val = Math.floor(Math.random() * statusCommon.length)
+					textSequence(val);
+				}
+			}, 5000);
 
-	// 	!function loop() {
-	// 		position = (position + 1) % sequence.length;
-	// 		$sequence.html(sequence[position])
-	// 			.fadeIn(1000)
-	// 			.delay(3000)
-	// 			.fadeOut(1000, loop);
-	// 	}();
-	// });
-
-	// var example = ['A', 'B', 'C', 'D'];
-	// textSequence(0);
-	// function textSequence(i) {
-	// 	if (example.length > i) {
-	// 		setTimeout(function () {
-	// 			document.getElementById("sequence").innerHTML = example[i]; fade-in
-	// 			textSequence(++i);
-	// 		}, 1000); // 1 second (in milliseconds)
-
-	// 	} else if (example.length == i) { // Loop
-	// 		textSequence(0);
-	// 	}
-	// }
-
+		}
+	}
 
 	return (
 		<PageLayout>
@@ -71,12 +53,12 @@ export default ({ data }) => {
 					<h3 className="positions">Software Engineer @ <a href="https://www.microsoft.com/">Microsoft</a></h3>
 					<h3 className="positions"><a href="https://rutgers.edu">Rutgers University</a> Alumna</h3>
 
-					<div className="sequence" id="sequence"></div>
+					<div className="sequence" id="sequence"><i>→ {statusCommon[val2]}</i></div>
 
-					<a className="no-effect" data-tip data-for='resume' href="/resume">
+					<a className="no-effect" data-tip data-for='resume' href="docs/Samantha-Lee-Resume.pdf">
 						<img alt="Resume icon" className="icons" src={dark ? `../../icons/resume-light.png` : `../../icons/resume-dark.png`}></img></a>
 					<ReactTooltip arrowColor="transparent" offset="{'bottom': 10}" place='bottom' data-place='bottom' className='tooltip' id='resume' aria-haspopup='true' >
-						<p className='tooltip-text'>resume/cv</p>
+						<p className='tooltip-text'>resume</p>
 					</ReactTooltip>
 
 					<a className="no-effect" data-tip data-for='email' href="mailto:samantha.lin.lee@gmail.com?subject=Hello!">
@@ -104,7 +86,7 @@ export default ({ data }) => {
 				/>
 			</Container>
 
-		</PageLayout>
+		</PageLayout >
 	)
 }
 

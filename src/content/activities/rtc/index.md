@@ -1,7 +1,7 @@
 ---
 title: "Rewriting the Code"
 tags: ["tech","women in stem"]
-description: "Empowering women in tech through intersectional communities, mentorship, and educational resources."
+description: "An intersectional and educational community of women in tech."
 start: "2020-07"
 end: 
 index: 1

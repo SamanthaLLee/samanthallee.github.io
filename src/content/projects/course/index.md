@@ -1,9 +1,9 @@
 ---
-title: "Course Projects"
+title: "Undergraduate Course Projects"
 tags: ["rutgers"]
 linkTitles: []
 actualLinks: []
-description: "Projects completed for coursework."
+description: "Projects completed for coursework at Rutgers University."
 season: "All Semesters"
 start: 
 end: "2019"
@@ -38,7 +38,7 @@ end: "2019"
 #
 ### Systems Programming [<a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-214-systems-programming">CS214</a>] 
 <details>
-  <summary>Where's the File?</summary>
+  <summary>Where's the File? - Version Control System</summary>
   Where's the File? (WTF) is a fully functional client-server version control system written in C. Through sockets, file I/O, and multithreading, it allows up to ten clients to interact with, push projects to, get projects from, and otherwise modify a repository in a remote server. While a local version of the repository exists on the client-side, the server maintains the version most recently pushed while keeping track of the project's history. WTF supports the following commands: configure, checkout, update, upgrade, commit, push, create, destroy, add, remove, currentVersion, history, and rollback. <a href="https://github.com/matthew-notaro/Systems-Programming/tree/master/AsstLast">View source here.</a>
 </details>
 
@@ -76,7 +76,7 @@ end: "2019"
 
 <details>
   <summary>Maze Neural Network</summary>
-    We built four TensorFlow neural networks in Python to mimic the original agent from project 1 (A* Maze Solver) and the logical inference agent from project 2 (Partial Sensing Maze Solver). For each project, we developed, trained, and, tested Keras models with full dense layers and convolutional neural networks. <a href="https://github.com/SamanthaLLee/CS520/tree/main/proj4">View source here.</a>
+    We built four TensorFlow neural networks in Python to mimic the original agent from the A* Maze Solver and the logical inference agent from the Partial Sensing Maze Solver. For each agent, we developed, trained, and, tested Keras models with full dense layers and convolutional neural networks. <a href="https://github.com/SamanthaLLee/CS520/tree/main/proj4">View source here.</a>
 
   </details>
 
@@ -101,7 +101,7 @@ end: "2019"
 
 <details>
   <summary>3D Ferris Wheel</summary>
-    This program displays a simple, 3D, rotating ferris wheel.
+    This program displays a simple rotating ferris wheel in 3D.
   
   <p><div style="text-align:center"><img alt="" src="../../../../images/ferris.png" width="70%"/></div></p>
 

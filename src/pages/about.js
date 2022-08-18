@@ -15,7 +15,7 @@ export default ({ data }) => {
 			{bullet} <a rel="noopener noreferrer" href={link}>
 				{title}
 			</a>
-			&nbsp; ({year}) – {author}
+			&nbsp; ({year})
 		</li>
 	)
 
@@ -88,7 +88,7 @@ export default ({ data }) => {
 							<h5 className="watch-list-title">
 								Interested in...
 							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+							<ul className="text-left themed-text" style={{ listStyle: "none" }}>
 								{interests.map((attr, i) => (
 									<span key={attr}>
 										<li>{bullet} {attr}</li>
@@ -101,7 +101,7 @@ export default ({ data }) => {
 							<h5 className="watch-list-title">
 								Passionate about...
 							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+							<ul className="text-left themed-text" style={{ listStyle: "none" }}>
 								{passions.map((attr, i) => (
 									<span key={attr}>
 										<li>{bullet} {attr}</li>
@@ -113,7 +113,7 @@ export default ({ data }) => {
 							<h5 className="watch-list-title">
 								Learning about...
 							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+							<ul className="text-left themed-text" style={{ listStyle: "none" }}>
 								{learnings.map((attr, i) => (
 									<span key={attr}>
 										<li>{bullet} {attr}</li>
@@ -126,7 +126,7 @@ export default ({ data }) => {
 								Eager to...
 							</h5>
 
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+							<ul className="text-left themed-text" style={{ listStyle: "none" }}>
 								{eager.map((attr, i) => (
 									<span key={attr}>
 										<li>{bullet} {attr}</li>
@@ -156,7 +156,7 @@ export default ({ data }) => {
 							<h5 className="watch-list-title">
 								Highlights:
 							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+							<ul className="text-left themed-text" style={{ listStyle: "none" }}>
 								{featureList}
 							</ul>
 						</Col>
@@ -167,7 +167,7 @@ export default ({ data }) => {
 							<h5 className="watch-list-title">
 								Movie recs:
 							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+							<ul className="text-left themed-text" style={{ listStyle: "none" }}>
 								{showLinks}
 							</ul>
 						</Col>
@@ -175,12 +175,12 @@ export default ({ data }) => {
 							<h5 className="watch-list-title">
 								Anime recs:
 							</h5>
-							<ul className="text-left themed-text" style={{ fontSize: "0.9rem", listStyle: "none" }}>
+							<ul className="text-left themed-text" style={{ listStyle: "none" }}>
 								{anime}</ul>
 						</Col>
-
-
 					</Row>
+
+					I don't watch many series these days, but I also recommend <a href="https://www.imdb.com/title/tt8036272/  ">Tuca and Bertie</a> (2019) and <a href="https://www.imdb.com/title/tt4955642/">The Good Place</a> (2016).
 
 				</article><br></br>
 

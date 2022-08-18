@@ -21,12 +21,14 @@ const EasterEgg = () => (
 					<li>I played the flute for ~10 years and now play it recreationally</li>
 					<li>I also played the trumpet in a marching band for ~4 years</li>
 					<li>Je parle un peu le français</li>
-					<li>Some of my favorite foods are poke, mangoes, </li>
+					<li>Some of my favorite foods are poke, mangoes, and <a href="https://thewoksoflife.com/shrimp-rice-noodle-rolls-cheung-fun/">ha cheung</a></li>
+					<li>A firm believer that Percy Jackson {'>'} Harry Potter</li>
+					<li>I love animals! Cats and dogs are equally good, and I have a soft spot for rats and mice</li>
 					<li>I'm fairly active on <a href="https://instagram.com/sam.lin.lee/">Instagram</a></li>
-					<li>I have six tattoos and seven piercings (and counting)</li>
-					<li>I have a page that lists relevant educational and mutual aid resources <a href="/links">here</a></li>
+					<li>I have four tattoos and seven piercings (and counting)</li>
+					<li>Sometimes, I consider going to law school... you should talk me into or out of it</li>
 					<li>
-						<a href="https://matthew-notaro.github.io/">Here</a> <a href="https://www.stephaniephotos.com/">are</a> <a href="https://sruthisoorian.github.io/">some</a> <a href="http://isabella-pham.github.io/">of</a> <a href="https://kuhuhalder.com/">my</a> <a href="https://manasvimedam.github.io/#/">favorite</a> <a href="https://www.jessleecreations.com/">people</a>
+						<a href="https://matthew-notaro.github.io/">Here</a> <a href="https://www.stephaniephotos.com/">are</a> <a href="https://sruthisoorian.github.io/">some</a> <a href="http://sandhya-veludandi.github.io/">of</a> <a href="http://isabella-pham.github.io/">my</a> <a href="https://kuhuhalder.com/">very</a> <a href="https://manasvimedam.github.io/#/">favorite</a> <a href="https://www.jessleecreations.com/">people</a>
 					</li>
 				</ul>
 			</Col>
