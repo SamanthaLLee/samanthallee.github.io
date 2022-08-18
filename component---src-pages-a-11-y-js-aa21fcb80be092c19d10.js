@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{h4BE:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),l=t.n(n),c=(t("Kvkj"),t("7vrA")),r=(t("rY4l"),t("JwsL"));a.default=function(){return l.a.createElement(c.a,{fluid:!0,className:"px-0 white app-container"},l.a.createElement(c.a,{fluid:!0,className:"pt-5 mt-5 min-vh-100 text-center"},l.a.createElement("h1",null,"Sam Lin Lee")),l.a.createElement(r.a,null))}}}]);
+//# sourceMappingURL=component---src-pages-a-11-y-js-aa21fcb80be092c19d10.js.map
