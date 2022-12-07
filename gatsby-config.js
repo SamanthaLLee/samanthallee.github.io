@@ -6,75 +6,90 @@ module.exports = {
     lastName: `Lee`,
     description: `Sam Lin Lee's portfolio`,
     occupation: `Student`,
-    keywords: [`Samantha`, `Sam`, `Lee`, `Personal`, `Portfolio`, `Resume`, `Projects`, `Work`, 'Tech'],
+    keywords: [
+      `Samantha`,
+      `Sam`,
+      `Lee`,
+      `Personal`,
+      `Portfolio`,
+      `Resume`,
+      `Projects`,
+      `Work`,
+      "Tech",
+    ],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: false,
     statusCommon: [
-      "working on improving this site's accessibility!",
-      "new to seattle – accepting food recs 🥘",
+      "improving this site's accessibility!",
+      "accepting seattle food recs 🥘",
       "AMOGR (add me on goodreads) 📚",
       "RU, RAH, RAH!",
       "1% software, 99% development",
-      "a vehement reducer, reuser, and recycler",
-      "let me know your favorite video essay!",
+      "what's your favorite video essay?",
       "currently getting back into reading",
-      "love exhaustively :^)",
       "a learning enthusiast",
-      "talk to me about anime, but not too loudly",
       "do good things, write good code",
       "professional beep-boop-er",
       "i'd tell you a UDP joke, but you might not get it",
       "welcome to my public static void",
       "amender of git commits",
-      "yellow peril supports black power"
     ],
     statusUncommon: [
       "You're telling me trauma is just a Hidden Markov Model?",
       "Sometimes, I consider going to law school. You should talk me into or out of it.",
     ],
     statusRare: [
-      "This blurb has a 1% chance of showing up, and you've seen it. Congratulations!"
+      "This blurb has a 1% chance of showing up, and you've seen it. Congratulations!",
     ],
-    designations: [
-      `Student`,
-      `Activist`,
-      `Teacher`,
-      `Thinker`,
-    ],
+    designations: [`Student`, `Activist`, `Teacher`, `Thinker`],
     interests: [`Software engineering`, "HCI research", "Public policy"],
-    passions: [`Ethical tech`, `Mutual aid`, 'LGBTQIA visibility', 'Sustainability',],
-    dabblings: [`Graphic design`, `Prose`, 'UI/UX'],
-    eager: ['Build my own closed ecosystem', "Get another tatt", 'Learn BJJ'],
-    learnings: ['Cybersecurity', 'Tech policy', 'Algorithmic bias', 'How to cook'],
-    hobbies: ['DIY', `Pokémon GO`, 'Sewing & embroidery', 'Ice skating'],
-    advanced: ['Java', 'Python', 'C'],
-    intermediate: ['JavaScript'],
-    basic: ['C#', 'React', 'PHP'],
+    passions: [
+      `Ethical tech`,
+      `Mutual aid`,
+      "LGBTQIA visibility",
+      "Sustainability",
+    ],
+    dabblings: [`Graphic design`, `Prose`, "UI/UX"],
+    eager: [
+      "Build my own closed ecosystem",
+      "Get another tatt",
+      "Rock climb more",
+    ],
+    learnings: [
+      "Cybersecurity",
+      "Tech policy",
+      "Algorithmic bias",
+      "How to cook",
+    ],
+    hobbies: ["DIY", `Pokémon GO`, "Sewing & embroidery", "Ice skating"],
+    advanced: ["Java", "Python", "C"],
+    intermediate: ["JavaScript"],
+    basic: ["C#", "React", "PHP"],
     conferences: [
       {
         title: `O4U Tech Conference (2021)`,
-        link: 'http://www.outforundergrad.org/tech',
+        link: "http://www.outforundergrad.org/tech",
       },
       {
         title: `Civis Data for Good Summit (2021)`,
-        link: 'https://hopin.com/events/dataforgood_june2021',
+        link: "https://hopin.com/events/dataforgood_june2021",
       },
       {
         title: `oSTEM Conference (2020)`,
-        link: 'https://ostem.org/page/conference-2020',
+        link: "https://ostem.org/page/conference-2020",
       },
       {
         title: `Impact Summit (2020)`,
-        link: 'https://www.impactlabs.io/summit/',
+        link: "https://www.impactlabs.io/summit/",
       },
       {
         title: `Grace Hopper Celebration (2019-2021)`,
-        link: 'https://ghc.anitab.org/',
+        link: "https://ghc.anitab.org/",
       },
       {
         title: `Bit by Bit (2018)`,
-        link: 'https://blogs.dalton.org/bitbybit/',
+        link: "https://blogs.dalton.org/bitbybit/",
       },
     ],
     readingList: [
@@ -124,61 +139,61 @@ module.exports = {
         title: `Everything, Everywhere, All at Once`,
         author: `Daniels`,
         link: `https://www.imdb.com/title/tt6710474/`,
-        year: '2022'
+        year: "2022",
       },
       {
         title: `Hereditary`,
         author: `Ari Aster`,
         link: `https://www.imdb.com/title/tt7784604/`,
-        year: '2018'
+        year: "2018",
       },
       {
         title: `Inception`,
         author: `Christopher Nolan`,
         link: `https://www.imdb.com/title/tt1375666/`,
-        year: '2010'
+        year: "2010",
       },
       {
         title: `Jojo Rabbit`,
         author: `Taika Waititi`,
         link: `https://www.imdb.com/title/tt2584384/`,
-        year: '2019'
+        year: "2019",
       },
       {
         title: `Knives Out`,
         author: `Rian Johnson`,
         link: `https://www.imdb.com/title/tt8946378/`,
-        year: '2019'
+        year: "2019",
       },
       {
         title: `Moulin Rouge!`,
         author: `Baz Luhrmann, Craig Pearce`,
         link: `https://www.imdb.com/title/tt0203009/`,
-        year: '2001'
+        year: "2001",
       },
       {
         title: `Portrait of a Lady on Fire`,
         author: `Céline Sciamma`,
         link: `https://www.imdb.com/title/tt8613070/`,
-        year: '2019'
+        year: "2019",
       },
       {
         title: `The Silence of the Lambs`,
         author: `Jonathan Demme`,
         link: `https://www.imdb.com/title/tt0102926/`,
-        year: '1991'
+        year: "1991",
       },
       {
         title: `The Sixth Sense`,
         author: `M. Night Shyamalan`,
         link: `https://www.imdb.com/title/tt0167404/`,
-        year: '1999'
+        year: "1999",
       },
       {
         title: `The Social Network`,
         author: `David Fincher`,
         link: `https://www.imdb.com/title/tt1285016/`,
-        year: '2010'
+        year: "2010",
       },
     ],
     essayList: [
@@ -212,100 +227,99 @@ module.exports = {
       {
         title: `Attack on Titan`,
         link: `https://myanimelist.net/anime/16498/Shingeki_no_Kyojin`,
-        year: '2013'
+        year: "2013",
       },
       {
         title: `Beastars`,
         link: `https://myanimelist.net/anime/39195/Beastars`,
-        year: '2019'
+        year: "2019",
       },
       {
         title: `Devilman: Crybaby`,
         link: `https://myanimelist.net/anime/35120/Devilman__Crybaby`,
-        year: '2018'
+        year: "2018",
       },
       {
         title: `Haikyuu!!`,
         link: `https://myanimelist.net/anime/20583/Haikyuu`,
-        year: '2014'
+        year: "2014",
       },
       {
         title: `Mob Psycho 100`,
         link: `https://myanimelist.net/anime/32182/Mob_Psycho_100`,
-        year: '2016'
+        year: "2016",
       },
       {
         title: `Perfect Blue`,
         link: `https://myanimelist.net/anime/437/Perfect_Blue`,
-        year: '1998'
+        year: "1998",
       },
       {
         title: `Puella Magi Madoka Magica`,
         link: `https://myanimelist.net/anime/9756/Mahou_Shoujo_Madoka%E2%98%85Magica`,
-        year: '2011'
+        year: "2011",
       },
       {
         title: `Spirited Away`,
         link: `https://myanimelist.net/anime/199/Sen_to_Chihiro_no_Kamikakushi`,
-        year: '2001'
+        year: "2001",
       },
       {
         title: `Steins;Gate`,
         link: `https://myanimelist.net/anime/9253/Steins_Gate`,
-        year: '2011'
+        year: "2011",
       },
       {
         title: `The Wolf Children Ame and Yuki`,
         link: `https://myanimelist.net/anime/12355/Ookami_Kodomo_no_Ame_to_Yuki`,
-        year: '2012'
+        year: "2012",
       },
     ],
     features: [
-
       {
         title: `Greenpeace Toolkit: Data Activist Co-op Sessions`,
         link: `https://www.greenpeace.org/usa/toolkits/data-activist-co-op-sessions/`,
-        year: '2022'
+        year: "2022",
       },
       {
         title: `Political Analysis of Fossil Fuel Projects`,
         link: `https://www.youtube.com/watch?v=myacoy0q1a4`,
-        year: '2022'
+        year: "2022",
       },
       {
         title: `Rutgers University SAS Honors Program Senior Spotlight`,
         link: `https://rutgershonorsblog.wordpress.com/2022/05/09/senior-spotlight-spring-2022-samantha-lee/`,
-        year: '2022'
+        year: "2022",
       },
       {
         title: `Congratulations to our 2021-22 CS Award Winners`,
         link: `https://www.cs.rutgers.edu/news-events/news/news-item/cs-2021-22-award-winners`,
-        year: '2022'
+        year: "2022",
       },
       {
         title: `Rutgers University Women's History Month Feature`,
         link: `https://www.linkedin.com/feed/update/urn:li:activity:6910706444946259968/`,
-        year: '2022'
+        year: "2022",
       },
       {
         title: `Pre-HackHERS Series: Interactive Visualization with R`,
         link: `https://www.youtube.com/watch?v=Q1OXnOy5bSo`,
-        year: '2022'
+        year: "2022",
       },
       {
         title: `Hylite of the Day (LinkedIn Feature)`,
         link: `https://www.linkedin.com/feed/update/urn:li:activity:6877354580028465153/`,
-        year: '2022'
+        year: "2022",
       },
       {
         title: `Pre-HackHERS Series 2021 Workshop #4: Chrome Extensions`,
         link: `https://www.youtube.com/watch?v=V6h5_wEqiRw`,
-        year: '2021'
+        year: "2021",
       },
       {
         title: `Announcing the LastPass STEM Scholarship Finalists`,
         link: `https://blog.lastpass.com/2019/06/announcing-lastpass-stem-scholarship-finalists.html/`,
-        year: '2019'
+        year: "2019",
       },
     ],
     hackathons: [
@@ -445,11 +459,11 @@ module.exports = {
             resolve: "gatsby-remark-embed-youtube",
             options: {
               width: 800,
-              height: 400
-            }
-          }
-        ]
-      }
-    }
+              height: 400,
+            },
+          },
+        ],
+      },
+    },
   ],
 }

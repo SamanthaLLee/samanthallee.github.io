@@ -47,10 +47,15 @@
     "react-helmet": "^6.1.0",
     "react-image-lightbox": "^5.1.1",
     "react-modal": "^3.11.2",
+    "react-particles": "^2.6.0",
     "react-simple-maps": "^2.3.0",
     "react-tabs": "^3.2.2",
     "react-tooltip": "^4.2.21",
-    "sass": "^1.34.1"
+    "react-tsparticles": "^2.6.0",
+    "sass": "^1.34.1",
+    "tsparticles": "^2.6.0",
+    "tsparticles-engine": "^2.6.0",
+    "tsparticles-slim": "^2.6.0"
   },
   "devDependencies": {
     "eslint": "^8.21.0",

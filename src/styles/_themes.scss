@@ -113,6 +113,7 @@ a:hover {
     background-size: auto 3px;
     background-repeat: repeat-x;
     text-decoration: none;
+    font-style: italic;
   }
 }
 
@@ -120,12 +121,14 @@ a.no-effect {
   background: none;
   background-image: none;
   text-decoration: none;
+  font-style: normal;
 }
 
 a.no-effect:hover {
   background: none;
   background-image: none;
   text-decoration: none;
+  font-style: normal;
 }
 
 summary,
@@ -142,6 +145,8 @@ details {
 .first-name {
   @include themify($themes) {
     color: themed("firstName");
+    font-size: "40px";
+    color: "black";
   }
 }
 
@@ -168,23 +173,36 @@ details {
     // background-repeat: repeat-x;
     // background-size: 1px 1px;
     text-decoration: underline themed("hoverBackground") solid;
+    font-style: normal;
 
     &:hover {
       @include themify($themes) {
-        background-image: url(themed("linkHoverSvg"));
-        background-position: 0 70%;
-        background-size: auto 3px;
+        // background-image: url(themed("linkHoverSvg"));
+        // background-position: 0 70%;
+        // background-size: auto 3px;
         // background-repeat: repeat-x;
-        text-decoration: none;
+        // text-decoration: none;
+        text-decoration: underline themed("hoverBackground") solid;
+        font-style: italic;
       }
     }
   }
 }
 
+.landing-blurb {
+  padding-top:10%;
+  padding-bottom:10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom:auto;
+  width:50%;
+}
+
 .positions {
   @include themify($themes) {
     //font-size: 4vw;
-    font-size: 22px;
+    font-size: 25px;
   }
 }
 
@@ -232,53 +250,28 @@ details {
 .card-container {
   @include themify($themes) {
     text-decoration-color: themed("hrefColor");
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);
-    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);
-    /* Firefox 3.5 - 3.6 */
-    box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);
+    // -webkit-transition: all 0.5s ease;
+    // -moz-transition: all 0.5s ease;
+    // -o-transition: all 0.5s ease;
+    // -ms-transition: all 0.5s ease;
+    // transition: all 0.5s ease;
+    // -webkit-box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);
+    // -moz-box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);
+    // box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.2);
 
     & *:not(.pill):not(.image) {
       background: themed("cardBackground");
     }
 
     &:hover {
-      text-decoration: none;
-      transform: scale(.99);
-      opacity: .7;
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-    }
-  }
-}
-
-.img-container {
-  @include themify($themes) {
-    border-radius: 5px !important;
-    border-color: themed("backgroundColor");
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-
-    &:hover {
-      text-decoration: none;
-      transform: scale(.99);
-      opacity: .7;
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-      transition: all 0.5s ease;
+      // text-decoration: none;
+      transform: scale(1.05);
+      // opacity: .7;
+      // -webkit-transition: all 0.5s ease;
+      // -moz-transition: all 0.5s ease;
+      // -o-transition: all 0.5s ease;
+      // -ms-transition: all 0.5s ease;
+      // transition: all 0.5s ease;
     }
   }
 }
@@ -303,43 +296,22 @@ details {
   }
 }
 
-.resume {
-  @include themify($themes) {
-    width: 100vh;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-
-    &:hover {
-      transform: scale(.99);
-      opacity: .7;
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-    }
-  }
-}
-
 .img-hover {
   @include themify($themes) {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    // -webkit-transition: all 0.5s ease;
+    // -moz-transition: all 0.5s ease;
+    // -o-transition: all 0.5s ease;
+    // -ms-transition: all 0.5s ease;
+    // transition: all 0.5s ease;
 
     &:hover {
-      transform: scale(.99);
-      opacity: .7;
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-      transition: all 0.5s ease;
+      transform: scale(1.05);
+      // opacity: .7;
+      // -webkit-transition: all 0.5s ease;
+      // -moz-transition: all 0.5s ease;
+      // -o-transition: all 0.5s ease;
+      // -ms-transition: all 0.5s ease;
+      // transition: all 0.5s ease;
     }
   }
 }
