@@ -1,17 +1,20 @@
 import React from "react"
 import { Row, Col, Image } from "react-bootstrap"
-
 import ConditionalLayout from "../components/ConditionalLayout"
 import { SEO } from "../utils"
+import "../styles/_themes.scss"
 
 const EasterEgg = () => (
   <ConditionalLayout>
     <SEO title="Hi! 👋" />
     <h1 className="pt-3">
       Hi!{" "}
-      <span role="img" aria-label="The wave emoji in yellow">
-        👋
-      </span>
+      <img
+        src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand%20Light%20Skin%20Tone.png"
+        alt="Waving Hand Light Skin Tone"
+        width="35"
+        height="35"
+      />
     </h1>
     <h5>You just found my Easter Egg :)</h5>
     <p></p>
@@ -41,7 +44,13 @@ const EasterEgg = () => (
           <li>A firm believer that Percy Jackson {">"} Harry Potter</li>
           <li>
             I love animals! Cats and dogs are equally good, and I have a soft
-            spot for rats and mice.
+            spot for rats and mice{" "}
+            <img
+              src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Mouse%20Face.png"
+              alt="Mouse Face"
+              width="25"
+              height="25"
+            />
           </li>
           <li>
             I'm fairly active on{" "}

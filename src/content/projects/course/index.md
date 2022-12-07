@@ -1,13 +1,13 @@
 ---
 title: "Undergraduate Course Projects"
-tags: ["rutgers"]
+tags: ["c", "java", "jsp", "python", "rutgers", "sql", "webgl"]
 linkTitles: []
 actualLinks: []
 description: "Projects completed for coursework at Rutgers University."
 season: "All Semesters"
-start: 
+start:
 end: "2019"
---- 
+---
 
 ### Software Methodology [<a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-213-software-methodology">CS213</a>]
 
@@ -21,7 +21,7 @@ end: "2019"
 
 <details>
   <summary>JavaFX Photo Library</summary>
-  This photo library, built using Java, JavaFX, and XML, is an application that supports user authentication, image upload, and image organization via albums, search functions, tags, and date-times. 
+  This photo library, built using Java, JavaFX, and XML, is an application that supports user authentication, image upload, and image organization via albums, search functions, tags, and date-times.
 
   <p><div style="text-align:center"><img alt="A JavaFX GUI of an album and photo display. Taking up the entire left slide, the display is currently selecting a picture of Armin Arlert, the best character from Attack on Titan. The right side displays details (an arbitrary caption and date time), and the photo has no tags. Below the details, there is a scrolling panel with all the images currently in the album. The images are Mob from Mob Psycho 100, Armin, and Tsukishima Kei from Haikyuu!!. These characters are top-tier." src="../../../../images/album.png" width="70%"/></div></p>
 
@@ -29,21 +29,25 @@ end: "2019"
 
 <details>
   <summary>Android Photo Library</summary>
-  This photo library, built using Java in Android Studio, is a phone app that supports user authentication, image upload, and image organization via albums, search functions, tags, and date-times. 
+  This photo library, built using Java in Android Studio, is a phone app that supports user authentication, image upload, and image organization via albums, search functions, tags, and date-times.
 
   <p><div style="text-align:center"><img alt="Two screenshots of an Android app. On both screens, we are on the 'Search Photos' page. The first screenshot has black search queries. The album itself contains three images below the search bars (one for location, one for people): the Eiffel Tower, Times Square, and the Great Wall. The second screenshot searches for 'new york', and the album is now filtered to just the Times Square image." src="../../../../images/android.png" width="70%"/></div></p>
 
 </details>
 
 #
-### Systems Programming [<a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-214-systems-programming">CS214</a>] 
+
+### Systems Programming [<a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-214-systems-programming">CS214</a>]
+
 <details>
   <summary>Where's the File? - Version Control System</summary>
   Where's the File? (WTF) is a fully functional client-server version control system written in C. Through sockets, file I/O, and multithreading, it allows up to ten clients to interact with, push projects to, get projects from, and otherwise modify a repository in a remote server. While a local version of the repository exists on the client-side, the server maintains the version most recently pushed while keeping track of the project's history. WTF supports the following commands: configure, checkout, update, upgrade, commit, push, create, destroy, add, remove, currentVersion, history, and rollback. <a href="https://github.com/matthew-notaro/Systems-Programming/tree/master/AsstLast">View source here.</a>
 </details>
 
 #
+
 ### Info & Data Management [<a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-336-principles-of-information-and-data-management">CS336</a>]
+
 <details>
   <summary>Train Scheduler</summary>
     Train Scheduler is a full-stack train booking web app that stores train routes and user data via efficient database schema. Users can search train routes stored in an AWS RDS database, create an account to create, modify, and delete reservations, and browse available schedules. The app also supports admin and employee configuration – employees can answer customer questions in a forum, and admins to view sales reports and customer employee information. It is hosted on an AWS EC2 instance through Apache Tomcat and leverages SQL and Java Servlet Pages to provide functionality to the user.
@@ -52,12 +56,12 @@ end: "2019"
 </details>
 
 #
+
 ### Intro to Artificial Intelligence [<a href="https://www.cs.rutgers.edu/academics/graduate/course-synopses/course-details/16-198-520-introduction-to-artificial-intelligence">CS520</a>]
 
 <details>
   <summary>A* Maze Solver</summary>
     A Python agent is put into an NxN maze and attempts to reach the goal using a repeated A* algorithm with a Manhattan distance heuristic. <a href="https://github.com/SamanthaLLee/CS520/tree/main/proj1">View source here.</a>
-
 
   <p><div style="text-align:center"><img alt="A command-line representation of a maze. The user has specified that the maze be 5x5 in dimension and 30% filled with obstacles. The program solves the maze and prints out the maze with a solution path. The trajectory length is 11, the number of cells processed is 16, and the time to solve is 0.0064518 seconds." src="../../../../images/maze.png" width="70%"/></div></p>
 
@@ -81,6 +85,7 @@ end: "2019"
   </details>
 
 #
+
 ### Computer Graphics [<a href="https://www.cs.rutgers.edu/academics/graduate/course-synopses/course-details/16-198-523-computer-graphics">CS523</a>]
 
 <details>

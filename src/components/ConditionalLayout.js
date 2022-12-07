@@ -1,27 +1,27 @@
 import React from "react"
-import { Link, ModalRoutingContext } from 'gatsby-plugin-modal-routing'
+import { Link, ModalRoutingContext } from "gatsby-plugin-modal-routing"
+import "../styles/_themes.scss"
 import { Container } from "react-bootstrap"
 import { PageLayout } from "../components"
 
-
 const ConditionalLayout = ({ children, ...rest }) => (
   <ModalRoutingContext.Consumer>
-    {({ modal, closeTo }) => (
+    {({ modal, closeTo }) =>
       modal ? (
         <React.Fragment>
-          {children}					
-						<Link className="close-button-text" to={closeTo}>
-							Get me out of here!
-	          </Link>
+          {children}
+          <Link className="close-button-text" to={closeTo}>
+            ❌ Get me out of here!
+          </Link>
         </React.Fragment>
       ) : (
-				<PageLayout>
-				<Container fluid className="text-left">
-		      {children}
-		    </Container>
-				</PageLayout>
+        <PageLayout>
+          <Container fluid className="text-left">
+            {children}
+          </Container>
+        </PageLayout>
       )
-    )}
+    }
   </ModalRoutingContext.Consumer>
 )
 

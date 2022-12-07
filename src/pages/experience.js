@@ -62,13 +62,14 @@ export default ({ data }) => {
         </Form>
       </Container>
       <Container>
+        <p style={{ display: "inline" }}>quick search: &nbsp;</p>
         <Badge
           pill
           variant="dark"
           className="img-hover px-3 mb-1 mr-1"
           onClick={handleChange("full time")}
         >
-          <h6 className="text-white my-0">full time</h6>
+          <h6 className="text-white my-0 prevent-select">full time</h6>
         </Badge>
         <Badge
           pill
@@ -76,7 +77,7 @@ export default ({ data }) => {
           className="img-hover px-3 mb-1 mr-1"
           onClick={handleChange("internship")}
         >
-          <h6 className="text-white my-0">internship</h6>
+          <h6 className="text-white my-0 prevent-select">internship</h6>
         </Badge>
         <Badge
           pill
@@ -84,7 +85,7 @@ export default ({ data }) => {
           className="img-hover px-3 mb-1 mr-1"
           onClick={handleChange("research")}
         >
-          <h6 className="text-white my-0">research</h6>
+          <h6 className="text-white my-0 prevent-select">research</h6>
         </Badge>
         <Badge
           pill
@@ -92,15 +93,14 @@ export default ({ data }) => {
           className="img-hover px-3 mb-1 mr-1"
           onClick={handleChange("teaching")}
         >
-          <h6 className="text-white my-0">teaching</h6>
+          <h6 className="text-white my-0 prevent-select">teaching</h6>
         </Badge>
         <Badge
           pill
-          variant="dark"
           className="img-hover px-2 mb-1 mr-1"
           onClick={handleChange("x")}
         >
-          <h6 className="text-white my-0">x</h6>
+          <h6 className="text-white my-0 prevent-select">❌</h6>
         </Badge>
       </Container>
       <Container

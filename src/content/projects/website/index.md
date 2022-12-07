@@ -32,10 +32,10 @@ Circa 2020: I discovered and subsequently switched to Gatsby. I also started dra
 
 <p><div style="text-align:center"><img alt="" src="../../../../images/website2.png" width="80%"/></div></p>
 
-Circa 2021: Yellow is a bit hard on the eyes (I still like the color, though).
+Circa 2021: Yellow is a bit hard on the eyes (I still like this shade, though).
 
 <p><div style="text-align:center"><img alt="" src="../../../../images/website3.png" width="80%"/></div></p>
 
-Circa 2022: Dark mode might just be the best mode.
+Circa 2022: Dark mode is ultimately the best mode.
 
 <p><div style="text-align:center"><img alt="" src="../../../../images/website4.png" width="80%"/></div></p>

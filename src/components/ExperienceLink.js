@@ -27,7 +27,7 @@ export default props => {
           <h6>{props.description}</h6>
           {props.tags.map(tag => (
             <Badge pill variant="dark" className="px-3 mr-1 pill" key={tag}>
-              <p className="text-white my-0 pill">{tag}</p>
+              <p className="text-white my-0 pill prevent-select">{tag}</p>
             </Badge>
           ))}
         </Card.Text>

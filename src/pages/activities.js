@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { PageLayout, PageTitle, ActivityLink } from "../components"
 import { SEO, Utils } from "../utils"
-import { Container, Form, FormControl } from "react-bootstrap"
+import { Container, Form, FormControl, Badge } from "react-bootstrap"
 
 export default ({ data }) => {
   const [state, setState] = useState({
@@ -15,26 +15,33 @@ export default ({ data }) => {
   const regex = /\/[activities].*\/|$/
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
 
-  const handleChange = e => {
-    const query = e.target.value
+  function handleChange(param) {
+    return e => {
+      let query = ""
+      if (!param) {
+        query = e.target.value
+      } else {
+        query = param
+      }
+      const filteredData =
+        param === "x"
+          ? allPosts
+          : allPosts.filter(post => {
+              const { description, title, tags } = post.node.frontmatter
+              const stdQuery = query.toLowerCase()
+              return (
+                post.node.excerpt.toLowerCase().includes(stdQuery) ||
+                (description && description.toLowerCase().includes(stdQuery)) ||
+                title.toLowerCase().includes(stdQuery) ||
+                (tags && tags.join("").toLowerCase().includes(stdQuery))
+              )
+            })
 
-    const filteredData = allPosts.filter(post => {
-      // query will run on the following fields
-      const { description, title, tags } = post.node.frontmatter
-      // standardize query
-      const stdQuery = query.toLowerCase()
-      return (
-        post.node.excerpt.toLowerCase().includes(stdQuery) ||
-        (description && description.toLowerCase().includes(stdQuery)) ||
-        title.toLowerCase().includes(stdQuery) ||
-        (tags && tags.join("").toLowerCase().includes(stdQuery))
-      )
-    })
-
-    setState({
-      query,
-      filteredData,
-    })
+      setState({
+        query,
+        filteredData,
+      })
+    }
   }
 
   const { filteredData, query } = state
@@ -53,6 +60,48 @@ export default ({ data }) => {
             onChange={handleChange}
           />
         </Form>
+      </Container>
+      <Container>
+        <p style={{ display: "inline" }}>quick search: &nbsp;</p>
+        <Badge
+          pill
+          variant="dark"
+          className="img-hover px-3 mb-1 mr-1"
+          onClick={handleChange("dei")}
+        >
+          <h6 className="text-white my-0 prevent-select">dei</h6>
+        </Badge>
+        <Badge
+          pill
+          variant="dark"
+          className="img-hover px-3 mb-1 mr-1"
+          onClick={handleChange("politics")}
+        >
+          <h6 className="text-white my-0 prevent-select">politics</h6>
+        </Badge>
+        <Badge
+          pill
+          variant="dark"
+          className="img-hover px-3 mb-1 mr-1"
+          onClick={handleChange("tech")}
+        >
+          <h6 className="text-white my-0 prevent-select">tech</h6>
+        </Badge>
+        <Badge
+          pill
+          variant="dark"
+          className="img-hover px-3 mb-1 mr-1"
+          onClick={handleChange("rutgers")}
+        >
+          <h6 className="text-white my-0 prevent-select">rutgers</h6>
+        </Badge>
+        <Badge
+          pill
+          className="img-hover px-2 mb-1 mr-1"
+          onClick={handleChange("x")}
+        >
+          <h6 className="text-white my-0 prevent-select">❌</h6>
+        </Badge>
       </Container>
       <Container
         fluid
@@ -81,7 +130,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/activities/" } }
-      sort: { fields: [frontmatter___end,frontmatter___index], order: DESC }
+      sort: { fields: [frontmatter___end, frontmatter___index], order: DESC }
     ) {
       totalCount
       edges {
@@ -92,8 +141,8 @@ export const query = graphql`
             description
             tags
             start(formatString: "MMMM YYYY")
-						end(formatString: "MMMM YYYY")
-						index
+            end(formatString: "MMMM YYYY")
+            index
             website
           }
           fields {

@@ -208,6 +208,7 @@ a.no-decorations:hover {
   height: 50px;
   line-height: 50px;
   position: relative;
+  z-index:999;
 
   @media (max-width: 700px) {
     font-size: 12px;
@@ -296,4 +297,13 @@ a.no-decorations:hover {
   100% {
     opacity: 1;
   }
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 }

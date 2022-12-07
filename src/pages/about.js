@@ -68,9 +68,9 @@ export default ({ data }) => {
       <Container className="text-center">
         <Link className="no-effect" to="/easter-egg/" asModal>
           <Image
-            alt="A headshot of Sam. She's wearing a blue, vertically striped button-up, and a black blazer. She has short hair, parted to the side. She smiles with her teeth."
+            alt="A casual photo of Sam from the waist up. She has short, reddish hair and a big smile. She's blocking the sun from her eyes and wearing a black dress with yellow and white flowers. She's in Discovery Park, right by the sound, and in the distance, there is lush greenery."
             style={{ width: 300, borderRadius: 300 / 2, overflow: "hidden" }}
-            src={`../../images/headshot.jpg`}
+            src={`../../images/casual.jpg`}
             overflow="hidden"
             className="img-hover pb-3"
           />
@@ -93,10 +93,16 @@ export default ({ data }) => {
           </p>
 
           <p>
-            I'm proud to be a member of several{" "}
-            <a href="/activities">communities</a> that span across various
-            causes and interests. Special shout-out to Rutgers Women in Computer
-            Science and Rutgers Ethitech! ❤️
+            I'm proud to be a member of various{" "}
+            <a href="/activities">communities</a> that have a range of causes
+            and interests. Special shout-out to Rutgers Women in Computer
+            Science and Rutgers Ethitech!{" "}
+            <img
+              src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png"
+              alt="Smiling Face with Hearts"
+              width="25"
+              height="25"
+            />
           </p>
 
           <Row className="py-2">
@@ -180,7 +186,9 @@ export default ({ data }) => {
         <article className="w-75 m-auto text-justify">
           <Row className="pt-4">
             <Col md={12}>
-              <h5 className="watch-list-title">Highlights:</h5>
+              <h5 className="watch-list-title">
+                Highlights, Features, & Talks:
+              </h5>
               <ul
                 className="text-left themed-text"
                 style={{ listStyle: "none" }}
@@ -191,7 +199,7 @@ export default ({ data }) => {
           </Row>
           <Row>
             <Col md={6}>
-              <h5 className="watch-list-title">Movie recs:</h5>
+              <h5 className="watch-list-title">Film Recs:</h5>
               <ul
                 className="text-left themed-text"
                 style={{ listStyle: "none" }}
@@ -200,7 +208,7 @@ export default ({ data }) => {
               </ul>
             </Col>
             <Col md={6}>
-              <h5 className="watch-list-title">Anime recs:</h5>
+              <h5 className="watch-list-title">Anime Recs:</h5>
               <ul
                 className="text-left themed-text"
                 style={{ listStyle: "none" }}
@@ -211,7 +219,7 @@ export default ({ data }) => {
           </Row>
 
           <p>
-            I don't watch many series these days, but I also recommend{" "}
+            I also recommend{" "}
             <a href="https://www.imdb.com/title/tt8036272/  ">
               Tuca and Bertie
             </a>{" "}

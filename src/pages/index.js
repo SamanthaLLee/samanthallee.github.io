@@ -56,17 +56,24 @@ export default ({ data }) => {
         <Container className="text-center pt-5 mt-5" fluid>
           <div className="landing-blurb">
             <h1 className="mb-3">
-              Hi, I'm <a href="/about">Sam</a>!
+              Hi, I'm <a href="/about">Sam</a>!&nbsp;
+              <img
+                src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Victory%20Hand%20Light%20Skin%20Tone.png"
+                alt="Victory Hand Light Skin Tone"
+                width="50"
+                height="50"
+              />
             </h1>
 
             <h4 className="positions">
-              I wear many hats: technologist, interdisciplinary learner, serial
+              I wear many hats: technologist, incessant learner, serial
               hobbyist. Reducer, reuser, recycler. Sometimes, those beanies with
               the little cat ears.
             </h4>
 
             <h4 className="positions">
-              Current software engineer @ Microsoft.
+              Current software engineer @{" "}
+              <a href="https://microsoft.com">Microsoft</a>.
             </h4>
 
             {/* <a
@@ -180,12 +187,17 @@ export default ({ data }) => {
           </div>
         </Container>
       </PageLayout>
-      <Particles
+      {/* <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
+          autoPlay: true,
           fpsLimit: 120,
+          fullScreen: {
+            enable: true,
+            zIndex: 0,
+          },
           interactivity: {
             events: {
               onClick: {
@@ -220,19 +232,12 @@ export default ({ data }) => {
             },
             number: { density: { enable: true, area: 800 }, value: 20 },
             opacity: {
-              value: 0.3,
+              value: 0.2,
             },
             shape: {
               type: "image",
               options: {
                 images: [
-                  {
-                    src:
-                      "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20on%20Fire.png",
-                    width: 32,
-                    height: 32,
-                    replaceColor: false,
-                  },
                   {
                     src:
                       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Butterfly.png",
@@ -248,7 +253,7 @@ export default ({ data }) => {
           },
           detectRetina: true,
         }}
-      />
+      /> */}
     </>
   )
 }

@@ -1,6 +1,6 @@
 ---
 title: "HackHERS"
-tags: ["hackathon", "rutgers", "tech","women in stem"]
+tags: ["dei", "hackathon", "rutgers", "tech"]
 description: "Rutgers University's annual women-centric hackathon."
 start: "2019-04"
 end: "2022-05"

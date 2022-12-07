@@ -1,11 +1,9 @@
 ---
 title: "Rewriting the Code"
-tags: ["tech","women in stem"]
+tags: ["dei", "tech", "women in stem"]
 description: "An intersectional and educational community of women in tech."
 start: "2020-07"
-end: 
+end:
 index: 1
 website: "https://rewritingthecode.org/"
 ---
-
-
