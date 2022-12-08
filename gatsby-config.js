@@ -297,6 +297,11 @@ module.exports = {
         year: "2022",
       },
       {
+        title: `Sentiment Analysis in R Workshop`,
+        link: `https://github.com/SamanthaLLee/R_sentiment_analysis`,
+        year: "2022",
+      },
+      {
         title: `Pre-HackHERS Series: Interactive Visualization with R`,
         link: `https://www.youtube.com/watch?v=Q1OXnOy5bSo`,
         year: "2022",

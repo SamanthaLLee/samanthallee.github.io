@@ -12,6 +12,14 @@ const ConditionalLayout = ({ children, ...rest }) => (
           <Link className="close-button-text" to={closeTo}>
             ❌ Get me out of here!
           </Link>
+          <div style={{ paddingTop: "30px", textAlign: "left" }}>
+            <a
+              href="https://samanthallee.notion.site/samanthallee/sam-s-misc-collection-22c816bd4369410184396ed470d3d35e"
+              style={{ color: "white" }}
+            >
+              (also, here is my super secret notion page)
+            </a>
+          </div>
         </React.Fragment>
       ) : (
         <PageLayout>

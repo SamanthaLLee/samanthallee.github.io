@@ -95,8 +95,8 @@ export default ({ data }) => {
           <p>
             I'm proud to be a member of various{" "}
             <a href="/activities">communities</a> that have a range of causes
-            and interests. Special shout-out to Rutgers Women in Computer
-            Science and Rutgers Ethitech!{" "}
+            and interests. Special shout-out to Rutgers Ethitech and Rutgers
+            Women in Computer Science!{" "}
             <img
               src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Revolving%20Hearts.png"
               alt="Revolving Hearts"
