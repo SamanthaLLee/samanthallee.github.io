@@ -9,8 +9,8 @@ const sound = new Howl({
 
 const defaultState = {
   dark: true,
-  toString: () => `light`,
-  toggleDark: () => { },
+  toString: () => `dark`,
+  toggleDark: () => {},
 }
 
 const ThemeContext = React.createContext(defaultState)
