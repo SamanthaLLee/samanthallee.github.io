@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, ModalRoutingContext } from "gatsby-plugin-modal-routing"
-import "../styles/_themes.scss"
 import { Container } from "react-bootstrap"
 import { PageLayout } from "../components"
 

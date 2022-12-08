@@ -2,7 +2,6 @@ import React from "react"
 import { Row, Col, Image } from "react-bootstrap"
 import ConditionalLayout from "../components/ConditionalLayout"
 import { SEO } from "../utils"
-import "../styles/_themes.scss"
 
 const EasterEgg = () => (
   <ConditionalLayout>
