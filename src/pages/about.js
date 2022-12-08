@@ -98,8 +98,8 @@ export default ({ data }) => {
             and interests. Special shout-out to Rutgers Women in Computer
             Science and Rutgers Ethitech!{" "}
             <img
-              src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png"
-              alt="Smiling Face with Hearts"
+              src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Revolving%20Hearts.png"
+              alt="Revolving Hearts"
               width="25"
               height="25"
             />

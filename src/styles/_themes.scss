@@ -193,11 +193,11 @@ details {
   @include themify($themes) {
       background-color: themed("backgroundColor");
   }
-  padding-top:10%;
-  padding-bottom:10%;
+  padding-top:5%;
+  padding-bottom:5%;
   margin-left: auto;
   margin-right: auto;
-  margin-top:auto;
+  margin-top:10vh;
   margin-bottom:auto;
   width:50%;
   z-index : 999;
