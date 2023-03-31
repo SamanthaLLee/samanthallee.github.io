@@ -317,6 +317,16 @@ module.exports = {
         year: "2021",
       },
       {
+        title: `Sego Lily Hacks - How to Organize a Gender-Focused Hackathon Panel`,
+        link: `https://www.instagram.com/p/CSAmwaGpDWm/`,
+        year: "2021",
+      },
+      {
+        title: `ACT-W National Conference 2021 - Diversity and Inclusion Panel`,
+        link: `https://act-w.org/past-events/`,
+        year: "2021",
+      },
+      {
         title: `Announcing the LastPass STEM Scholarship Finalists`,
         link: `https://blog.lastpass.com/2019/06/announcing-lastpass-stem-scholarship-finalists.html/`,
         year: "2019",
