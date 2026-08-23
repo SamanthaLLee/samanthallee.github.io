@@ -44,7 +44,7 @@ module.exports = {
     ],
     designations: [`Student`, `Activist`, `Teacher`, `Thinker`],
     interests: [
-      "Data sovereignity",
+      "Data sovereignty",
       "AI ethics & alignment",
       "Fandom & pop culture analysis"
     ],
