@@ -68,7 +68,7 @@ export default ({ data }) => {
       <Container className="text-center">
         <Link className="no-effect" to="/easter-egg/" asModal>
           <Image
-            alt="A casual photo of Sam from the knees up. She has short, black hair with pink tips, and a big smile. She's wearing white pants and a loose green button up over a black tank. She's leaning against a railing above tthe Amstel river in Amsterdam."
+            alt="A casual photo of Sam from the knees up. She has short, black hair with pink tips, and a big smile. She's wearing white pants and a loose green button up over a black tank. She's leaning against a railing above the Amstel river in Amsterdam."
             style={{ width: 300, borderRadius: 300, overflow: "hidden" }}
             src={`../../images/about.JPG`}
             overflow="hidden"
@@ -77,7 +77,7 @@ export default ({ data }) => {
         </Link>
         <article className="w-75 m-auto pt-3 pb-2 text-justify">
           <p>
-            Hi, there! I'm Sam Lee, a cybersecurity student at the University of Washington–Bothell and a software engineer at Microsoft.
+            Hi, there! I'm Sam Lee, a software engineer at Microsoft and Cybersecurity Master's student at the University of Washington–Bothell. 
             I'm based in Seattle and originally from New Jersey, which are the traditional lands of the{" "}
             <a href="https://native-land.ca/maps/territories/puget-sound-salish/">
               Coast Salish

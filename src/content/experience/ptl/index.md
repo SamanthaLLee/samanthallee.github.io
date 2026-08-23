@@ -1,7 +1,7 @@
 ---
 title: "Head Teaching Assistant"
 tags: ["teaching"]
-description: "Led recitations and developed lessons for Data Structures in Java (CS112)."
+description: "Led recitations and developed lessons for Data Structures in Java."
 start: "2020-09"
 end: "2022-05"
 ---

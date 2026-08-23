@@ -21,11 +21,11 @@ const EasterEgg = () => (
     <Row>
       <Col sm={11}>
         <ul>
-          <li>My favorite bird is the ruby-throated hummingbird; my favorite fish is the (Chinook) salmon.</li>
+          <li>My favorite bird is the ruby-throated hummingbird; my favorite fish is the Chinook salmon.</li>
           <li>I love art and have novice skills in charcoal drawing, block printing, and embroidery.</li>
           <li>♌︎☉ ♎︎☽ ♒︎↑ (I invite you to explain astrology to me).</li>
           <li>Every year, I submit an entry to the <a href="https://adamcadre.ac/lyttle/">Lyttle Lytton Contest</a>.</li>
-          <li>I know the alphabet backwards.</li>
+          <li>I can recite the alphabet backwards.</li>
           <li>I was introduced to coding through Tumblr – thanks, Tumblr!</li>
           <li>
             I played the flute for ~10 years and now play it recreationally.
