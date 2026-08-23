@@ -1,7 +1,7 @@
 ---
 title: "Software Development Engineering Intern"
 tags: ["internship","swe"]
-description: "Designed a BOGO BuyBox for the Audible website."
+description: "Frontend development for the Audible website."
 start: "2021-06"
 end: "2021-08"
 index: 0

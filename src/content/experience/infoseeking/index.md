@@ -1,7 +1,7 @@
 ---
 title: "Research Assistant"
 tags: ["data science","research"]
-description: "Developed software for information retrieval studies."
+description: "Information retrieval research."
 start: "2019-01"
 end: "2019-10"
 index: 4

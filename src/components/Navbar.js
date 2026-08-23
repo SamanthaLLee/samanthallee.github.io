@@ -48,14 +48,6 @@ export default () => {
           >
             projects
           </Nav.Link>
-          <Nav.Link
-            className="ml-2 no-effect"
-            as={Link}
-            to="/activities"
-            title="activities"
-          >
-            activities
-          </Nav.Link>
           <Form className="ml-3 my-auto">
             <Form.Check
               type="switch"

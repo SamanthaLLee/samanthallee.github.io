@@ -5,7 +5,7 @@ module.exports = {
     firstName: `Sam`,
     lastName: `Lee`,
     description: `Sam Lin Lee's portfolio`,
-    occupation: `Student`,
+    occupation: [`Student`, `Software Engineer`],
     keywords: [
       `Samantha`,
       `Sam`,
@@ -44,18 +44,17 @@ module.exports = {
     ],
     designations: [`Student`, `Activist`, `Teacher`, `Thinker`],
     interests: [
-      "Fandom & pop culture analysis",
-      "HCI research",
-      "Public policy",
+      "Data sovereignity",
+      "AI ethics & alignment",
+      "Fandom & pop culture analysis"
     ],
-    passions: [`Ethical tech`, "LGBTQIA visibility", "Sustainability"],
+    passions: ["Climbing rocks","Skating ice","Watching birds","Experimenting with different art mediums"],
     dabblings: [`Graphic design`, `Prose`, "UI/UX"],
-    eager: ["Build a closed ecosystem", "Get another tattoo", "Boulder V5"],
+    eager: ["Build a closed ecosystem", "Get another tattoo", "Boulder V6", "Try new things"],
     learnings: [
-      "Cybersecurity",
-      "Tech policy",
-      "Algorithmic bias",
-      "Mutual aid",
+      "Horizontal surveillance",
+      "Local transit infrastructure",
+      "Sewing techniques"
     ],
     hobbies: ["DIY", `Pokémon GO`, "Sewing & embroidery", "Ice skating"],
     advanced: ["Java", "Python", "C"],
@@ -137,18 +136,6 @@ module.exports = {
         year: "2022",
       },
       {
-        title: `Hereditary`,
-        author: `Ari Aster`,
-        link: `https://www.imdb.com/title/tt7784604/`,
-        year: "2018",
-      },
-      {
-        title: `Inception`,
-        author: `Christopher Nolan`,
-        link: `https://www.imdb.com/title/tt1375666/`,
-        year: "2010",
-      },
-      {
         title: `Jojo Rabbit`,
         author: `Taika Waititi`,
         link: `https://www.imdb.com/title/tt2584384/`,
@@ -165,6 +152,12 @@ module.exports = {
         author: `Baz Luhrmann, Craig Pearce`,
         link: `https://www.imdb.com/title/tt0203009/`,
         year: "2001",
+      },
+      {
+        title: `Nope`,
+        author: `Jordan Peele`,
+        link: `https://www.imdb.com/title/tt10954984/`,
+        year: "2022",
       },
       {
         title: `Portrait of a Lady on Fire`,
@@ -220,16 +213,6 @@ module.exports = {
     ],
     animeList: [
       {
-        title: `Attack on Titan`,
-        link: `https://myanimelist.net/anime/16498/Shingeki_no_Kyojin`,
-        year: "2013",
-      },
-      {
-        title: `Beastars`,
-        link: `https://myanimelist.net/anime/39195/Beastars`,
-        year: "2019",
-      },
-      {
         title: `Devilman: Crybaby`,
         link: `https://myanimelist.net/anime/35120/Devilman__Crybaby`,
         year: "2018",
@@ -263,6 +246,11 @@ module.exports = {
         title: `Steins;Gate`,
         link: `https://myanimelist.net/anime/9253/Steins_Gate`,
         year: "2011",
+      },
+      {
+        title: `The Apothecary Diaries`,
+        link: `https://myanimelist.net/anime/54492/Kusuriya_no_Hitorigoto`,
+        year: "2023",
       },
       {
         title: `The Wolf Children Ame and Yuki`,
@@ -312,6 +300,11 @@ module.exports = {
         year: "2022",
       },
       {
+        title: `HackRU Winner`,
+        link: `https://hackru-s22.devpost.com/`,
+        year: "2022",
+      },
+      {
         title: `Pre-HackHERS Series 2021 Workshop #4: Chrome Extensions`,
         link: `https://www.youtube.com/watch?v=V6h5_wEqiRw`,
         year: "2021",
@@ -325,6 +318,21 @@ module.exports = {
         title: `ACT-W National Conference 2021 - Diversity and Inclusion Panel`,
         link: `https://act-w.org/past-events/`,
         year: "2021",
+      },
+      {
+        title: `HackRU Winner`,
+        link: `https://hackru-s21.devpost.com/`,
+        year: "2021",
+      },
+      {
+        title: `HackRU Winner`,
+        link: `https://hackru-f20.devpost.com/`,
+        year: "2020",
+      },
+      {
+        title: `Estée Lauder Hack for Pink Winner`,
+        link: `https://elchackathon2020.devpost.com/`,
+        year: "2020",
       },
       {
         title: `Announcing the LastPass STEM Scholarship Finalists`,
@@ -374,7 +382,6 @@ module.exports = {
         category: `Education`,
         link: `https://educateurself.carrd.co/`,
       },
-
       {
         title: `Mutual Morris`,
         category: `Mutual Aid`,

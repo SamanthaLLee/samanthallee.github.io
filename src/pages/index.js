@@ -1,5 +1,6 @@
 import React, { useCallback, useContext } from "react"
 import { graphql } from "gatsby"
+import { Link } from "gatsby-plugin-modal-routing"
 import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
@@ -53,10 +54,18 @@ export default ({ data }) => {
     <>
       <PageLayout>
         <SEO title="Home" />
-        <Container className="text-center pt-5 mt-5" fluid>
+        <Container className="text-center pt-2 mt-2" fluid>
           <div className="landing-blurb">
+          <Link className="no-effect" to="/about">
+          <Image
+            alt="A casual photo of Sam from the waist up. She has short, reddish hair and a big smile. She's blocking the sun from her eyes and wearing a black dress with yellow and white flowers. She's in Discovery Park, right by the sound, and in the distance, there is lush greenery."
+            style={{ width: 200, borderRadius: 200, overflow: "hidden" }}
+            src={`../../images/casual.JPG`}
+            overflow="hidden"
+            className="img-hover pb-3"
+          /></Link>
             <h1 className="mb-3">
-              Hi, I'm <a href="/about">Sam</a>!&nbsp;
+              Hi, I'm Sam!&nbsp;
               <img
                 src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Victory%20Hand%20Light%20Skin%20Tone.png"
                 alt="Victory Hand Light Skin Tone"
@@ -66,14 +75,10 @@ export default ({ data }) => {
             </h1>
 
             <h4 className="positions">
-              I wear many hats: technologist, incessant learner, serial
-              hobbyist. Reducer, reuser, recycler. Sometimes, those beanies with
-              the little cat ears.
-            </h4>
-
-            <h4 className="positions">
-              Current software engineer @{" "}
-              <a href="https://microsoft.com">Microsoft</a>.
+              Identity @{" "}
+              <a href="https://microsoft.com/">Microsoft</a>; Cybersecurity @{" "}
+              <a href="https://www.uwb.edu/">UWB</a>;
+              Patron @ your local sushi restaurant.
             </h4>
 
             {/* <a

@@ -68,20 +68,17 @@ export default ({ data }) => {
       <Container className="text-center">
         <Link className="no-effect" to="/easter-egg/" asModal>
           <Image
-            alt="A casual photo of Sam from the waist up. She has short, reddish hair and a big smile. She's blocking the sun from her eyes and wearing a black dress with yellow and white flowers. She's in Discovery Park, right by the sound, and in the distance, there is lush greenery."
-            style={{ width: 300, borderRadius: 300 / 2, overflow: "hidden" }}
-            src={`../../images/casual.jpg`}
+            alt="A casual photo of Sam from the knees up. She has short, black hair with pink tips, and a big smile. She's wearing white pants and a loose green button up over a black tank. She's leaning against a railing above tthe Amstel river in Amsterdam."
+            style={{ width: 300, borderRadius: 300, overflow: "hidden" }}
+            src={`../../images/about.JPG`}
             overflow="hidden"
             className="img-hover pb-3"
           />
         </Link>
         <article className="w-75 m-auto pt-3 pb-2 text-justify">
           <p>
-            Hi, there! I'm Sam Lee, a recent graduate of Rutgers University–New
-            Brunswick with a B.S. in Computer Science and Cognitive Science
-            (with a concentration in decision-making) and a completed minor in
-            Political Science. I'm based in Seattle and the greater NYC area,
-            which are the traditional lands of the{" "}
+            Hi, there! I'm Sam Lee, a cybersecurity student at the University of Washington–Bothell and a software engineer at Microsoft.
+            I'm based in Seattle and originally from New Jersey, which are the traditional lands of the{" "}
             <a href="https://native-land.ca/maps/territories/puget-sound-salish/">
               Coast Salish
             </a>{" "}
@@ -93,16 +90,8 @@ export default ({ data }) => {
           </p>
 
           <p>
-            I'm proud to be a member of various{" "}
-            <a href="/activities">communities</a> that have a range of causes
-            and interests. Special shout-out to Rutgers Ethitech and Rutgers
-            Women in Computer Science!{" "}
-            <img
-              src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Revolving%20Hearts.png"
-              alt="Revolving Hearts"
-              width="25"
-              height="25"
-            />
+            I graduated from Rutgers University–New Brunswick with a B.S. in Computer Science, a B.A. in Cognitive Science, and a minor in
+            Political Science. There, I was an active leader and organizer in various <a href="/activities">tech communities</a> and focused on diversity, skill-sharing, and K-12 education.
           </p>
 
           <Row className="py-2">
@@ -123,7 +112,7 @@ export default ({ data }) => {
             </Col>
 
             <Col md={3}>
-              <h5 className="watch-list-title">Passionate about...</h5>
+              <h5 className="watch-list-title">Spending time...</h5>
               <ul
                 className="text-left themed-text"
                 style={{ listStyle: "none" }}
@@ -169,11 +158,6 @@ export default ({ data }) => {
               </ul>
             </Col>
           </Row>
-
-          <p>
-            I'd like to pursue a PhD in the future, but I'm taking things one
-            step at a time.
-          </p>
 
           <p>
             Check out my <Link to="/projects">projects</Link> or{" "}

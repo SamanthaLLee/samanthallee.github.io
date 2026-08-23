@@ -21,50 +21,25 @@ const EasterEgg = () => (
     <Row>
       <Col sm={11}>
         <ul>
-          <li>
-            I'm an{" "}
-            <a href="https://www.16personalities.com/infj-personality">INFJ</a>{" "}
-            and a <a href="https://www.enneagraminstitute.com/type-3">3w2</a>
-          </li>
-          <li>♌︎☉ ♎︎☽ ♒︎↑ (I invite you to explain astrology to me)</li>
-          <li>I know the alphabet backwards</li>
+          <li>My favorite bird is the ruby-throated hummingbird; my favorite fish is the (Chinook) salmon.</li>
+          <li>I love art and have novice skills in charcoal drawing, block printing, and embroidery.</li>
+          <li>♌︎☉ ♎︎☽ ♒︎↑ (I invite you to explain astrology to me).</li>
+          <li>Every year, I submit an entry to the <a href="https://adamcadre.ac/lyttle/">Lyttle Lytton Contest</a>.</li>
+          <li>I know the alphabet backwards.</li>
           <li>I was introduced to coding through Tumblr – thanks, Tumblr!</li>
           <li>
-            I played the flute for ~10 years and now play it recreationally
+            I played the flute for ~10 years and now play it recreationally.
           </li>
-          <li>I also played the trumpet in a marching band for ~4 years</li>
-          <li>Je parle un peu le français</li>
+          <li>I also played the trumpet in a marching band for ~4 years.</li>
+          <li>Je parle un peu le français.</li>
+          <li>I have four tattoos and nine piercings (and counting).</li>
           <li>
-            Some of my favorite foods are poke, mangoes, and{" "}
-            <a href="https://thewoksoflife.com/shrimp-rice-noodle-rolls-cheung-fun/">
-              ha cheung
-            </a>
-          </li>
-          <li>A firm believer that Percy Jackson {">"} Harry Potter</li>
-          <li>
-            I love animals! Cats and dogs are equally good, and I have a soft
-            spot for rats and mice{" "}
-            <img
-              src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Mouse%20Face.png"
-              alt="Mouse Face"
-              width="25"
-              height="25"
-            />
-          </li>
-          <li>
-            I'm fairly active on{" "}
-            <a href="https://instagram.com/sam.lin.lee/">Instagram</a>
-          </li>
-          <li>I have four tattoos and seven piercings (and counting)</li>
-          <li>
-            <a href="https://matthew-notaro.github.io/">Here</a>{" "}
-            <a href="https://www.stephaniephotos.com/">are</a>{" "}
-            <a href="https://sruthisoorian.github.io/">some</a>{" "}
-            <a href="http://sandhya-veludandi.github.io/">of</a>{" "}
-            <a href="http://isabella-pham.github.io/">my</a>{" "}
-            <a href="https://kuhuhalder.com/">very</a>{" "}
-            <a href="https://manasvimedam.github.io/#/">favorite</a>{" "}
-            <a href="https://www.jessleecreations.com/">people</a>
+            <a href="https://matthew-notaro.github.io/">I</a>{" "}
+            <a href="https://www.stephaniephotos.com/">am</a>{" "}
+            <a href="https://www.jessleecreations.com/">surrounded</a>{" "}
+            <a href="https://sruthisoorian.github.io/">by</a>{" "}
+            <a href="http://sandhya-veludandi.github.io/">fantastic</a>{" "}
+            <a href="http://isabella-pham.github.io/">people</a>.
           </li>
         </ul>
       </Col>
