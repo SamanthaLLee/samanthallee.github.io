@@ -335,6 +335,16 @@ module.exports = {
         year: "2020",
       },
       {
+        title: `Project SUPER Research Symposium Presenter`,
+        link: `https://iwl.rutgers.edu/events/project-super-research-symposium-3/`,
+        year: "Fall 2019",
+      },
+      {
+        title: `Project SUPER Research Symposium Presenter`,
+        link: `https://iwl.rutgers.edu/events/project-super-research-symposium-2/`,
+        year: "Spring 2019",
+      },
+      {
         title: `Announcing the LastPass STEM Scholarship Finalists`,
         link: `https://blog.lastpass.com/2019/06/announcing-lastpass-stem-scholarship-finalists.html/`,
         year: "2019",

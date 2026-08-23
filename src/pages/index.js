@@ -60,7 +60,7 @@ export default ({ data }) => {
           <Image
             alt="A casual photo of Sam from the waist up. She has short, reddish hair and a big smile. She's blocking the sun from her eyes and wearing a black dress with yellow and white flowers. She's in Discovery Park, right by the sound, and in the distance, there is lush greenery."
             style={{ width: 200, borderRadius: 200, overflow: "hidden" }}
-            src={`../../images/casual.JPG`}
+            src={`../../images/casual.jpg`}
             overflow="hidden"
             className="img-hover pb-3"
           /></Link>

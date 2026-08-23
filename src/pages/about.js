@@ -77,7 +77,7 @@ export default ({ data }) => {
         </Link>
         <article className="w-75 m-auto pt-3 pb-2 text-justify">
           <p>
-            Hi, there! I'm Sam Lee, a software engineer at Microsoft and Cybersecurity Master's student at the University of Washington–Bothell. 
+            Hi, there! I'm Sam Lee (she/her), a software engineer at Microsoft and Cybersecurity Master's student at the University of Washington–Bothell. 
             I'm based in Seattle and originally from New Jersey, which are the traditional lands of the{" "}
             <a href="https://native-land.ca/maps/territories/puget-sound-salish/">
               Coast Salish
